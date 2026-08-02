@@ -1,6 +1,7 @@
 export type BlogPost = {
   slug: string;
   title: string;
+  seoTitle?: string;
   shortTitle: string;
   excerpt: string;
   datePublished: string;
@@ -10,30 +11,42 @@ export type BlogPost = {
   readTime: string;
   keywords: string[];
   officialStatus?: string;
+  sources?: { label: string; publisher: string; href: string }[];
+  faqs?: { question: string; answer: string }[];
   contentHtml: string;
 };
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-system-requirements-speculations",
-    title: "Dawn of War 4 System Requirements: Official & Estimated",
+    title: "Dawn of War 4 System Requirements: What Is Confirmed?",
+    seoTitle: "Dawn of War 4 PC Requirements",
     shortTitle: "Dawn of War 4 System Requirements",
-    excerpt: "Comprehensive breakdown of official announcements and hardware estimates for Warhammer 40,000: Dawn of War IV on PC, featuring CPU, GPU, and RAM benchmarks.",
+    excerpt: "See the confirmed Dawn of War 4 PC requirements, what remains unannounced, and how to prepare without relying on invented CPU, GPU, RAM, or storage specs.",
     datePublished: "2026-08-01",
     dateModified: "2026-08-02",
     author: "Kronus Archive Tech Desk",
     category: "System Specs",
-    readTime: "7 min read",
+    readTime: "4 min read",
     keywords: ["Dawn of War 4 system requirements", "Dawn of War IV PC specs", "Dawn of War 4 hardware"],
-    officialStatus: "Official Status: Not Announced by Publisher",
+    officialStatus: "Official specs: not yet announced",
+    sources: [
+      { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
+      { label: "Dawn of War IV official FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "Are the Dawn of War 4 system requirements official?", answer: "Not yet. Steam currently confirms only that a 64-bit processor and operating system are required; detailed minimum and recommended specifications remain unannounced." },
+      { question: "Will Dawn of War 4 require Windows?", answer: "Yes. Deep Silver lists the game for Windows PC through Steam, but the supported Windows version has not yet been specified." },
+      { question: "Should I upgrade my PC before launch?", answer: "Wait for the official specifications unless your PC already needs a general upgrade. Any specific CPU, GPU, RAM, or storage target published before then is an estimate." },
+    ],
     contentHtml: `
 <div class="official-notice-box">
-  <strong>⚠️ Official Publisher Status:</strong> Final system requirements have not yet been published on Steam by Deep Silver or KING Art Games. The benchmarks below combine confirmed 64-bit platform requirements with technical estimates based on campaign squad rendering size.
+  <strong>Current official status:</strong> Steam confirms only a 64-bit processor and operating system. Every named CPU, GPU, memory, storage, OS-version, and performance target remains unannounced.
 </div>
 
 <h2>1. Official vs. Estimated Hardware Baseline</h2>
 <p>
-  <em>Warhammer 40,000: Dawn of War IV</em> is developed exclusively for modern 64-bit Windows PC architectures. While the store listing currently reads <em>"Coming Soon"</em> for precise clock speeds, official campaign footage demonstrates battlefield engine demands including real-time destructible cover, simultaneous squad calculations, and lighting effects during night sieges on Kronus.
+  <em>Warhammer 40,000: Dawn of War IV</em> is confirmed for Windows PC through Steam. The store page currently says <em>"Coming soon"</em> for the minimum OS and provides no detailed recommended specification. The estimates below are intentionally left blank until official figures are published.
 </p>
 
 <table class="data-table">
@@ -48,63 +61,64 @@ export const blogPosts: BlogPost[] = [
   <tbody>
     <tr>
       <td><strong>Operating System</strong></td>
-      <td>64-bit Windows 10 / 11 (Confirmed)</td>
-      <td>Windows 10 64-bit (v22H2)</td>
-      <td>Windows 11 64-bit</td>
+      <td>64-bit OS required; Windows version TBA</td>
+      <td>Not announced</td>
+      <td>Not announced</td>
     </tr>
     <tr>
       <td><strong>Processor (CPU)</strong></td>
       <td>64-bit Processor Required (Confirmed)</td>
-      <td>Intel Core i5-8400 / AMD Ryzen 5 2600</td>
-      <td>Intel Core i7-12700K / AMD Ryzen 7 5800X3D</td>
+      <td>Not announced</td>
+      <td>Not announced</td>
     </tr>
     <tr>
       <td><strong>Memory (RAM)</strong></td>
       <td>TBA by Publisher</td>
-      <td>16 GB RAM</td>
-      <td>32 GB High-Speed DDR4 / DDR5</td>
+      <td>Not announced</td>
+      <td>Not announced</td>
     </tr>
     <tr>
       <td><strong>Graphics Card (GPU)</strong></td>
       <td>TBA by Publisher</td>
-      <td>NVIDIA GTX 1060 (6GB) / AMD Radeon RX 580</td>
-      <td>NVIDIA RTX 3070 (8GB) / AMD Radeon RX 6800 XT</td>
+      <td>Not announced</td>
+      <td>Not announced</td>
     </tr>
     <tr>
       <td><strong>Storage</strong></td>
       <td>TBA by Publisher</td>
-      <td>70 GB Available Space (SSD Recommended)</td>
-      <td>70 GB NVMe M.2 SSD Required</td>
+      <td>Not announced</td>
+      <td>Not announced</td>
     </tr>
   </tbody>
 </table>
 
-<h2>2. Engine Architecture & Performance Drivers</h2>
+<h2>2. What Official Material Shows — and What It Does Not Prove</h2>
 <p>
-  The proprietary RTS engine powering Dawn of War IV prioritizes high-density squad combat. Unlike small-scale skirmish engines, massive engagements featuring <a href="/factions/orks">Orks Waaagh! hordes</a> or extensive <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus Noosphere grids</a> place significant load on multi-threaded CPU pipeline passes.
+  Official material shows large armies, base building, cover, and mechanically distinct factions such as the <a href="/factions/orks">Orks</a> and <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus</a>. It does not confirm a proprietary engine, a player-count ceiling, or how the game distributes work across CPU cores.
 </p>
 <ul>
-  <li><strong>CPU Bound Processing:</strong> Squad AI pathfinding and cover calculations execute across multiple core threads. Processors with high L3 cache architecture (such as AMD 3D V-Cache) will offer notable stability during 8-player battles.</li>
-  <li><strong>VRAM Allocations:</strong> High-resolution texture packs for detailed <a href="/factions/space-marines">Space Marines armor Chapter relics</a> and <a href="/factions/necrons">Necrons Monolith energy shaders</a> require at least 8 GB of VRAM for Ultra settings.</li>
-  <li><strong>Solid State Drive Necessity:</strong> High-speed solid-state drives reduce map load times and eliminate micro-stutter when stream-loading reinforcement drop pods into combat zones.</li>
+  <li><strong>CPU:</strong> No model, core count, or clock-speed target is official.</li>
+  <li><strong>GPU and VRAM:</strong> No graphics card, VRAM figure, preset, resolution, or frame-rate target is official.</li>
+  <li><strong>Storage:</strong> No capacity or SSD requirement is official.</li>
 </ul>
 
-<h2>3. Recommended Hardware Upgrade Priorities</h2>
+<h2>3. Should You Upgrade Before Launch?</h2>
 <p>
-  If you are preparing your rig ahead of the September 17 launch, focus your upgrade budget in the following order:
+  For most players, the safest choice is to wait for the official table. Upgrading against guessed requirements can mean spending money in the wrong area. Wishlist the game on Steam and compare your PC only after minimum and recommended targets are published.
 </p>
 <ol>
-  <li><strong>Upgrade System RAM to 32 GB:</strong> Large-scale RTS campaigns heavily utilize system memory for background squad states and map asset buffering.</li>
-  <li><strong>Install on an NVMe SSD:</strong> Moving from a traditional mechanical HDD to a modern M.2 drive provides the single largest improvement in load performance.</li>
-  <li><strong>Target CPU Core Count:</strong> Ensure your processor possesses at least 6 performance cores and 12 threads to prevent framerate dips during endgame clashes.</li>
+  <li><strong>Wait for official minimum and recommended specs.</strong></li>
+  <li><strong>Check whether the official targets name a resolution and frame rate.</strong></li>
+  <li><strong>Treat all pre-release hardware calculators as estimates, not requirements.</strong></li>
 </ol>
 `,
   },
   {
-    slug: "dawn-of-war-4-pre-order-editions-comparison",
+    slug: "dawn-of-war-4-release-date-editions-early-access",
     title: "Dawn of War 4 Release Date & Editions",
+    seoTitle: "Dawn of War 4 Release Date & Editions",
     shortTitle: "Dawn of War 4 Release Date & Editions",
-    excerpt: "Detailed breakdown of Dawn of War IV launch dates, Commander Edition 3-day early unlock on September 14, pre-order bonuses, and edition price comparisons.",
+    excerpt: "Dawn of War 4 launches September 17, 2026. Compare Standard and Commander Editions, US Steam prices, three-day early unlock, and confirmed DLC.",
     datePublished: "2026-08-01",
     dateModified: "2026-08-02",
     author: "Kronus Archive Commercial Desk",
@@ -112,6 +126,15 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min read",
     keywords: ["Dawn of War 4 release date", "Dawn of War 4 Commander Edition", "Dawn of War 4 pre-order bonus"],
     officialStatus: "Publisher Confirmed: September 17, 2026 Launch",
+    sources: [
+      { label: "Release date, editions and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
+      { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
+    ],
+    faqs: [
+      { question: "When does Dawn of War 4 release?", answer: "Dawn of War IV releases for Windows PC on September 17, 2026. Commander Edition pre-purchases include a three-day early unlock beginning September 14." },
+      { question: "How much is the Commander Edition?", answer: "The US Steam list price is $89.99, with a 10% pre-purchase price of $80.99 as checked on August 2, 2026. Regional prices can differ." },
+      { question: "What is included in the Commander Edition?", answer: "It includes the base game, Blood Ravens Story Prologue, Aftermath campaign expansion with a new faction, digital soundtrack, and the announced Year One expansion content." },
+    ],
     contentHtml: `
 <h2>1. Launch Timeline & Early Unlock Access</h2>
 <p>
@@ -129,25 +152,25 @@ export const blogPosts: BlogPost[] = [
   <tbody>
     <tr>
       <td><strong>14 SEP 2026</strong></td>
-      <td>Commander Edition ($79.99 / €79.99)</td>
-      <td>3-Day Early Access to Full Campaign, Skirmish &amp; Multiplayer Progression</td>
+      <td>Commander Edition ($89.99 US list price)</td>
+      <td>3-day early unlock; Steam lists access from September 14</td>
     </tr>
     <tr>
       <td><strong>17 SEP 2026</strong></td>
-      <td>Standard Edition ($59.99 / €59.99)</td>
+      <td>Standard Edition ($59.99 US list price)</td>
       <td>Global Steam Unlock for Standard Digital Pre-orders</td>
     </tr>
     <tr>
       <td><strong>FALL 2026</strong></td>
       <td>All Game Owners</td>
-      <td>Free Operation 1: Crusade Game Mode &amp; Map Expansion Pack</td>
+      <td>Crusade mode and new map packs begin in the announced free-DLC window</td>
     </tr>
   </tbody>
 </table>
 
 <h2>2. Standard vs. Commander Edition Feature Comparison</h2>
 <p>
-  Choosing the correct digital edition depends on whether you intend to participate in early competitive ladder matches or prioritize campaign progression for <a href="/factions/space-marines">Space Marines</a> and <a href="/factions/orks">Orks</a>.
+  The practical choice is between the base game and a larger Year One bundle. US prices below are Steam list prices checked on August 2, 2026; the 10% pre-purchase discount and regional pricing can change what you pay.
 </p>
 
 <table class="data-table">
@@ -155,7 +178,7 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <th>Included Feature / Content</th>
       <th>Standard Edition ($59.99)</th>
-      <th>Commander Edition ($79.99)</th>
+      <th>Commander Edition ($89.99)</th>
     </tr>
   </thead>
   <tbody>
@@ -175,14 +198,14 @@ export const blogPosts: BlogPost[] = [
       <td><strong>✅ Included (72h Early Unlock)</strong></td>
     </tr>
     <tr>
-      <td>Pre-Order Cosmetic Armor Packs</td>
-      <td>✅ Pre-order Bonus Only</td>
-      <td>✅ Included Automatically</td>
+      <td>Blood Ravens Story Prologue</td>
+      <td>❌ Not included</td>
+      <td>✅ Included</td>
     </tr>
     <tr>
-      <td>Post-Launch Operations &amp; Crusade Pass</td>
-      <td>❌ Separate DLC Purchase</td>
-      <td><strong>✅ Included (Season Pass Access)</strong></td>
+      <td>Aftermath campaign expansion + new faction</td>
+      <td>❌ Separate premium DLC</td>
+      <td><strong>✅ Included</strong></td>
     </tr>
   </tbody>
 </table>
@@ -192,16 +215,17 @@ export const blogPosts: BlogPost[] = [
   <h3>Which Edition Should You Buy?</h3>
   <ul>
     <li><strong>Buy Standard Edition ($59.99) if:</strong> You plan to play solo campaign missions at your own pace and do not mind waiting until September 17.</li>
-    <li><strong>Buy Commander Edition ($79.99) if:</strong> You want to jump onto the competitive multiplayer ladder 3 days early (Sep 14) and desire all post-launch Crusade operations bundled at a discount.</li>
+    <li><strong>Buy Commander Edition ($89.99 US list price) if:</strong> You value the three-day early unlock, both announced premium DLCs, and the digital soundtrack enough to pay the higher price.</li>
   </ul>
 </div>
 `,
   },
   {
-    slug: "necrons-reanimation-monolith-late-game-guide",
+    slug: "dawn-of-war-4-factions-compared",
     title: "Dawn of War 4 Factions: Which Army Should You Pick?",
+    seoTitle: "Dawn of War 4 Factions Compared",
     shortTitle: "Dawn of War 4 Factions & Army Comparison Guide",
-    excerpt: "Complete beginner and strategic guide comparing all 4 launch factions: Space Marines, Orks, Necrons, and Adeptus Mechanicus in Dawn of War IV.",
+    excerpt: "Compare all four confirmed Dawn of War 4 factions—Space Marines, Orks, Necrons, and Adeptus Mechanicus—and find the army that fits your RTS style.",
     datePublished: "2026-08-01",
     dateModified: "2026-08-02",
     author: "Kronus Archive Tactical Desk",
@@ -209,10 +233,19 @@ export const blogPosts: BlogPost[] = [
     readTime: "9 min read",
     keywords: ["Dawn of War 4 factions comparison", "Dawn of War 4 best faction", "Dawn of War 4 army pick guide"],
     officialStatus: "Developer Confirmed Faction Roster",
+    sources: [
+      { label: "Dawn of War IV official overview and FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+    ],
+    faqs: [
+      { question: "What factions are in Dawn of War 4?", answer: "The four confirmed launch factions are Space Marines, Orks, Necrons, and Adeptus Mechanicus. Each has its own campaign and distinct mechanics." },
+      { question: "Which Dawn of War 4 faction is best for beginners?", answer: "The publisher has not issued an official difficulty ranking. Because the developers describe Space Marine structures as the most straightforward, Space Marines are the clearest starting point to watch." },
+      { question: "Is there a confirmed best faction?", answer: "No. Balance is still being refined before release, and the developers plan to use launch data and player feedback for further changes." },
+    ],
     contentHtml: `
 <h2>1. Four Launch Armies: Side-by-Side Comparison</h2>
 <p>
-  Selecting your main faction in <em>Dawn of War IV</em> determines your economic expansion, commander tech tree, and combat pacing. Below is the comprehensive comparison matrix across all four launch armies.
+  Selecting a faction changes buildings, economy, commanders, units, and battlefield mechanics. The roster and faction identities below are developer-confirmed; difficulty and mobility labels are editorial guidance based on current official descriptions, not launch balance data.
 </p>
 
 <table class="data-table">
@@ -557,10 +590,11 @@ export const blogPosts: BlogPost[] = [
 `,
   },
   {
-    slug: "campaign-co-op-modes-breakdown",
+    slug: "dawn-of-war-4-multiplayer-modes-guide",
     title: "Dawn of War 4 Multiplayer Modes Explained",
+    seoTitle: "Dawn of War 4 Multiplayer Modes",
     shortTitle: "Dawn of War 4 Multiplayer Modes Explained",
-    excerpt: "Detailed breakdown of Dawn of War IV game modes: Annihilation, Domination, 2-Player Campaign Co-op, Skirmish, and the returning Last Stand.",
+    excerpt: "See every confirmed Dawn of War 4 multiplayer mode, including Annihilation, Domination, Maelstrom, campaign co-op, Skirmish, and Last Stand.",
     datePublished: "2026-08-01",
     dateModified: "2026-08-02",
     author: "Kronus Archive Tactical Desk",
@@ -568,10 +602,19 @@ export const blogPosts: BlogPost[] = [
     readTime: "7 min read",
     keywords: ["Dawn of War 4 multiplayer modes", "Dawn of War 4 Last Stand mode", "Dawn of War 4 co-op campaign"],
     officialStatus: "Developer Confirmed Game Modes",
+    sources: [
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Dawn of War IV official overview and FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "What multiplayer modes are confirmed for Dawn of War 4?", answer: "Quick Match supports Annihilation, Domination, and Maelstrom. The official site also confirms competitive multiplayer, Skirmish, Last Stand, and campaign co-op." },
+      { question: "Does Dawn of War 4 have co-op?", answer: "Yes. The 70-plus-mission campaign supports solo or two-player co-op, and official material says several other modes support cooperative play." },
+      { question: "Does Dawn of War 4 have 4v4 multiplayer?", answer: "The developer has discussed team games but has not published a final player-cap table confirming 4v4. This guide will update when that information is official." },
+    ],
     contentHtml: `
 <h2>1. Overview of Game Modes & Player Capacities</h2>
 <p>
-  <em>Warhammer 40,000: Dawn of War IV</em> features a comprehensive suite of game modes catering to solo narrative players, cooperative team commanders, and competitive ladder players.
+  <em>Warhammer 40,000: Dawn of War IV</em> includes modes for solo narrative players, cooperative commanders, and competitive multiplayer players. Where the developer has not published player limits or detailed rules, this guide marks them as unannounced.
 </p>
 
 <table class="data-table">
@@ -586,41 +629,354 @@ export const blogPosts: BlogPost[] = [
   <tbody>
     <tr>
       <td><strong>Authored Campaign</strong></td>
-      <td>1 - 2 Players (Co-op)</td>
+      <td>Solo or 2-player co-op</td>
       <td>70+ Mission planetary conquest of Kronus</td>
       <td>Narrative &amp; Co-op players</td>
     </tr>
     <tr>
       <td><strong>Annihilation Mode</strong></td>
-      <td>1v1, 2v2, 3v3, 4v4</td>
+      <td>Quick Match; final team-size limits not published</td>
       <td>Destroy all enemy headquarters &amp; production bases</td>
       <td>Hardcore RTS purists</td>
     </tr>
     <tr>
       <td><strong>Domination Mode</strong></td>
-      <td>1v1, 2v2, 3v3</td>
+      <td>Quick Match; final team-size limits not published</td>
       <td>Capture &amp; hold Strategic Victory Points for score</td>
-      <td>Competitive Ranked Ladder</td>
+      <td>Objective-focused multiplayer players</td>
     </tr>
-    <tr>
-      <td><strong>Last Stand Mode</strong></td>
-      <td>3 Players (Co-op Arena)</td>
-      <td>Survive escalating enemy horde waves with hero units</td>
-      <td>Co-op arena &amp; hero progression fans</td>
-    </tr>
+    <tr><td><strong>Maelstrom</strong></td><td>Quick Match; final team-size limits not published</td><td>Secure dynamically appearing objectives for Victory Points</td><td>Players who prefer shifting objectives</td></tr>
+    <tr><td><strong>Last Stand</strong></td><td>Co-op support confirmed; capacity TBA</td><td>Returning mode; detailed rules still to be showcased</td><td>Co-op and hero-mode fans</td></tr>
     <tr>
       <td><strong>Skirmish Mode</strong></td>
-      <td>1 Player vs AI (Custom)</td>
-      <td>Customizable match parameters &amp; AI difficulty tests</td>
-      <td>Build order practice &amp; casual play</td>
+      <td>Player capacity TBA</td>
+      <td>Offline/custom rules not yet fully detailed</td>
+      <td>Practice and custom-match players</td>
     </tr>
   </tbody>
 </table>
 
-<h2>2. 2-Player Cooperative Campaign Integration</h2>
+<h2>2. Campaign Co-op: What Is Confirmed</h2>
 <p>
-  The full 70+ mission campaign can be played in two-player co-op. Co-op partners can pick complementary factions (e.g. <a href="/factions/space-marines">Space Marines</a> providing frontline defense while <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus</a> builds networked artillery), sharing tactical commander cooldowns across the front.
+  The 70-plus-mission campaign can be played solo or with one friend. The publisher has not confirmed that partners can freely mix factions inside a campaign, nor has it documented shared Commander cooldowns, so those details remain open until a co-op showcase or launch documentation appears.
 </p>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-cover-retreat-reinforcement-guide",
+    title: "Dawn of War 4 Cover, Retreat & Reinforcement Explained",
+    seoTitle: "Dawn of War 4 Cover and Retreat Guide",
+    shortTitle: "Cover, Retreat & Reinforcement Guide",
+    excerpt: "Learn how Dawn of War 4 cover, retreat, and on-field reinforcement work, including faction exceptions and the tactical choices confirmed by developers.",
+    datePublished: "2026-08-02",
+    dateModified: "2026-08-02",
+    author: "Kronus Archive Tactical Desk",
+    category: "Campaign & Co-op",
+    readTime: "6 min read",
+    keywords: ["Dawn of War 4 cover", "Dawn of War 4 retreat", "Dawn of War 4 reinforcement"],
+    officialStatus: "Mechanics confirmed by developer AMA",
+    sources: [
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Dawn of War IV official overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "How does cover work in Dawn of War 4?", answer: "Cover reduces incoming ranged damage. Maps include directional cover and garrisonable structures, while melee attacks and some Wargear can force units out of cover or negate its protection." },
+      { question: "Can you cancel a retreat in Dawn of War 4?", answer: "Yes, but not immediately. The retreat icon changes from red to yellow after a period of time; once it is yellow, the retreat order can be cancelled." },
+      { question: "Do Necrons use cover?", answer: "No. Developers say Necrons do not use the normal cover system. Their faction instead has a distinct approach to preservation and on-field reinforcement." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Cover reduces ranged damage, retreat trades temporary control for safer repositioning, and on-field reinforcement spends resources to keep squads combat-ready. These systems are confirmed, but exact damage reductions, timers, and resource costs have not been published.</div>
+
+<h2>How the three preservation systems compare</h2>
+<p>Dawn of War IV rewards keeping experienced squads alive. Cover, retreat, and on-field reinforcement all support that goal, but each solves a different battlefield problem. The comparison below uses the developer’s July 2026 multiplayer AMA and avoids assigning unannounced numerical values.</p>
+<table class="data-table">
+  <thead><tr><th>Mechanic</th><th>Primary use</th><th>Main trade-off</th><th>Confirmed exception</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Cover</strong></td><td>Reduce ranged damage while holding a position</td><td>Melee and anti-cover Wargear can dislodge squads</td><td><a href="/factions/necrons">Necrons</a> do not use cover</td></tr>
+    <tr><td><strong>Retreat</strong></td><td>Escape melee or reposition toward production</td><td>Temporary loss of unit control</td><td>Order becomes cancellable after the icon turns yellow</td></tr>
+    <tr><td><strong>On-field reinforcement</strong></td><td>Replace squad models without leaving the field</td><td>Can drain the economy during prolonged fights</td><td>Necrons use a distinctive variant</td></tr>
+  </tbody>
+</table>
+
+<h2>Directional cover and garrisonable structures</h2>
+<p>Directional cover protects a squad from the relevant approach, so facing and flanking matter. Garrisonable structures provide protection from all directions. The developers describe cover as an optimization rather than an automatic win condition: it can swing an otherwise close engagement, but positioning, weapons, abilities, and matchups still matter.</p>
+<p>Faction asymmetry changes how players create safe positions. <a href="/factions/orks">Orks</a> can construct their own cover, while the <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus</a> can build a garrisonable structure. Necrons sit outside this normal cover loop entirely.</p>
+
+<h2>What breaks or bypasses cover?</h2>
+<ul>
+  <li><strong>Melee contact:</strong> engaging a ranged squad in melee forces it out of cover.</li>
+  <li><strong>Specialized Wargear:</strong> developers specifically name Flamers and grenades as examples that can negate cover.</li>
+  <li><strong>Flanking:</strong> directional protection makes the angle of attack important even before special weapons enter the fight.</li>
+</ul>
+
+<h2>When retreat becomes a tactical commitment</h2>
+<p>Retreat moves units toward their closest production structure while reducing the damage they take. During the first stage, the retreat icon is red and the order is committed. After it changes to yellow, the player may cancel and regain control. This creates a choice between staying long enough to deal more damage and leaving early enough to preserve veterancy.</p>
+<p>The opposing player also faces a decision: commit focus fire and abilities to chase the retreating unit, or stop the chase and use the opening to capture territory. See the broader <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a> for the objectives that can make territory more valuable than a risky pursuit.</p>
+
+<h2>Why reinforcement is powerful but expensive</h2>
+<p>On-field reinforcement lets players invest resources directly into an active engagement. Auto-reinforce can make squads significantly harder to remove, but placing too many units on automatic replacement can consume resources needed for production, upgrades, or tech. It is a battlefield advantage tied directly to economy management—not free healing.</p>
+
+<h2>How faction asymmetry changes preservation</h2>
+<p>The same preservation tool does not carry identical value for every army. <a href="/factions/space-marines">Space Marines</a> field elite squads whose veterancy may make a successful retreat especially valuable. Orks can push infrastructure forward and create cover, shortening the distance between production and battle. Adeptus Mechanicus units operate around a connected Noosphere that can reward holding prepared territory. Necrons skip normal cover and receive a distinct reinforcement implementation.</p>
+<p>Those descriptions come from official previews, but the relative value is an editorial interpretation. Final unit prices, reinforcement rates, retreat paths, and veterancy bonuses will determine whether preservation-heavy play is economically optimal in a specific matchup.</p>
+
+<h2>A practical decision framework</h2>
+<ol>
+  <li><strong>Before contact:</strong> identify directional cover, garrisons, the closest production structure, and the route an enemy melee unit could use.</li>
+  <li><strong>During contact:</strong> compare the cost of reinforcing with the value of holding the position. Auto-reinforce should be an active economic decision.</li>
+  <li><strong>At the retreat threshold:</strong> leave enough time for the squad to survive the forced movement period. Waiting for one more attack may trade veterancy for little gain.</li>
+  <li><strong>After disengaging:</strong> decide whether to cancel once the icon turns yellow, continue to safety, or redirect fresh units to protect the route.</li>
+</ol>
+<p>This framework is designed for new RTS players who need a repeatable question sequence. It is not a substitute for matchup data, which will be added after public hands-on testing becomes available.</p>
+
+<h2>Common mistakes to avoid</h2>
+<ul>
+  <li><strong>Treating cover as invulnerability:</strong> it reduces ranged damage but can be bypassed by angle, melee, and specialized Wargear.</li>
+  <li><strong>Retreating every unit together:</strong> a total withdrawal may concede an objective even when only one damaged squad needs to leave.</li>
+  <li><strong>Leaving auto-reinforce on by default:</strong> replacing models across several squads can consume the resources intended for tech progression.</li>
+  <li><strong>Chasing every retreat:</strong> a failed pursuit can pull units away from Strategic Positions or a newly appearing Maelstrom objective.</li>
+</ul>
+<div class="recommendation-box"><h3>Launch-day verification checklist</h3><ul><li>Measure cover reduction by weapon class.</li><li>Record the red-to-yellow retreat timing.</li><li>Compare reinforcement cost in and out of combat.</li><li>Document the Necron-specific reinforcement rules.</li></ul></div>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-maelstrom-mode-guide",
+    title: "Dawn of War 4 Maelstrom Mode: Objectives Explained",
+    seoTitle: "Dawn of War 4 Maelstrom Mode Guide",
+    shortTitle: "Maelstrom Mode Guide",
+    excerpt: "Dawn of War 4 Maelstrom mode uses dynamically appearing objectives. Learn its confirmed win condition, how it differs from Domination, and what remains TBA.",
+    datePublished: "2026-08-02",
+    dateModified: "2026-08-02",
+    author: "Kronus Archive Tactical Desk",
+    category: "Campaign & Co-op",
+    readTime: "5 min read",
+    keywords: ["Dawn of War 4 Maelstrom mode", "Dawn of War IV Maelstrom", "Dawn of War 4 multiplayer objectives"],
+    officialStatus: "Quick Match mode confirmed",
+    sources: [
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Dawn of War IV official overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "What is Maelstrom mode in Dawn of War 4?", answer: "Maelstrom is a Quick Match win condition where players secure objectives that dynamically appear across the map to earn Victory Points." },
+      { question: "How is Maelstrom different from Domination?", answer: "Domination is built around holding more Strategic Positions than the opponent. Maelstrom instead moves attention toward objectives that appear dynamically during the match." },
+      { question: "Is Maelstrom available in ranked matchmaking?", answer: "The developer confirms it as a selectable Quick Match mode. A separate ranked rule set, map pool, team-size limit, and scoring values have not yet been detailed." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Maelstrom is one of three confirmed Dawn of War IV Quick Match modes. Players gain Victory Points by securing objectives that dynamically appear across the map, forcing armies to respond to changing priorities.</div>
+
+<h2>Maelstrom win condition at a glance</h2>
+<p>The developers list Maelstrom beside Annihilation and Domination in the Quick Match selector. Annihilation is the default, but players can choose any or all of the available conditions when matchmaking. The official description confirms dynamic objectives and Victory Points; it does not yet publish score thresholds, objective duration, spawn logic, or supported team sizes.</p>
+<table class="data-table">
+  <thead><tr><th>Quick Match mode</th><th>Confirmed objective</th><th>Likely source of pressure</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Annihilation</strong></td><td>Destroy every enemy headquarters and protect your own</td><td>Base defense and finishing attacks</td></tr>
+    <tr><td><strong>Domination</strong></td><td>Hold more Strategic Positions to gain Victory Points</td><td>Persistent territorial control</td></tr>
+    <tr><td><strong>Maelstrom</strong></td><td>Secure dynamically appearing objectives for Victory Points</td><td>Rapid movement between changing locations</td></tr>
+  </tbody>
+</table>
+
+<h2>Why dynamic objectives change an RTS match</h2>
+<p>A fixed objective lets players build a plan around known terrain. A dynamic objective can pull armies away from established firing lines, expose an expansion, or create a short window in which mobility matters more than raw defensive strength. That conclusion is an editorial inference from the confirmed rule—not a published balance claim.</p>
+<p>The four <a href="/blog/dawn-of-war-4-factions-compared">launch factions</a> approach map movement differently. Ork construction and pressure, Space Marine orbital deployment, Necron teleport infrastructure, and the Adeptus Mechanicus Noosphere could all shape how players respond. Exact Maelstrom strategies must wait for final maps and scoring rules.</p>
+
+<h2>Three decisions players should expect</h2>
+<ol>
+  <li><strong>Contest or trade:</strong> decide whether the new objective is worth leaving a defended position.</li>
+  <li><strong>Commit or delay:</strong> send the full army, a screening force, or abilities that buy time.</li>
+  <li><strong>Score or punish:</strong> attack the objective itself or strike the opponent’s exposed base and economy.</li>
+</ol>
+<p>These are general RTS decision patterns, not tested Dawn of War IV build orders. Once the game launches, this archive will replace them with map-specific evidence and replay timing.</p>
+
+<h2>What is still unconfirmed</h2>
+<ul><li>Victory Point totals and scoring rate.</li><li>How long each dynamic objective remains active.</li><li>Whether objective locations can repeat.</li><li>Final player and team-size limits.</li><li>Ranked matchmaking and tournament rules.</li></ul>
+
+<h2>How Maelstrom may affect each faction</h2>
+<p>The following section is a source-based interpretation, not tested balance advice. Space Marine buildings can deploy from orbit within vision, with longer deployment times farther from headquarters. That could help establish infrastructure around a newly important area, but visible deployment markers can warn opponents. Ork infantry can construct inexpensive armed buildings, potentially supporting pressure across a wider map.</p>
+<p>Necron Tomb Pylons allow forces to teleport from headquarters, while the Power Matrix is tied to their economy and unit empowerment. Adeptus Mechanicus structures form a Noosphere Network that unlocks stronger options and benefits units within its influence. A moving-objective mode may therefore create a tension between defending established networks and contesting points beyond them.</p>
+
+<h2>Maelstrom preparation without inventing a build order</h2>
+<p>Before official maps and numbers exist, players can still practice decision-making in other RTS games. The transferable skill is not memorizing an opening; it is reading the map, preserving a mobile reserve, and evaluating whether an objective is worth the opportunity cost.</p>
+<ul>
+  <li><strong>Keep reconnaissance active:</strong> a dynamic objective is more valuable when you also know which route the opponent is using.</li>
+  <li><strong>Avoid one immobile army group:</strong> a small screening force may delay a capture while the main army protects production.</li>
+  <li><strong>Track the win condition:</strong> an objective matters because of Victory Points, not merely because a fight is available there.</li>
+  <li><strong>Preserve retreat routes:</strong> contesting a temporary location is less useful if the entire force becomes trapped afterward.</li>
+</ul>
+
+<h2>What to record during the first week</h2>
+<table class="data-table">
+  <thead><tr><th>Question</th><th>Why it matters</th><th>Evidence needed</th></tr></thead>
+  <tbody>
+    <tr><td>Where can objectives appear?</td><td>Determines scouting paths and defensive reach</td><td>Multiple replays on each map</td></tr>
+    <tr><td>How are Victory Points awarded?</td><td>Sets the value of contesting versus trading</td><td>Score changes with timestamps</td></tr>
+    <tr><td>How long does an objective persist?</td><td>Controls whether slow armies can respond</td><td>Spawn and expiry timing</td></tr>
+    <tr><td>Can objectives overlap or repeat?</td><td>Affects long-term map control</td><td>Full-match objective sequence</td></tr>
+  </tbody>
+</table>
+<p>For all announced formats, compare the complete <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">Dawn of War IV multiplayer modes</a>. For the mechanics used to preserve squads while rotating across the map, read the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover and retreat guide</a>.</p>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-year-one-roadmap-dlc",
+    title: "Dawn of War 4 Year One Roadmap: Free & Paid DLC",
+    seoTitle: "Dawn of War 4 Year One DLC Roadmap",
+    shortTitle: "Year One DLC Roadmap",
+    excerpt: "See the confirmed Dawn of War 4 Year One roadmap: free Crusade mode, maps, mission editor, Commander scenarios, and two premium campaign DLC releases.",
+    datePublished: "2026-08-02",
+    dateModified: "2026-08-02",
+    author: "Kronus Archive Commercial Desk",
+    category: "Pre-order & Editions",
+    readTime: "6 min read",
+    keywords: ["Dawn of War 4 DLC roadmap", "Dawn of War 4 Year One expansion", "Dawn of War 4 Crusade mode"],
+    officialStatus: "Year One plan confirmed by publisher",
+    sources: [
+      { label: "Release date, editions and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
+      { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
+    ],
+    faqs: [
+      { question: "What free DLC is planned for Dawn of War 4?", answer: "Deep Silver plans free Crusade mode, new map packs, a mission editor, and additional Commander scenarios for Last Stand and Crusade between fall 2026 and spring 2027." },
+      { question: "What paid DLC is in the Year One expansion?", answer: "The two announced premium releases are the Blood Ravens Story Prologue and Aftermath, a campaign expansion that introduces an additional faction." },
+      { question: "Does the Commander Edition include the Year One DLC?", answer: "Yes. The publisher says Commander Edition owners receive the announced free and paid DLC, alongside the base game and digital soundtrack." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Roadmap summary:</strong> From fall 2026 through spring 2027, Dawn of War IV is scheduled to receive free modes, maps, editing tools, and scenarios plus two premium story releases. Exact dates and finer details remain unannounced.</div>
+
+<h2>Confirmed Dawn of War 4 DLC roadmap</h2>
+<p>Deep Silver describes the post-launch plan as the Year One Expansion. The roadmap separates free updates available to game owners from two premium story packages that are included with the Commander Edition or sold separately. This page records only announced content and does not assign dates the publisher has not given.</p>
+<table class="data-table">
+  <thead><tr><th>Content</th><th>Type</th><th>Confirmed window or status</th><th>What the publisher says</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Crusade mode</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>Post-launch game mode</td></tr>
+    <tr><td><strong>Map packs</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>New maps</td></tr>
+    <tr><td><strong>Mission editor</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>Player-facing mission creation tool</td></tr>
+    <tr><td><strong>Commander scenarios</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>New scenarios for Last Stand and Crusade</td></tr>
+    <tr><td><strong>Blood Ravens Story Prologue</strong></td><td>Premium</td><td>Date TBA</td><td>Story leading into the main campaign</td></tr>
+    <tr><td><strong>Aftermath</strong></td><td>Premium</td><td>Date TBA</td><td>Campaign expansion plus an additional faction</td></tr>
+  </tbody>
+</table>
+
+<h2>What is free for all game owners?</h2>
+<p>The publisher groups Crusade, maps, the mission editor, and Commander scenarios under free DLC. “Free” does not mean every feature arrives on launch day: the announced release window runs from fall 2026 through spring 2027. The order and individual dates are not yet public.</p>
+<p>Crusade is separate from the launch campaign and from the three Quick Match win conditions described in our <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a>. Until a dedicated feature reveal appears, rules such as progression, map structure, and co-op capacity remain TBA.</p>
+
+<h2>What are the two premium expansions?</h2>
+<h3>Blood Ravens Story Prologue</h3>
+<p>The prologue follows a Blood Ravens strike force travelling to Aurelia and expands on events before the main campaign. It is included with Commander Edition and will also be sold separately.</p>
+<h3>Aftermath</h3>
+<p>Aftermath continues the campaign and adds a new playable faction. The faction identity, roster, campaign length, and release date have not been announced. Any named-faction prediction should therefore be treated as speculation.</p>
+
+<h2>Standard or Commander Edition for DLC?</h2>
+<p>Standard Edition includes the base game, while Commander Edition packages the base game, both premium releases, the digital soundtrack, and the three-day early unlock offered to pre-purchasers. Use our <a href="/blog/dawn-of-war-4-release-date-editions-early-access">edition comparison</a> for current US Steam pricing and the exact inclusions.</p>
+
+<h2>What the roadmap does not promise</h2>
+<p>A roadmap describes current plans, not a guarantee that every feature will ship on the first possible date. Deep Silver has provided a broad fall 2026 to spring 2027 window for the free content and has said that finer details are not ready to share. It has not assigned a public release date to either premium DLC.</p>
+<ul>
+  <li>No exact launch date for Crusade mode.</li>
+  <li>No number or names for the free maps.</li>
+  <li>No published specification for the mission editor.</li>
+  <li>No scenario count for Last Stand or Crusade.</li>
+  <li>No identity or roster for the Aftermath faction.</li>
+  <li>No separate price for either premium DLC at the time of this update.</li>
+</ul>
+
+<h2>How to evaluate the Year One expansion</h2>
+<p>Players interested mainly in the launch campaign can safely judge the Standard Edition on the base game alone. Players who already expect to play both story expansions can compare the Commander Edition premium with the eventual separate DLC prices. Until those standalone prices are public, claims that one option is definitively cheaper are premature.</p>
+<p>The free content should not be counted as exclusive Commander Edition value because the publisher says it is free. Commander owners receive it, but so do other game owners. The commercial difference comes from the early unlock, digital soundtrack, Blood Ravens Story Prologue, Aftermath, and the new faction bundled with Aftermath.</p>
+
+<h2>Roadmap tracking checklist</h2>
+<table class="data-table">
+  <thead><tr><th>Update to watch</th><th>What Kronus Archive will verify</th></tr></thead>
+  <tbody>
+    <tr><td>Crusade reveal</td><td>Rules, progression, player capacity, and launch date</td></tr>
+    <tr><td>Mission editor showcase</td><td>Sharing, scripting, map support, and platform requirements</td></tr>
+    <tr><td>Premium DLC store pages</td><td>Standalone prices, dates, and exact inclusions</td></tr>
+    <tr><td>Aftermath faction reveal</td><td>Name, mechanics, commanders, units, and campaign scope</td></tr>
+  </tbody>
+</table>
+<p>This page will change only when an official publisher announcement or store listing changes the record. Rumors and unnamed leaks will not be added to the confirmed roadmap table.</p>
+<div class="recommendation-box"><h3>Before you buy</h3><ul><li>Compare the bundle price with buying the premium DLC separately once prices are announced.</li><li>Do not assume every roadmap item arrives at once.</li><li>Recheck Steam because regional pricing and the pre-purchase discount can change.</li></ul></div>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-orks-faction-guide",
+    title: "Dawn of War 4 Orks Guide: Waaagh!, Units & Commanders",
+    seoTitle: "Dawn of War 4 Orks Faction Guide",
+    shortTitle: "Orks Faction Guide",
+    excerpt: "Learn how the Dawn of War 4 Orks faction works: Waaagh! momentum, low-cost expansion, early upgrades, Gorgutz, Guzcutta, and confirmed battlefield roles.",
+    datePublished: "2026-08-02",
+    dateModified: "2026-08-02",
+    author: "Kronus Archive Tactical Desk",
+    category: "Faction Mechanics",
+    readTime: "7 min read",
+    keywords: ["Dawn of War 4 Orks guide", "Dawn of War 4 Waaagh mechanic", "Dawn of War 4 Gorgutz"],
+    officialStatus: "Based on official Orks faction deep dive",
+    sources: [
+      { label: "Faction Deep Dive — Orks", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/faction-deep-dive-orks" },
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+    ],
+    faqs: [
+      { question: "How does the Ork Waaagh! work in Dawn of War 4?", answer: "The Waaagh! meter grows with the number of Orks fielded and enemies killed. Activating it makes fighting units more aggressive and stronger for a timed battlefield advantage." },
+      { question: "Who are the Ork commanders in Dawn of War 4?", answer: "The official faction preview names returning Warboss Gorgutz and the new Beast Snagga Boss Guzcutta. Guzcutta later unlocks a Squigosaur mount during the campaign." },
+      { question: "Can Orks build cover?", answer: "Yes. Developers confirm that Orks can construct their own cover, supporting their ability to expand and bring infrastructure closer to the front." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Faction summary:</strong> Dawn of War IV Orks are built around numbers, fast expansion, inexpensive structures, early upgrades, and a Waaagh! meter charged by fielded Orks and defeated enemies. Exact costs, bonuses, and build timings remain unannounced.</div>
+
+<h2>How the Orks play in Dawn of War 4</h2>
+<p>Orks are one of four confirmed <a href="/blog/dawn-of-war-4-factions-compared">launch factions</a>. Deep Silver’s faction preview positions them as an aggressive army that expands through fighting and looting. Their roster can add models and unlock weapons or upgrades early, while many units and structures sit among the game’s cheaper options.</p>
+<table class="data-table">
+  <thead><tr><th>Confirmed feature</th><th>Battlefield meaning</th><th>Still unknown</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Waaagh! meter</strong></td><td>Build momentum through army size and kills, then activate a combat boost</td><td>Meter values, duration, and exact bonuses</td></tr>
+    <tr><td><strong>Low-cost units and buildings</strong></td><td>Supports expansion and a larger battlefield presence</td><td>Costs and economic breakpoints</td></tr>
+    <tr><td><strong>Infantry construction</strong></td><td>Almost any Ork infantry can build armed structures</td><td>Build times and structure-specific limits</td></tr>
+    <tr><td><strong>Self-built cover</strong></td><td>Creates protection closer to the frontline</td><td>Durability and placement restrictions</td></tr>
+  </tbody>
+</table>
+
+<h2>How the Waaagh! meter works</h2>
+<p>The official preview compares Waaagh! to an energy bar. It fills through two confirmed inputs: putting more Orks on the battlefield and killing enemies. Activating it makes units already engaged in combat act like berserkers and become substantially stronger.</p>
+<p>The strategic lesson is timing. Triggering Waaagh! without enough units in contact may waste part of its value; waiting too long risks losing the squads that charged it. Exact activation rules require launch testing, so this is a decision framework rather than a finished build order.</p>
+
+<h2>Confirmed Ork units and roles</h2>
+<ul>
+  <li><strong>Flash Gitz:</strong> powerful ranged infantry using Snazzguns to pressure defensive lines.</li>
+  <li><strong>Squighog Boyz:</strong> relatively fast mounted fighters designed to strike and create gaps in a frontline.</li>
+  <li><strong>Lootas and Looted Wagons:</strong> examples named by developers when discussing ranged threats and anti-mass tools.</li>
+  <li><strong>Slugga Boyz:</strong> can use a Burna that is particularly effective against clustered units.</li>
+</ul>
+<p>This list is not presented as the complete launch roster. Unit costs, production tiers, upgrades, and counters can change during final balancing.</p>
+
+<h2>Gorgutz and Guzcutta</h2>
+<p>Warboss Gorgutz returns from earlier Dawn of War games and appears at the start of Dawn of War IV. The campaign also introduces Guzcutta, a Beast Snagga Boss designed as an emerging rival. Guzcutta begins on foot and later unlocks a Squigosaur he can ride, effectively changing how the commander enters battle.</p>
+<p>Outside campaigns, the developer says multiplayer commanders are generic faction units selected before a match and normally produced from headquarters after unlocks. Named campaign characters should therefore not automatically be treated as standard multiplayer commander options.</p>
+
+<h2>Buildings, forward pressure, and economy</h2>
+<p>The multiplayer developers say almost any Ork infantry can build structures. Those buildings are relatively cheap and always armed, making “base crawling” a natural part of the faction: production can move closer to the fighting while new structures also threaten nearby enemies. Forward production shortens reinforcement travel, but it also places economic assets where opponents can attack them.</p>
+<p>Orks can additionally build their own cover. Combined with armed structures, that suggests a faction identity based on turning newly captured territory into a fighting position. The word “suggests” matters here; exact construction radius, weapon damage, cover durability, and refund rules have not been published.</p>
+
+<h2>How Orks interact with core multiplayer systems</h2>
+<ul>
+  <li><strong>Cover:</strong> Orks can create cover rather than relying only on map placement.</li>
+  <li><strong>Retreat:</strong> like other cover-using factions, Ork squads can preserve experience by disengaging toward production.</li>
+  <li><strong>On-field reinforcement:</strong> adding models supports the faction’s numbers, but continuous replacement can pressure the economy.</li>
+  <li><strong>Anti-mass tools:</strong> the developer names the Slugga Boyz’ Burna as a weapon suited to clustered enemies.</li>
+  <li><strong>Faction Stratagem:</strong> every faction has a powerful Stratagem independent of its selected Commander; the Ork-specific details remain TBA.</li>
+</ul>
+
+<h2>Beginner questions to ask during a match</h2>
+<ol>
+  <li>Is the Waaagh! meter growing because the army is expanding, because enemies are dying, or both?</li>
+  <li>Will another inexpensive unit create useful pressure, or delay a needed technology unlock?</li>
+  <li>Can an infantry builder safely establish armed production closer to the objective?</li>
+  <li>Is Waaagh! being activated with enough units already fighting to justify the timing?</li>
+  <li>Should a damaged squad reinforce in the field, retreat, or hold behind constructed cover?</li>
+</ol>
+<p>These questions describe the faction’s confirmed systems without pretending that a universal five-minute sequence exists. Maps, opponents, balance patches, and selected Commanders will all affect the correct answer.</p>
+
+<h2>Ork strengths, risks, and launch questions</h2>
+<div class="recommendation-box"><h3>What to watch</h3><ul><li><strong>Strength:</strong> pressure from numerous affordable units and armed forward structures.</li><li><strong>Strength:</strong> Waaagh! converts existing momentum into a timed combat advantage.</li><li><strong>Risk:</strong> an economy spread across forward structures may be exposed to focused attacks.</li><li><strong>Verify at launch:</strong> Waaagh! thresholds, expansion timings, unit caps, reinforcement costs, and anti-vehicle options.</li></ul></div>
+<p>Players comparing this aggressive style with defensive scaling should review the <a href="/factions/necrons">Necrons dossier</a> and <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus dossier</a>. For positioning fundamentals, see the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a>.</p>
 `,
   },
 ];

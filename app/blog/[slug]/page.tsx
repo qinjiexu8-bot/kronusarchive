@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { blogPosts, getBlogPost } from "@/lib/blog-data";
-import { site, sources } from "@/lib/site-data";
+import { site, sources as defaultSources } from "@/lib/site-data";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -25,14 +25,14 @@ export async function generateMetadata({
   }
 
   return {
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.excerpt,
     keywords: post.keywords,
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
-      title: post.title,
+      title: post.seoTitle ?? post.title,
       description: post.excerpt,
       type: "article",
       url: `${site.url}/blog/${post.slug}`,
@@ -109,12 +109,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     ],
   };
 
+  const faqJsonLd = post.faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      }
+    : null;
+
+  const verificationSources = post.sources ?? defaultSources.slice(0, 3);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -137,7 +157,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               )}
               <p className="kicker">
-                {post.category} <span aria-hidden="true">//</span> Intel Briefing
+                {post.category} <span aria-hidden="true">{"//"}</span> Intel Briefing
               </p>
               <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(32px, 4.5vw, 56px)", textTransform: "uppercase", margin: "8px 0 16px", lineHeight: 1.05 }}>
                 {post.title}
@@ -173,12 +193,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
             <div className="status-row">
               <span>Date Modified</span>
-              <span>02 Aug 2026</span>
+              <span>{post.dateModified}</span>
             </div>
           </aside>
 
           <div>
             <article className="record-block blog-post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+
+            {post.faqs?.length ? (
+              <article className="record-block blog-post-content">
+                <p className="kicker">Quick Answers</p>
+                <h2>Frequently Asked Questions</h2>
+                {post.faqs.map((faq) => (
+                  <section key={faq.question}>
+                    <h3>{faq.question}</h3>
+                    <p>{faq.answer}</p>
+                  </section>
+                ))}
+              </article>
+            ) : null}
 
             <article className="record-block">
               <p className="kicker">Primary Sources</p>
@@ -189,7 +222,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 This briefing separates publisher-confirmed information from editorial estimates. Check the official records below for the latest changes.
               </p>
               <ul className="record-list">
-                {sources.slice(0, 3).map((source) => (
+                {verificationSources.map((source) => (
                   <li key={source.href}>
                     <a href={source.href} target="_blank" rel="noreferrer" style={{ color: "var(--accent-gold)", fontWeight: 700 }}>
                       {source.label} — {source.publisher} ↗

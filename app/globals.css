@@ -1249,4 +1249,33 @@ button:focus-visible {
   .site-header nav {
     display: none;
   }
+
+  .data-table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 640px) {
+  .subpage-hero {
+    padding-block: 48px 28px;
+  }
+
+  .record-block,
+  .dossier-summary {
+    padding: 24px 20px;
+  }
+
+  .blog-post-content h2 {
+    font-size: 27px;
+  }
+
+  .data-table th,
+  .data-table td {
+    min-width: 150px;
+    padding: 12px 14px;
+  }
 }

@@ -1,6 +1,3 @@
-const vercelHost =
-  process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
-
 export const site = {
   name: "Kronus Archive",
   shortName: "KA//IV",
