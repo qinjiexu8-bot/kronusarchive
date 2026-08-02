@@ -3,7 +3,7 @@ import { blogPosts } from "@/lib/blog-data";
 import { factions, site } from "@/lib/site-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated = new Date("2026-08-01T00:00:00Z");
+  const updated = new Date("2026-08-02T00:00:00Z");
   
   const baseRoutes: MetadataRoute.Sitemap = [
     {
@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${site.url}/blog/${post.slug}`,
-    lastModified: updated,
+    lastModified: new Date(`${post.date}T00:00:00Z`),
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));

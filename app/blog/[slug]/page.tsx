@@ -158,6 +158,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             ))}
 
             <article className="record-block">
+              <p className="kicker">Primary Sources</p>
+              <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", margin: "8px 0 16px" }}>
+                Verification Links
+              </h2>
+              <p style={{ color: "var(--ink-muted)", marginBottom: "20px" }}>
+                This briefing separates publisher-confirmed information from editorial estimates. Check the official records below for the latest changes.
+              </p>
+              <ul className="record-list">
+                {post.sources.map((source) => (
+                  <li key={source.href}>
+                    <a href={source.href} target="_blank" rel="noreferrer" style={{ color: "var(--accent-gold)", fontWeight: 700 }}>
+                      {source.label} ↗
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            <article className="record-block">
               <p className="kicker">Archive Navigation</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", margin: "8px 0 16px" }}>
                 Return to Intel Index
