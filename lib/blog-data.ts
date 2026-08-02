@@ -979,6 +979,229 @@ export const blogPosts: BlogPost[] = [
 <p>Players comparing this aggressive style with defensive scaling should review the <a href="/factions/necrons">Necrons dossier</a> and <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus dossier</a>. For positioning fundamentals, see the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a>.</p>
 `,
   },
+  {
+    slug: "dawn-of-war-4-adeptus-mechanicus-faction-guide",
+    title: "Dawn of War 4 Adeptus Mechanicus Guide: Noosphere & Units",
+    seoTitle: "Dawn of War 4 Adeptus Mechanicus Guide",
+    shortTitle: "Adeptus Mechanicus Faction Guide",
+    excerpt: "Learn how the Dawn of War 4 Adeptus Mechanicus use the Noosphere, Void Shield, Auger Vision, ranged units, Knights, and two distinct Commanders before launch.",
+    datePublished: "2026-08-02",
+    dateModified: "2026-08-02",
+    author: "Kronus Archive Tactical Desk",
+    category: "Faction Mechanics",
+    readTime: "10 min read",
+    keywords: ["Dawn of War 4 Adeptus Mechanicus guide", "Dawn of War 4 Noosphere", "Dawn of War 4 AdMech units"],
+    officialStatus: "Based on official faction preview and developer AMA",
+    sources: [
+      { label: "Introducing Dawn of War IV’s Adeptus Mechanicus", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/introducing-warhammer-40-000-dawn-of-war-iv-s-adeptus-mechanicus" },
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Dawn of War IV official overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "How does the Adeptus Mechanicus Noosphere work in Dawn of War 4?", answer: "Adeptus Mechanicus structures link back to headquarters to form a Noosphere Network. Adding connected structures raises its level, unlocks stronger technology, and benefits units and production inside its sphere of influence." },
+      { question: "What does the Void Shield do?", answer: "The Void Shield protects a large area containing buildings and units. Enemies can move through it, but enemy ranged fire cannot pass through the barrier, making its placement important around chokepoints." },
+      { question: "Who are the Adeptus Mechanicus Commanders?", answer: "The two named campaign Commanders are Technoarcheologist Potentia Delta-9 and Skitarii Marshal Sek-Ix-23. Potentia offers scouting and flexible upgrades; Sek-Ix-23 buffs nearby units and is protected by multiple bodyguard models." },
+      { question: "Is this an Adeptus Mechanicus build order?", answer: "No. Final costs, build times, upgrade requirements, and balance values are not public. This guide explains confirmed systems and provides a launch-day testing framework rather than inventing an opening sequence." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> The Dawn of War IV Adeptus Mechanicus are a fast, ranged-focused faction built around a connected Noosphere Network. Their strength grows as linked structures unlock technology and improve forces inside the network, while Auger Vision, the Void Shield, specialized units, and two contrasting Commanders reward planning and combined arms.</div>
+
+<p>This guide is for players who want to understand the faction before choosing an army. It separates developer-confirmed mechanics from editorial interpretation. Exact costs, percentages, build times, network radii, and competitive build orders remain unannounced and will be added only after official documentation or repeatable launch testing.</p>
+
+<h2>Adeptus Mechanicus playstyle at a glance</h2>
+<p>The Adeptus Mechanicus make their first full appearance as a playable Dawn of War faction. KING Art Games describes them as relatively quick, strong at ranged combat, and equipped with technological tools that reveal information and amplify connected forces. They do field melee specialists, including Ruststalkers, but their close-combat units are designed to work with ranged synergies rather than turn the faction into an Ork-style brawler.</p>
+<table class="data-table">
+  <thead><tr><th>Confirmed system</th><th>What it does</th><th>Strategic question</th><th>Still unannounced</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Noosphere Network</strong></td><td>Links structures, static weapons, and units back to headquarters</td><td>How far can the network expand without becoming fragile?</td><td>Connection radius, thresholds, and exact bonuses</td></tr>
+    <tr><td><strong>Auger Vision</strong></td><td>Shows imperfect signs of enemy activity beneath fog of war</td><td>When is a warning strong enough to justify repositioning?</td><td>Duration, cooldown, range, and information detail</td></tr>
+    <tr><td><strong>Void Shield</strong></td><td>Stops hostile ranged fire crossing a large protected area</td><td>Which buildings, units, or chokepoints deserve protection?</td><td>Cost, durability, size, and counterplay values</td></tr>
+    <tr><td><strong>Combined arms</strong></td><td>Pairs mobile ranged units, support tools, melee threats, and heavy machines</td><td>Which unit covers the current weakness of the formation?</td><td>Complete roster and production tiers</td></tr>
+  </tbody>
+</table>
+
+<h2>How the Noosphere Network works</h2>
+<p>The Noosphere is the defining Adeptus Mechanicus mechanic. Buildings connect to headquarters, and the linked chain creates a sphere of influence that can include structures, static weapons, and units. As more structures join the network, its level increases and opens access to stronger units, upgrades, and research. The official faction preview also says units within the network can become stronger and cheaper to produce.</p>
+<p>This creates a base-building problem with two competing goals. A compact network should be easier to defend, but it may surrender map reach and resources. A wide network can support forward units and production, but losing one critical connection may isolate part of the system. The developer explicitly frames disconnecting the Noosphere as an enemy objective, so network topology matters alongside army combat.</p>
+<p>It is important not to convert that description into fictional percentage bonuses. An earlier version of this site presented unsupported cost and turret values; those figures have been removed. Until the final game exposes its rules, the correct preparation is learning how to evaluate connectivity, redundancy, and the value of territory.</p>
+
+<h2>Building a resilient network without a fake build order</h2>
+<p>A pre-release build order would require exact costs, build times, starting resources, map distances, and unlock requirements. Those inputs are not public. Players can still use a source-led planning framework when the game becomes available:</p>
+<ol>
+  <li><strong>Identify the network root:</strong> confirm which headquarters connection keeps each branch active.</li>
+  <li><strong>Map critical links:</strong> note whether destroying one structure disconnects several valuable buildings.</li>
+  <li><strong>Add redundancy:</strong> test whether alternative connections preserve the sphere after a flank or artillery strike.</li>
+  <li><strong>Match expansion to information:</strong> use Auger Vision and scouting before extending expensive technology toward contested ground.</li>
+  <li><strong>Protect the payoff:</strong> place defenses where they guard production, research, and the structures that maintain network level.</li>
+</ol>
+<p>This sequence is a launch-day testing method, not a claim about the optimal opening. Maps and balance patches may change the correct structure order, while different multiplayer objectives can make a forward branch more or less valuable.</p>
+
+<h2>Auger Vision and battlefield information</h2>
+<p>Auger Vision is a strategic ability that provides awareness beneath the fog of war. The developer compares it to a heatmap: it hints at enemy activity in an area without providing perfect information. That distinction matters. A hint can reveal that something is developing, but players must still scout or infer whether the threat is infantry, armor, a base expansion, or a diversion.</p>
+<p>Used defensively, Auger Vision can warn of pressure against a vulnerable network link. Used offensively, it may identify lightly protected space for ranged units to exploit. Used around a changing objective, it can help decide whether to commit the main formation or preserve it for another location. These use cases are reasonable interpretations of the confirmed information tool; cooldown and coverage will determine how often they are practical.</p>
+
+<h2>Void Shield rules and chokepoint use</h2>
+<p>The Void Shield is an enormous defensive structure that can cover many buildings and units. Friendly and enemy units can move through the shield, and friendly forces can move out. Hostile ranged attacks cannot travel through it. The barrier therefore changes firing lines without creating a sealed wall.</p>
+<p>That rule produces several immediate tactical consequences. A ranged opponent may need to enter the protected area, attack the shield or its support network, or reposition toward another angle. Melee attackers are not automatically stopped at the boundary, so a shielded formation still needs units capable of controlling enemies that cross it. The Void Shield is best understood as a tool that changes engagement geometry, not an invulnerability button.</p>
+<ul>
+  <li><strong>Protect production:</strong> cover buildings that are essential to maintaining the Noosphere.</li>
+  <li><strong>Shape a chokepoint:</strong> deny comfortable ranged fire while forcing enemies to approach.</li>
+  <li><strong>Support a firing line:</strong> let ranged units operate behind the shield while melee or durable units watch the boundary.</li>
+  <li><strong>Avoid false safety:</strong> plan for enemies physically entering the protected area.</li>
+</ul>
+
+<h2>Confirmed Adeptus Mechanicus units and roles</h2>
+<p>The official preview presents a faction that combines lower-cost mobile troops with advanced machines and Knight support from the Imperium’s House Raven. The complete launch roster and production tree are not public, so the table describes only units and battlefield identities specifically mentioned or shown by the publisher.</p>
+<table class="data-table">
+  <thead><tr><th>Unit or tool</th><th>Confirmed identity</th><th>How it fits the faction</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Ruststalkers</strong></td><td>Close-combat specialists</td><td>Exploit openings created by ranged pressure rather than replacing it</td></tr>
+    <tr><td><strong>Onager Dunecrawler</strong></td><td>Large, heavily armed war machine</td><td>Adds durable mechanized firepower</td></tr>
+    <tr><td><strong>Skorpius Disintegrator</strong></td><td>Long-range vehicle</td><td>Supports the faction’s emphasis on ranged combat</td></tr>
+    <tr><td><strong>Imperial Knights</strong></td><td>Colossal House Raven combat machines</td><td>Provide a high-impact heavy option tied to the faction’s Imperial alliance</td></tr>
+    <tr><td><strong>Garrisonable structure</strong></td><td>Faction-built protection</td><td>Creates defensive positions alongside Noosphere infrastructure</td></tr>
+  </tbody>
+</table>
+<p>Exact weapons, counters, upgrades, and tech tiers should be verified after launch. For example, knowing that a unit is long-ranged does not reveal its accuracy, minimum range, armor interaction, or resource efficiency. Those are the details that eventually turn a faction overview into a tested strategy guide.</p>
+
+<h2>Potentia Delta-9 vs Sek-Ix-23</h2>
+<p>The Adeptus Mechanicus campaign offers two named leaders with different purposes. Technoarcheologist Potentia Delta-9 can deploy a servo-skull to scout remote areas. Her upgrade paths are described as highly flexible, allowing development toward melee or ranged combat while retaining technological tricks. She fits players who value information and adapting a Commander to the match.</p>
+<p>Skitarii Marshal Sek-Ix-23 focuses on improving units attached to him and other forces within range. The official preview encourages placing him close to the center of battle so more units receive his support. Bodyguards make him the only Commander described as a multi-model unit, and the publisher specifically imagines him leading a 20-strong Skitarii formation.</p>
+<p>Those campaign identities should not be assumed to map directly onto every multiplayer rule. The multiplayer AMA says generic faction Commanders are selected before a match and normally produced from headquarters after unlocks. Named campaign characters and multiplayer Commander options may therefore differ.</p>
+
+<h2>Who should choose Adeptus Mechanicus?</h2>
+<div class="recommendation-box"><h3>Best fit player profile</h3><ul><li>Choose them if you enjoy spatial base planning and connected infrastructure.</li><li>Choose them if you prefer ranged combined arms over constant melee pressure.</li><li>Choose them if information tools and adaptable technology appeal to you.</li><li>Expect a learning curve: network placement creates more dependencies than the straightforward Space Marine structure system.</li></ul></div>
+<p>Players who prefer relentless numbers may be happier with the <a href="/blog/dawn-of-war-4-orks-faction-guide">Orks faction guide</a>. Those comparing all four armies should use the <a href="/blog/dawn-of-war-4-factions-compared">faction comparison</a>. For the shared preservation systems surrounding cover and reinforcement, read the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a>.</p>
+
+<h2>Launch-day Adeptus Mechanicus test checklist</h2>
+<ul>
+  <li>Measure every Noosphere connection radius and identify whether links require uninterrupted chains.</li>
+  <li>Record network-level thresholds and the exact unlock or production benefit at each level.</li>
+  <li>Test what happens to units, buildings, and research when a branch disconnects.</li>
+  <li>Measure Auger Vision range, duration, cooldown, and the information shown for different enemy activities.</li>
+  <li>Test which attacks the Void Shield blocks and how enemies can damage or bypass it.</li>
+  <li>Compare Potentia and Sek-Ix-23 upgrades without assuming campaign and multiplayer loadouts are identical.</li>
+</ul>
+<p>The lasting answer to “how do Adeptus Mechanicus play in Dawn of War IV?” is that they convert connected territory and information into technological power. Build the Noosphere carefully, protect its critical links, and use ranged units and specialized tools as one system. Return after launch for measured values and replay-tested openings.</p>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-crusade-mode-guide",
+    title: "Dawn of War 4 Crusade Mode Guide: Map, Actions & Progression",
+    seoTitle: "Dawn of War 4 Crusade Mode Guide",
+    shortTitle: "Crusade Mode Guide",
+    excerpt: "Learn how Dawn of War 4 Crusade mode works: the turn-based Kronus map, Action Points, Requisition, Strike Forces, Commander campaigns, and co-op before launch.",
+    datePublished: "2026-08-02",
+    dateModified: "2026-08-02",
+    author: "Kronus Archive Campaign Desk",
+    category: "Campaign & Co-op",
+    readTime: "10 min read",
+    keywords: ["Dawn of War 4 Crusade mode", "Dawn of War IV Crusade guide", "Dawn of War 4 turn-based map"],
+    officialStatus: "Crusade systems confirmed by publisher",
+    sources: [
+      { label: "Crusade mode returns in Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/au/games/dawn-of-war-iv/news/crusade-mode-returns-in-warhammer-40-000-dawn-of-iv" },
+      { label: "Release date, editions and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
+      { label: "What we’re building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "What is Crusade mode in Dawn of War 4?", answer: "Crusade is a replayable extended campaign built around a turn-based world map of Kronus. Players spend limited Action Points, move a Strike Force between territories, fight RTS battles, and pursue Commander-specific objectives." },
+      { question: "How long is a Dawn of War 4 Crusade?", answer: "Deep Silver says a typical Crusade takes approximately eight to ten hours. Because the mode is designed to play differently across runs, actual completion time may vary." },
+      { question: "How many Crusades are available?", answer: "Five Commanders are confirmed to receive dedicated Crusades. The publisher also plans additional Commander scenarios for Crusade and Last Stand as free post-launch content." },
+      { question: "Does Crusade mode support co-op?", answer: "Deep Silver has stated that Crusade supports cooperative play. Final lobby rules, player responsibilities, saving behavior, and campaign ownership details still need clarification." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV Crusade mode is a replayable extended campaign that combines a turn-based map of Kronus with real-time strategy battles. You spend limited Action Points, move and improve a Strike Force, capture territories, manage Requisition, and pursue objectives shaped by the selected Commander.</div>
+
+<p>This guide explains what Deep Silver has confirmed, how the strategic layer connects to RTS missions, and which details remain unknown. It does not invent territory bonuses, Action Point costs, AI rules, or “best routes” before the final mode can be tested.</p>
+
+<h2>Crusade mode at a glance</h2>
+<p>Crusade takes inspiration from the strategic campaign associated with Dawn of War: Dark Crusade, but KING Art Games describes its Dawn of War IV version as an endless, replayable mode rather than a fixed story campaign. Each run takes place across a turn-based world map containing numerous territories on Kronus. The selected Commander brings a particular objective, starting conditions, advantages, and disadvantages.</p>
+<table class="data-table">
+  <thead><tr><th>Confirmed element</th><th>Role in the campaign</th><th>Decision it creates</th><th>Still unannounced</th></tr></thead>
+  <tbody>
+    <tr><td><strong>World map</strong></td><td>Organizes neutral and enemy territories across Kronus</td><td>Where should the Strike Force move or attack?</td><td>Territory count, layouts, and randomization rules</td></tr>
+    <tr><td><strong>Action Points</strong></td><td>Limit what can be done during each turn</td><td>Move, fight, or invest within a finite turn budget?</td><td>Starting total and action costs</td></tr>
+    <tr><td><strong>Strike Force</strong></td><td>Carries combat units through the extended campaign</td><td>How should damage, upgrades, and unit composition be managed?</td><td>Roster limits and replacement rules</td></tr>
+    <tr><td><strong>Requisition</strong></td><td>Improves territories and heals or develops Strike Forces</td><td>Spend on map control or army recovery?</td><td>Income values and upgrade prices</td></tr>
+    <tr><td><strong>Commander scenario</strong></td><td>Defines goals, starting conditions, advantages, and disadvantages</td><td>Which campaign style fits the player?</td><td>All five launch Commander identities and exact modifiers</td></tr>
+  </tbody>
+</table>
+
+<h2>How the turn-based Kronus map works</h2>
+<p>The strategic layer divides Kronus into territories held by neutral or hostile forces. On a turn, players spend a limited supply of Action Points to move their Strike Force and enter new territory. Battles resolve through Dawn of War IV’s real-time strategy gameplay, giving individual missions a larger purpose: the result changes position and control on the campaign map.</p>
+<p>A territory is more than a marker. Requisition can strengthen its defenses and economy, making it harder for an opponent to capture. That creates a long-term trade-off between pushing forward and consolidating what has already been won. A player who expands too quickly may leave weak holdings behind, while excessive investment in safe territory may slow progress toward the Commander’s overall objective.</p>
+<p>The publisher has not revealed whether the map is procedurally generated, assembled from variations, or fixed with randomized conditions. “Always play out differently” confirms replay variation, but not the system responsible for it. The archive will preserve that distinction until the game exposes its campaign rules.</p>
+
+<h2>Action Points: the turn’s central constraint</h2>
+<p>Action Points limit how many strategic choices can be made in a turn. The official preview explicitly mentions spending them to maneuver a Strike Force into neutral and enemy territories. It does not yet publish a complete action list or the price of each action, so movement, attacks, defense, and recovery should not be assigned imaginary costs.</p>
+<p>Even without numbers, Action Points establish the mode’s core decision rhythm. Every choice consumes part of a finite turn budget and carries an opportunity cost. Moving toward an objective can mean delaying an economic improvement; attacking one territory can leave another uncontested; recovering a damaged force can surrender initiative.</p>
+<ol>
+  <li><strong>Define the immediate objective:</strong> identify what must change before the turn ends.</li>
+  <li><strong>Check force condition:</strong> determine whether the Strike Force can survive the intended battle.</li>
+  <li><strong>Protect the campaign economy:</strong> avoid an advance that exposes several valuable territories.</li>
+  <li><strong>Reserve flexibility:</strong> when rules allow, avoid spending the entire budget before new information appears.</li>
+</ol>
+<p>These are general planning principles, not an optimal route. The right sequence will depend on the Commander, enemy behavior, map state, difficulty, and the final Action Point rules.</p>
+
+<h2>Strike Force persistence and progression</h2>
+<p>The Strike Force contains the combat units moved around the world map. Requisition can heal and improve this increasingly powerful force between battles, giving damage and development meaning beyond a single match. The description suggests persistence across encounters, but the publisher has not yet documented permadeath, replacement, unit caps, veterancy retention, or whether every battlefield unit appears on the strategic roster.</p>
+<p>For players, persistence changes how a tactical victory should be judged. Winning while taking severe losses may create a weaker position for the next turn. Retreating or reinforcing an experienced unit could have strategic value beyond the current mission. Our <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a> explains the confirmed preservation mechanics that may support this approach.</p>
+<p>At launch, the first task is to separate what persists from what resets. Record unit veterancy, Wargear, injuries, reinforcement status, Commander progression, and territory bonuses before and after a battle. A reliable Crusade strategy depends on that evidence.</p>
+
+<h2>Requisition: territory or army?</h2>
+<p>Requisition connects the two layers of Crusade. It improves the defenses and economies of captured territories, and it also heals and develops Strike Forces between battles. Spending in one area may reduce what is available in the other, turning economic management into a choice between securing the map and maintaining combat readiness.</p>
+<table class="data-table">
+  <thead><tr><th>Possible Requisition use</th><th>Confirmed purpose</th><th>Reason to prioritize it</th><th>Risk of over-investment</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Territory defense</strong></td><td>Make captured regions harder to seize</td><td>Protect routes, economy, or an exposed frontier</td><td>Resources are tied to areas that may not be attacked</td></tr>
+    <tr><td><strong>Territory economy</strong></td><td>Improve the value of controlled land</td><td>Support a longer campaign and future spending</td><td>Delayed combat power may slow an urgent objective</td></tr>
+    <tr><td><strong>Strike Force healing</strong></td><td>Restore campaign units between battles</td><td>Preserve a force needed for the next attack</td><td>Repeated recovery can stall expansion</td></tr>
+    <tr><td><strong>Strike Force improvement</strong></td><td>Develop an increasingly powerful army</td><td>Prepare for stronger enemies or a Commander goal</td><td>Concentration in one force may leave territories weak</td></tr>
+  </tbody>
+</table>
+<h2>Five Commander Crusades and replayability</h2>
+<p>Deep Silver says five Commanders will have dedicated Crusades. Each brings its own goals and starting conditions plus combat advantages and disadvantages. These variables are intended to make runs feel different and give the strategic map a purpose beyond a sequence of unrelated Skirmish battles.</p>
+<p>Five does not necessarily mean one campaign for every named story character, and it should not be interpreted as the complete Commander roster. The official announcement does not list all five scenarios. Additional Crusades are planned as free post-launch content, aligning with the broader <a href="/blog/dawn-of-war-4-year-one-roadmap-dlc">Year One roadmap</a>.</p>
+<p>The faction choice should also alter the RTS layer. Space Marines, Orks, Necrons, and Adeptus Mechanicus have different economies, buildings, Commanders, and preservation systems. Review the <a href="/blog/dawn-of-war-4-factions-compared">four-faction comparison</a> before deciding which mechanics you want to manage across an extended campaign.</p>
+
+<h2>How long does a Crusade take?</h2>
+<p>The publisher estimates that a Crusade takes approximately eight to ten hours. “Typical” leaves room for variation by difficulty, map decisions, failed battles, co-op pacing, and player familiarity. It should not be presented as a guaranteed completion time.</p>
+<h2>Crusade vs campaign, Skirmish, and multiplayer</h2>
+<table class="data-table">
+  <thead><tr><th>Mode</th><th>Primary structure</th><th>Best fit</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Authored campaign</strong></td><td>Four faction storylines feeding one larger narrative across 70+ missions</td><td>Players seeking characters, cinematics, and a fixed story arc</td></tr>
+    <tr><td><strong>Crusade</strong></td><td>Replayable turn-based world map plus persistent RTS battles</td><td>Players seeking strategic progression and varied extended runs</td></tr>
+    <tr><td><strong>Skirmish</strong></td><td>Custom map, factions, difficulty, and match settings</td><td>Practice and self-directed one-off battles</td></tr>
+    <tr><td><strong>Quick Match</strong></td><td>Annihilation, Domination, or Maelstrom matchmaking</td><td>Players seeking competitive objectives against other players</td></tr>
+  </tbody>
+</table>
+<p>Crusade’s distinguishing feature is context. Territory, Requisition, persistent force development, and a Commander objective explain why the next RTS battle matters. For individual matchmaking win conditions, see the <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a>.</p>
+
+<h2>What remains unconfirmed before launch</h2>
+<ul>
+  <li>The complete map, territory count, and how layouts vary between runs.</li>
+  <li>The number of Action Points per turn and the cost of every action.</li>
+  <li>All five launch Commander Crusades and their modifiers.</li>
+  <li>Requisition income, prices, territory upgrades, and healing rules.</li>
+  <li>Strike Force roster limits, losses, replacement, and veterancy persistence.</li>
+  <li>Enemy strategic AI, counterattacks, diplomacy, and difficulty behavior.</li>
+  <li>Detailed co-op control, saving, ownership, and matchmaking rules.</li>
+</ul>
+<p>The correct pre-launch conclusion is not that these systems are absent; it is that their details are not yet public. Once Crusade is playable, Kronus Archive will replace this list with measured values, screenshots, and repeatable campaign tests.</p>
+
+<h2>Launch-day Crusade test checklist</h2>
+<ol>
+  <li>Record starting Action Points, every action cost, and whether unused points carry forward.</li>
+  <li>Map all territory connections, income, defenses, and special bonuses.</li>
+  <li>Track Requisition gained and spent after each strategic and tactical event.</li>
+  <li>Compare the Strike Force before and after victories, defeats, retreat, healing, and upgrades.</li>
+  <li>Run the same Commander scenario twice to identify which elements actually vary.</li>
+  <li>Test co-op saving, control assignment, disconnect recovery, and campaign ownership.</li>
+</ol>
+<p>Dawn of War IV Crusade mode is designed to turn individual RTS battles into a longer war for Kronus. Its confirmed foundation—limited actions, territory control, Requisition, persistent Strike Forces, and Commander-specific goals—gives players meaningful strategic choices before combat begins. Start with the objective, protect the campaign economy, and treat every battle result as part of the next turn.</p>
+`,
+  },
 ];
 
 export function getBlogPost(slug: string) {
