@@ -1118,6 +1118,129 @@ button:focus-visible {
   gap: 10px;
 }
 
+/* ==========================================================================
+   BLOG ARTICLE ENHANCEMENTS (TABLES, NOTICES, RECOMMENDATIONS & ANCHORS)
+   ========================================================================== */
+.blog-post-content h2 {
+  font-family: var(--font-display), sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-top: 36px;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed var(--border-dim);
+  padding-bottom: 10px;
+}
+
+.blog-post-content h2:first-child {
+  margin-top: 0;
+}
+
+.blog-post-content p {
+  color: var(--ink-muted);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.blog-post-content a {
+  color: var(--accent-gold);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 150ms ease;
+}
+
+.blog-post-content a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px var(--accent-gold-glow);
+}
+
+.official-notice-box {
+  padding: 20px 24px;
+  background: rgba(255, 55, 71, 0.08);
+  border: 1px solid var(--accent-red);
+  border-left: 4px solid var(--accent-red);
+  color: var(--ink);
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.official-notice-box strong {
+  color: var(--accent-red);
+}
+
+.recommendation-box {
+  padding: 28px;
+  background: rgba(245, 192, 57, 0.06);
+  border: 1px solid var(--border-bright);
+  border-left: 4px solid var(--accent-gold);
+  margin-block: 32px;
+}
+
+.recommendation-box h3 {
+  font-family: var(--font-display), sans-serif;
+  font-size: 24px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.recommendation-box ul {
+  padding-left: 20px;
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.recommendation-box li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 28px;
+  font-size: 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dim);
+}
+
+.data-table th,
+.data-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.data-table th {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--accent-gold);
+  font-family: var(--font-display), sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.data-table tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.faq-block h3 {
+  font-family: var(--font-display), sans-serif;
+  font-size: 20px;
+  color: var(--accent-gold);
+  margin: 20px 0 8px;
+}
+
+.faq-block p {
+  font-size: 15px;
+  color: var(--ink-muted);
+  margin-bottom: 16px;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 960px) {
   .hero, .intel-section, .dossier-body, .standards-layout, .subpage-hero-grid {

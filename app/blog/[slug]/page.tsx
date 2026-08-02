@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { blogPosts, getBlogPost } from "@/lib/blog-data";
-import { site } from "@/lib/site-data";
+import { site, sources } from "@/lib/site-data";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -31,6 +31,23 @@ export async function generateMetadata({
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      url: `${site.url}/blog/${post.slug}`,
+      publishedTime: post.datePublished,
+      modifiedTime: post.dateModified,
+      authors: [post.author],
+      images: [
+        {
+          url: `${site.url}/og.png`,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
   };
 }
 
@@ -47,15 +64,22 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.date,
-    dateModified: post.date,
+    image: [`${site.url}/og.png`],
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
     author: {
       "@type": "Organization",
       name: post.author,
+      url: `${site.url}/standards`,
     },
     publisher: {
       "@type": "Organization",
       name: site.name,
+      url: site.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${site.url}/favicon.svg`,
+      },
     },
     mainEntityOfPage: `${site.url}/blog/${post.slug}`,
   };
@@ -79,7 +103,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {
         "@type": "ListItem",
         position: 3,
-        name: post.title,
+        name: post.shortTitle,
         item: `${site.url}/blog/${post.slug}`,
       },
     ],
@@ -106,20 +130,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <span>/</span>
               <span>{post.category}</span>
             </div>
-            <div style={{ maxWidth: "800px" }}>
+            <div style={{ maxWidth: "860px" }}>
+              {post.officialStatus && (
+                <div style={{ display: "inline-block", padding: "4px 12px", background: "rgba(245, 192, 57, 0.12)", color: "var(--accent-gold)", border: "1px solid rgba(245, 192, 57, 0.3)", fontSize: "12px", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "16px", borderRadius: "3px" }}>
+                  {post.officialStatus}
+                </div>
+              )}
               <p className="kicker">
-                {post.category} <span aria-hidden="true">{"//"}</span> Intel Briefing
+                {post.category} <span aria-hidden="true">//</span> Intel Briefing
               </p>
-              <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(36px, 5vw, 60px)", textTransform: "uppercase", margin: "12px 0 20px", lineHeight: 1.05 }}>
+              <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(32px, 4.5vw, 56px)", textTransform: "uppercase", margin: "8px 0 16px", lineHeight: 1.05 }}>
                 {post.title}
               </h1>
-              <p style={{ color: "var(--ink-muted)", fontSize: "18px" }}>
+              <p style={{ color: "var(--ink-muted)", fontSize: "18px", lineHeight: 1.6 }}>
                 {post.excerpt}
               </p>
-              <div style={{ display: "flex", gap: "20px", marginTop: "24px", color: "var(--ink-subtle)", fontSize: "14px", borderTop: "1px dashed var(--border-dim)", paddingTop: "16px" }}>
+              <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", marginTop: "24px", color: "var(--ink-subtle)", fontSize: "14px", borderTop: "1px dashed var(--border-dim)", paddingTop: "16px" }}>
                 <span>Published by <strong>{post.author}</strong></span>
                 <span>•</span>
-                <span>{post.date}</span>
+                <span>Last Updated: <strong style={{ color: "var(--accent-gold)" }}>{post.dateModified}</strong></span>
                 <span>•</span>
                 <span>{post.readTime}</span>
               </div>
@@ -130,7 +159,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <section className="dossier-body shell">
           <aside className="dossier-summary">
             <p className="kicker">Briefing Meta</p>
-            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "24px", margin: "8px 0 16px" }}>Keywords &amp; Topic</h2>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "24px", margin: "8px 0 12px" }}>Keywords &amp; Topic</h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "20px" }}>
               {post.keywords.map((kw) => (
                 <span key={kw} style={{ padding: "4px 10px", background: "rgba(245, 192, 57, 0.1)", color: "var(--accent-gold)", border: "1px solid rgba(245, 192, 57, 0.2)", fontSize: "12px", borderRadius: "3px" }}>
@@ -139,23 +168,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ))}
             </div>
             <div className="status-row">
-              <span>Status</span>
+              <span>Record Status</span>
               <span>Source Checked</span>
+            </div>
+            <div className="status-row">
+              <span>Date Modified</span>
+              <span>02 Aug 2026</span>
             </div>
           </aside>
 
           <div>
-            {post.content.map((sec, idx) => (
-              <article key={idx} className="record-block">
-                <p className="kicker">Section 0{idx + 1}</p>
-                <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", textTransform: "uppercase", margin: "8px 0 16px" }}>
-                  {sec.heading}
-                </h2>
-                <p style={{ color: "var(--ink-muted)", fontSize: "17px", lineHeight: 1.7 }}>
-                  {sec.text}
-                </p>
-              </article>
-            ))}
+            <article className="record-block blog-post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
 
             <article className="record-block">
               <p className="kicker">Primary Sources</p>
@@ -166,10 +189,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 This briefing separates publisher-confirmed information from editorial estimates. Check the official records below for the latest changes.
               </p>
               <ul className="record-list">
-                {post.sources.map((source) => (
+                {sources.slice(0, 3).map((source) => (
                   <li key={source.href}>
                     <a href={source.href} target="_blank" rel="noreferrer" style={{ color: "var(--accent-gold)", fontWeight: 700 }}>
-                      {source.label} ↗
+                      {source.label} — {source.publisher} ↗
                     </a>
                   </li>
                 ))}

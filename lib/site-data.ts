@@ -6,9 +6,7 @@ export const site = {
   shortName: "KA//IV",
   description:
     "An independent, source-led field guide to Warhammer 40,000: Dawn of War IV.",
-  url:
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    (vercelHost ? `https://${vercelHost}` : "http://localhost:3000"),
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kronusarchive.com",
   releaseDate: "2026-09-17",
   earlyUnlockDate: "2026-09-14",
   steamUrl:

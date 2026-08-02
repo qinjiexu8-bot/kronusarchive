@@ -55,7 +55,7 @@ export default function BlogIndexPage() {
                   {post.excerpt}
                 </p>
                 <div style={{ marginTop: "auto", display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: "20px", borderTop: "1px dashed var(--border-dim)" }}>
-                  <small style={{ color: "var(--ink-subtle)", fontSize: "12px" }}>{post.readTime} · {post.date}</small>
+                  <small style={{ color: "var(--ink-subtle)", fontSize: "12px" }}>{post.readTime} · {post.datePublished}</small>
                   <Link href={`/blog/${post.slug}`} className="open-record" style={{ paddingTop: 0 }}>
                     Read Briefing ↗
                   </Link>
