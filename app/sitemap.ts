@@ -51,12 +51,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${site.url}/blog/${post.slug}`,
-    lastModified: new Date(`${post.dateModified}T00:00:00Z`),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts
+    .filter((post) => post.indexable !== false)
+    .map((post) => ({
+      url: `${site.url}/blog/${post.slug}`,
+      lastModified: new Date(`${post.dateModified}T00:00:00Z`),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    }));
 
   return [...baseRoutes, ...factionRoutes, ...blogRoutes];
 }

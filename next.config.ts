@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
         destination: "/blog/dawn-of-war-4-multiplayer-modes-guide",
         permanent: true,
       },
+      {
+        source: "/blog/dawn-of-war-4-space-marines-build-orders-drop-pod-tactics",
+        destination: "/blog/dawn-of-war-4-space-marines-faction-guide",
+        permanent: true,
+      },
+      {
+        source: "/blog/dawn-of-war-4-last-stand-hero-commanders-guide",
+        destination: "/blog/dawn-of-war-4-last-stand-mode-guide",
+        permanent: true,
+      },
     ];
   },
   turbopack: {
