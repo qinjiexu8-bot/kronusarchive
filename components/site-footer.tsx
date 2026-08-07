@@ -24,7 +24,7 @@ export function SiteFooter() {
             target="_blank"
             rel="noreferrer"
           >
-            {source.publisher} ↗
+            {source.label} ↗
           </a>
         ))}
       </div>

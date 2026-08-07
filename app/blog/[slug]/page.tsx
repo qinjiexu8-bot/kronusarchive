@@ -31,6 +31,10 @@ export async function generateMetadata({
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
+    robots:
+      post.indexable === false
+        ? { index: false, follow: true }
+        : { index: true, follow: true },
     openGraph: {
       title: post.seoTitle ?? post.title,
       description: post.excerpt,

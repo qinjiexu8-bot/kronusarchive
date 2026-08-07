@@ -11,6 +11,7 @@ export type BlogPost = {
   readTime: string;
   keywords: string[];
   officialStatus?: string;
+  indexable?: boolean;
   sources?: { label: string; publisher: string; href: string }[];
   faqs?: { question: string; answer: string }[];
   contentHtml: string;
@@ -304,145 +305,152 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "space-marines-dark-angels-sub-faction-differences",
-    title: "Blood Ravens vs Dark Angels: Space Marines Sub-Faction Guide",
-    shortTitle: "Blood Ravens vs Dark Angels Sub-Faction Guide",
-    excerpt: "Detailed tactical breakdown comparing the Blood Ravens campaign roster against the Dark Angels playable sub-faction in Dawn of War IV.",
+    title: "Blood Ravens vs Dark Angels in Dawn of War 4",
+    seoTitle: "Blood Ravens vs Dark Angels in Dawn of War 4",
+    shortTitle: "Blood Ravens vs Dark Angels",
+    excerpt: "Compare Dawn of War 4's Blood Ravens and Dark Angels, including their campaign roles, commanders, Deathwing, Ravenwing, and confirmed differences.",
     datePublished: "2026-08-01",
     dateModified: "2026-08-02",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
-    readTime: "8 min read",
+    readTime: "6 min read",
     keywords: ["Dawn of War 4 Dark Angels", "Blood Ravens vs Dark Angels Dawn of War IV", "Space Marines sub-factions"],
-    officialStatus: "Developer Confirmed Sub-Faction Feature",
+    officialStatus: "Based on official story and faction material",
+    sources: [
+      { label: "Dawn of War IV official faction overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
+      { label: "Meet the new faces from the Story Trailer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/meet-the-new-faces-from-our-epic-story-trailer" },
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+    ],
+    faqs: [
+      { question: "Are Blood Ravens and Dark Angels both playable in Dawn of War 4?", answer: "Yes. Official material says both Chapters appear in the Space Marines campaign, while the Dark Angels are also a playable sub-faction." },
+      { question: "What is the confirmed difference between Blood Ravens and Dark Angels?", answer: "The Blood Ravens are described as flexible strategic fighters. The Dark Angels emphasize shock-and-awe, with Deathwing and Ravenwing elite units supporting different battlefield roles." },
+      { question: "Do Blood Ravens and Dark Angels have different commanders?", answer: "Yes. Developers identify Commander choice as the largest sub-faction difference, but complete commander rosters, abilities, and balance values have not yet been published." },
+    ],
     contentHtml: `
-<h2>1. Sub-Faction Overview & Tactical Roles</h2>
-<p>
-  In <em>Dawn of War IV</em>, the <a href="/factions/space-marines">Adeptus Astartes (Space Marines)</a> serve as an elite, resilient army designed around squad preservation and tactical abilities. While the main campaign follows the Blood Ravens, players can select the legendary <strong>Dark Angels</strong> sub-faction in skirmish and multiplayer engagements.
-</p>
-
+<div class="official-notice-box"><strong>Quick answer:</strong> The Blood Ravens and Dark Angels share the Space Marines faction foundation, but official material gives them distinct identities. Blood Ravens favor flexible strategic combat; Dark Angels bring shock-and-awe through Deathwing and Ravenwing formations. Commander selection is the clearest confirmed gameplay difference.</div>
+<h2>What Blood Ravens and Dark Angels share</h2>
+<p>Both Chapters belong to the <a href="/factions/space-marines">Space Marines</a>, an elite army built around strong individual squads, upgrades, preservation, fortifications, and rapid redeployment. The official campaign includes both Chapters, so this is more than a cosmetic paint choice. However, the publisher has not released a complete side-by-side roster or balance sheet.</p>
+<p>For faction-wide systems—including orbital structures, Reserves, the Thunderhawk Relay, and on-field reinforcement—see our <a href="/blog/dawn-of-war-4-space-marines-faction-guide">Space Marines faction guide</a>.</p>
+<h2>Confirmed Chapter differences</h2>
 <table class="data-table">
-  <thead>
-    <tr>
-      <th>Tactical Metric</th>
-      <th>Blood Ravens (Standard Roster)</th>
-      <th>Dark Angels (Sub-Faction Variant)</th>
-    </tr>
-  </thead>
+  <thead><tr><th>Area</th><th>Blood Ravens</th><th>Dark Angels</th></tr></thead>
   <tbody>
-    <tr>
-      <td><strong>Play-style Focus</strong></td>
-      <td>Methodical versatility, drop-pod reinforcements</td>
-      <td>Fast recon flanking &amp; heavy armor siege shock</td>
-    </tr>
-    <tr>
-      <td><strong>Unique Specialty</strong></td>
-      <td>Relic wargear buffs &amp; tactical flexibility</td>
-      <td>Ravenwing speed &amp; Deathwing Terminator armor</td>
-    </tr>
-    <tr>
-      <td><strong>Learning Curve</strong></td>
-      <td>Low / Moderate (Ideal for beginners)</td>
-      <td>Moderate / High (Requires micro-management)</td>
-    </tr>
-    <tr>
-      <td><strong>Micro-Management</strong></td>
-      <td>Squad ability timing &amp; position holding</td>
-      <td>Hit-and-run maneuvers &amp; teleport placement</td>
-    </tr>
+    <tr><td><strong>Official identity</strong></td><td>Flexible strategic combat</td><td>Shock-and-awe warfare</td></tr>
+    <tr><td><strong>Named characters</strong></td><td>Cyrus and Jonah Orion return in the story</td><td>Master Korahael and Chaplain Redemptus are introduced</td></tr>
+    <tr><td><strong>Named elite formations</strong></td><td>Complete Chapter-specific roster remains TBA</td><td>Deathwing and Ravenwing</td></tr>
+    <tr><td><strong>Commander selection</strong></td><td>Distinct commander options are confirmed</td><td>Distinct commander options are confirmed</td></tr>
   </tbody>
 </table>
-
-<h2>2. Dark Angels Pros & Cons Matrix</h2>
-<table class="data-table">
-  <thead>
-    <tr>
-      <th>Sub-Faction</th>
-      <th>Core Pros / Strengths</th>
-      <th>Core Cons / Weaknesses</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Blood Ravens</strong></td>
-      <td>High durability, forgiving for beginners, versatile squad loadouts</td>
-      <td>Slower movement speed, reliant on drop-pod cooldown timers</td>
-    </tr>
-    <tr>
-      <td><strong>Dark Angels</strong></td>
-      <td>Devastating flank attacks, elite Terminator power spikes</td>
-      <td>Higher requisition cost per unit, vulnerable to anti-armor counter-picks</td>
-    </tr>
-  </tbody>
-</table>
+<h2>How the Dark Angels identity may shape play</h2>
+<p>Deep Silver describes the Deathwing as slow and punishing, while the Ravenwing uses hit-and-run tactics. Together, those formations suggest a choice between heavy battlefield presence and mobile pressure. That is a useful strategic frame, but it is not yet a verified build order: unit costs, tech requirements, availability, and exact counters remain unpublished.</p>
+<h2>Why commanders matter</h2>
+<p>In the multiplayer developer AMA, KING Art Games says commanders are selected before a match and produced from headquarters. The developers also call commanders the biggest difference between sub-factions. That means Chapter selection should affect more than appearance, although the full set of abilities and matchups is still TBA.</p>
+<h2>Which Chapter should you follow?</h2>
+<div class="recommendation-box"><ul><li><strong>Follow Blood Ravens</strong> if you care most about the returning Dawn of War cast and a flexible Chapter identity.</li><li><strong>Follow Dark Angels</strong> if Deathwing resilience, Ravenwing mobility, and a more specialized shock-assault theme appeal to you.</li><li><strong>Wait for hands-on data</strong> before choosing based on competitive strength; no reliable tier list exists before launch.</li></ul></div>
+<h2>What remains unconfirmed</h2>
+<ul><li>Complete Chapter-specific unit and Commander rosters.</li><li>Unit prices, statistics, production times, and tech requirements.</li><li>Whether every faction-wide unit is shared by both Chapters.</li><li>Matchup-specific strengths, counters, and competitive tier placement.</li></ul>
 `,
   },
   {
-    slug: "dawn-of-war-4-space-marines-build-orders-drop-pod-tactics",
-    title: "Space Marines Build Orders & Drop Pod Tactics",
-    shortTitle: "Space Marines Build Orders & Drop Pod Tactics",
-    excerpt: "Opening build order step-by-step table, Scout Squad map control, and frontline Drop Pod reinforcement maneuvers for Space Marines in Dawn of War IV.",
+    slug: "dawn-of-war-4-space-marines-faction-guide",
+    title: "Dawn of War 4 Space Marines Guide: Units & Strategy",
+    seoTitle: "Dawn of War 4 Space Marines Guide",
+    shortTitle: "Space Marines Faction Guide",
+    excerpt: "Learn how Dawn of War 4 Space Marines use elite squads, orbital structures, fortifications, Reserves, reinforcement, and two playable Chapters.",
     datePublished: "2026-08-02",
     dateModified: "2026-08-02",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
-    readTime: "8 min read",
-    keywords: ["Space Marines build order Dawn of War 4", "Blood Ravens opening guide", "Drop pod tactics Dawn of War IV"],
-    officialStatus: "Tactical Guide & Opening Build Order",
+    readTime: "7 min read",
+    keywords: ["Dawn of War 4 Space Marines guide", "Dawn of War 4 Blood Ravens", "Dawn of War 4 Space Marine units"],
+    officialStatus: "Based on official faction overview and developer AMA",
+    sources: [
+      { label: "Dawn of War IV official faction overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Meet the new faces from the Story Trailer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/meet-the-new-faces-from-our-epic-story-trailer" },
+    ],
+    faqs: [
+      { question: "How do Space Marines play in Dawn of War 4?", answer: "Space Marines are an elite, expensive army built around favorable individual engagements, squad preservation, fortifications, on-field reinforcement, and rapid redeployment through Reserves and the Thunderhawk Relay." },
+      { question: "Can Space Marine buildings deploy from orbit?", answer: "Yes. Developers say their structures can deploy anywhere within vision. Deployment takes longer farther from headquarters, and opponents can see the intended landing location." },
+      { question: "Are Blood Ravens and Dark Angels both playable?", answer: "Yes. Both Chapters appear in the Space Marines campaign. Dark Angels are also described as a playable sub-faction with Deathwing and Ravenwing elite units." },
+    ],
     contentHtml: `
-<h2>1. Standard Opening Build Order Flow (First 5 Minutes)</h2>
-<p>
-  Executing a clean opening build order as <a href="/factions/space-marines">Space Marines</a> ensures immediate requisition control while unlocking Tier 1 Tactical Squad upgrades before <a href="/factions/orks">Orks</a> or <a href="/factions/necrons">Necrons</a> can expand their perimeters.
-</p>
-
+<div class="official-notice-box"><strong>Quick answer:</strong> Space Marines are elite fighters whose individual squads are powerful but expensive. Their confirmed toolkit emphasizes early harassment, upgrades, preservation, fortifications, orbital structure deployment, and rapid movement through Reserves and the Thunderhawk Relay.</div>
+<h2>Space Marines playstyle at a glance</h2>
+<p>The official faction overview says Space Marines will usually win equal one-on-one engagements, especially early. That strength is balanced by cost and limited map coverage: opponents are encouraged to stretch them across several fights and deny Power. Space Marine players therefore need to trade efficiently and keep experienced units alive.</p>
 <table class="data-table">
-  <thead>
-    <tr>
-      <th>Game Time</th>
-      <th>Production &amp; Queue Action</th>
-      <th>Strategic Resource Focus</th>
-    </tr>
-  </thead>
+  <thead><tr><th>Confirmed system</th><th>Purpose</th><th>Risk</th></tr></thead>
   <tbody>
-    <tr>
-      <td><strong>00:00 - 00:30</strong></td>
-      <td>Queue Scout Squad #1 at Fortress HQ; Send Servitor to nearest Requisition Point</td>
-      <td>Capture Primary Requisition Node</td>
-    </tr>
-    <tr>
-      <td><strong>00:30 - 01:15</strong></td>
-      <td>Build Generator Shrine; Queue Scout Squad #2 for vision perimeter</td>
-      <td>Establish Energy Resource Flow</td>
-    </tr>
-    <tr>
-      <td><strong>01:15 - 02:30</strong></td>
-      <td>Construct Armory Structure; Queue Tactical Squad #1</td>
-      <td>Prepare Tier 1 Infantry Core</td>
-    </tr>
-    <tr>
-      <td><strong>02:30 - 04:00</strong></td>
-      <td>Upgrade Tactical Squad Heavy Bolter wargear; Deploy Commander Unit</td>
-      <td>Secure Mid-Map Strategic Points</td>
-    </tr>
-    <tr>
-      <td><strong>04:00 - 05:00</strong></td>
-      <td>Research Orbital Relay Upgrade; Prepare Drop Pod Cooldowns</td>
-      <td>Transition to Tier 2 Vehicle Tech</td>
-    </tr>
+    <tr><td><strong>Elite squads</strong></td><td>Win efficient local engagements</td><td>Losses are costly to replace</td></tr>
+    <tr><td><strong>On-field reinforcement</strong></td><td>Preserve squads and veterancy</td><td>Continuous replacement drains resources</td></tr>
+    <tr><td><strong>Orbital structures</strong></td><td>Build anywhere within vision</td><td>Longer distant deployment and visible warning</td></tr>
+    <tr><td><strong>Fortifications</strong></td><td>Secure points the main army cannot hold</td><td>Static defenses cannot answer every attack</td></tr>
+    <tr><td><strong>Reserves and Thunderhawk Relay</strong></td><td>Move troops to threatened areas</td><td>Exact rules and timings remain TBA</td></tr>
   </tbody>
 </table>
-
-<h2>2. Drop Pod Deployment Maneuvers</h2>
-<p>
-  Drop Pods are not just spawn points—they are dynamic tactical weapons. When deployed directly onto enemy squad positions, the impact dealing area-of-effect knockback disrupts enemy channels while instantly spawning reinforced Tactical Space Marines into heavy cover.
-</p>
-
-<div class="recommendation-box">
-  <h3>Drop Pod Tactical Checklist</h3>
-  <ul>
-    <li><strong>Disrupt Enemy Channels:</strong> Launch Drop Pods directly on enemy heavy weapon teams (e.g. Ork Lootaz or Looted Wagons) to interrupt their firing arc.</li>
-    <li><strong>Instant Field Replenishment:</strong> Position Drop Pods slightly behind your frontline Dreadnoughts to replenish squad models without retreating to HQ.</li>
-  </ul>
-</div>
+<h2>Orbital construction and map presence</h2>
+<p>Space Marine structures can drop from orbit anywhere the player has vision. Distance from headquarters increases deployment time, and enemies can see where a structure will arrive. This produces a clear trade-off: orbital placement can establish a forward position, but an ambitious landing gives the opponent time and information to react.</p>
+<p>The official overview also names fortifications, Reserves, and the Thunderhawk Relay as tools for covering a wide map. Until costs and cooldowns are published, these should be treated as confirmed capabilities rather than a finished build order.</p>
+<h2>Squad preservation and Power economy</h2>
+<p>Space Marines are encouraged to upgrade units, reinforce in the field, and retreat when necessary. Their expensive roster also depends heavily on Power. A good opponent can trade cheaper units, attack Resource Points, and force the elite army to respond in several places. Read the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">preservation mechanics guide</a> for confirmed retreat and reinforcement rules.</p>
+<h2>Blood Ravens and Dark Angels</h2>
+<p>The Space Marines campaign includes both Blood Ravens and Dark Angels. Official story material describes Blood Ravens as flexible strategic fighters, while Dark Angels favor shock-and-awe through Deathwing and Ravenwing elite units. The <a href="/blog/space-marines-dark-angels-sub-faction-differences">Chapter comparison</a> records only confirmed differences.</p>
+<h2>What remains TBA</h2>
+<ul><li>Opening production sequence and starting resources.</li><li>Unit prices, build times, and tech tiers.</li><li>Exact Reserves and Thunderhawk Relay rules.</li><li>Complete multiplayer roster and Commander loadouts.</li><li>Map-specific fortification and orbital deployment strategy.</li></ul>
+<div class="recommendation-box"><h3>Who should choose Space Marines?</h3><ul><li>Players who prefer fewer, stronger squads.</li><li>Players who enjoy upgrades and unit preservation.</li><li>Players comfortable defending several locations with mobility and fortifications.</li></ul></div>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-necrons-faction-guide",
+    title: "Dawn of War 4 Necrons Guide: Power Matrix & Strategy",
+    seoTitle: "Dawn of War 4 Necrons Faction Guide",
+    shortTitle: "Necrons Faction Guide",
+    excerpt: "Learn how Dawn of War 4's Necrons use the Power Matrix, Tomb Pylon teleportation, on-field reinforcement, and a slow, relentless advance.",
+    datePublished: "2026-08-02",
+    dateModified: "2026-08-02",
+    author: "Kronus Archive Tactical Desk",
+    category: "Faction Mechanics",
+    readTime: "7 min read",
+    keywords: ["Dawn of War 4 Necrons guide", "Dawn of War 4 Necrons", "Necron Power Matrix Dawn of War 4"],
+    officialStatus: "Based on official faction and developer material",
+    sources: [
+      { label: "Dawn of War IV official faction overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
+      { label: "Necron CGI trailer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/necron-cgi-trailer" },
+      { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Battlefield Report: Necrons vs Adeptus Mechanicus", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/battlefield-report-1v1-multiplayer-necrons-vs-adeptus-mechanicus" },
+    ],
+    faqs: [
+      { question: "How do Necrons play in Dawn of War 4?", answer: "Necrons build strength through a slow, relentless advance. Their confirmed systems include the economy-linked Power Matrix, Tomb Pylon teleportation, and on-field reinforcement." },
+      { question: "What is the Necron Power Matrix?", answer: "It is a faction system connected to the Necron economy that empowers units within its influence. Exact bonuses, ranges, and upgrade values remain TBA." },
+      { question: "Do Necrons use cover in Dawn of War 4?", answer: "No. The official faction overview says Necrons do not use cover, making positioning, reinforcement, and Power Matrix control especially important." },
+      { question: "Who leads the Necrons in the campaign?", answer: "Official story material identifies the Chronomancer Thothmek, who awakens after a 60-million-year slumber." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Necrons are designed around a slow, relentless advance. Their confirmed toolkit links economic expansion to a Power Matrix, supports teleportation through the Tomb Pylon, and allows reinforcement on the battlefield. They do not use cover, so maintaining formation and finishing damaged enemies matter.</div>
+<h2>Necrons playstyle at a glance</h2>
+<p>The official faction overview presents Necrons as an army that becomes more dangerous as its controlled territory and economy grow. A battlefield report reinforces that identity by showing pressure that escalates over time. This does not yet justify a timed build order, but it does establish the faction's strategic direction: expand the Matrix, preserve the advance, and deny opponents clean opportunities to eliminate isolated units.</p>
+<table class="data-table">
+  <thead><tr><th>Confirmed system</th><th>Battlefield role</th><th>Evidence boundary</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Power Matrix</strong></td><td>Links economic presence with unit empowerment</td><td>Exact bonuses and radius remain TBA</td></tr>
+    <tr><td><strong>Tomb Pylon</strong></td><td>Teleports forces from headquarters</td><td>Costs, cooldowns, and limits remain TBA</td></tr>
+    <tr><td><strong>On-field reinforcement</strong></td><td>Supports a sustained forward army</td><td>Rates and resource costs remain TBA</td></tr>
+    <tr><td><strong>No cover use</strong></td><td>Shifts survival toward formation and faction systems</td><td>Full defensive statistics remain TBA</td></tr>
+    <tr><td><strong>Slow advance</strong></td><td>Builds pressure over time</td><td>Unit speeds and matchup timings remain TBA</td></tr>
+  </tbody>
+</table>
+<h2>Power Matrix and economy</h2>
+<p>The Power Matrix is tied to the Necron economy and empowers units. That makes map control more than a source of income: the territory supporting the Matrix also shapes where the army is strongest. Until the interface, values, and structure rules are published, players should treat this as a positioning principle rather than follow made-up layouts or percentage bonuses.</p>
+<h2>Tomb Pylon mobility</h2>
+<p>The Tomb Pylon lets Necrons teleport forces from headquarters. This gives an otherwise methodical army a way to reinforce its advance or respond away from the main base. The official description confirms the capability, but not a safe teleport destination, charge system, cooldown, or production interaction. Those details require hands-on testing.</p>
+<h2>Reinforcement instead of cover</h2>
+<p>Necrons do not use the game's cover system. Their survival instead depends on their own faction mechanics, positioning, and on-field reinforcement. The general <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a> explains how this differs from the other armies.</p>
+<p>When fighting Necrons, the official advice is to focus fire and destroy units outright. Leaving damaged units alive may allow the Necron player to sustain the formation. For the Necron player, the inverse lesson is clear: avoid exposing single units that an opponent can finish before support arrives.</p>
+<h2>Campaign identity</h2>
+<p>The Necron CGI trailer introduces Chronomancer Thothmek, awakened after a 60-million-year slumber. The Necrons are one of the four fully playable factions in the 70-plus-mission campaign and in multiplayer. See our <a href="/blog/dawn-of-war-4-factions-compared">four-faction comparison</a> before choosing a first army.</p>
+<h2>What remains TBA</h2>
+<ul><li>Complete unit, structure, and Commander rosters.</li><li>Power Matrix values, influence radius, and expansion rules.</li><li>Tomb Pylon cost, cooldown, and teleport restrictions.</li><li>Reinforcement costs, reanimation rules, and veterancy interaction.</li><li>Verified openings, counters, and late-game compositions.</li></ul>
+<div class="recommendation-box"><h3>Who should choose Necrons?</h3><ul><li>Players who enjoy methodical pressure rather than constant early mobility.</li><li>Players who want territory and economy to reinforce battlefield strength.</li><li>Players comfortable protecting a formation while it advances.</li></ul></div>
 `,
   },
   {
@@ -457,6 +465,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min read",
     keywords: ["Adeptus Mechanicus build order Dawn of War 4", "AdMech Noosphere layout", "Noosphere network patterns"],
     officialStatus: "Tactical Guide & Network Layout",
+    indexable: false,
     contentHtml: `
 <h2>1. Optimal Noosphere Connection Network Patterns</h2>
 <p>
@@ -524,68 +533,52 @@ export const blogPosts: BlogPost[] = [
 `,
   },
   {
-    slug: "dawn-of-war-4-last-stand-hero-commanders-guide",
-    title: "Last Stand Mode Hero Commanders & Survival Guide",
-    shortTitle: "Last Stand Mode Hero Commanders & Survival Guide",
-    excerpt: "Wave 1-20 survival tactics, 3-player team hero compositions, and relic wargear level progression for Last Stand mode in Dawn of War IV.",
+    slug: "dawn-of-war-4-last-stand-mode-guide",
+    title: "Dawn of War 4 Last Stand Mode Explained",
+    seoTitle: "Dawn of War 4 Last Stand Mode Guide",
+    shortTitle: "Last Stand Mode Explained",
+    excerpt: "Learn what is confirmed about Dawn of War 4's returning Last Stand mode: escalating enemy waves, co-op, progression, skills, and equipment.",
     datePublished: "2026-08-02",
     dateModified: "2026-08-02",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
-    readTime: "9 min read",
-    keywords: ["Dawn of War 4 Last Stand", "Last Stand hero commanders", "Dawn of War 4 Last Stand wave guide"],
-    officialStatus: "Developer Confirmed Co-op Arena Mode",
+    readTime: "6 min read",
+    keywords: ["Dawn of War 4 Last Stand", "Dawn of War 4 Last Stand mode", "Dawn of War 4 co-op"],
+    officialStatus: "Based on official mode and roadmap announcements",
+    sources: [
+      { label: "What we're building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
+      { label: "Release date, pre-order and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
+    ],
+    faqs: [
+      { question: "Is Last Stand returning in Dawn of War 4?", answer: "Yes. Deep Silver has officially confirmed that Last Stand returns as a horde-like mode built around increasingly deadly waves." },
+      { question: "Does Dawn of War 4 Last Stand support co-op?", answer: "Yes. Official material identifies Last Stand among the modes with co-op support, though the final player limit has not been published in the cited announcements." },
+      { question: "Does Last Stand have progression?", answer: "Yes. Players can level up characters and unlock skills and equipment. Exact progression trees, unlock rates, and launch equipment remain TBA." },
+    ],
     contentHtml: `
-<h2>1. Last Stand Hero Commander Roles & Team Compositions</h2>
-<p>
-  Returning in <em>Dawn of War IV</em>, <strong>Last Stand</strong> is a 3-player cooperative arena mode where players command a single Hero unit against 20 escalating waves of enemy assault. Balancing crowd control, single-target damage, and revive utility is critical for surviving Wave 15+.
-</p>
-
+<div class="official-notice-box"><strong>Quick answer:</strong> Last Stand returns in <em>Dawn of War IV</em> as a horde-like mode with increasingly deadly enemy waves. It supports cooperative play and includes character levels, skills, and equipment. Hero rosters, player limits, wave counts, and detailed progression values remain TBA.</div>
+<h2>What is Last Stand?</h2>
+<p>Last Stand is a survival-focused alternative to the game's army-scale campaign and competitive multiplayer. The official description centers on enduring waves that become progressively more dangerous. Rather than inventing a fixed wave count or boss schedule before release, this guide tracks the structure that Deep Silver and KING Art Games have actually announced.</p>
 <table class="data-table">
-  <thead>
-    <tr>
-      <th>Hero Commander Unit</th>
-      <th>Primary Arena Role</th>
-      <th>Key Wargear Ability</th>
-      <th>Recommended Team Partner</th>
-    </tr>
-  </thead>
+  <thead><tr><th>Feature</th><th>Official status</th><th>What remains TBA</th></tr></thead>
   <tbody>
-    <tr>
-      <td><strong>Space Marine Captain</strong></td>
-      <td>Tank / Frontline Taunt</td>
-      <td>Iron Halo Shields &amp; Jump Pack Stun</td>
-      <td>Pair with AdMech Tech-Priest or Ork Mek</td>
-    </tr>
-    <tr>
-      <td><strong>Ork Warboss</strong></td>
-      <td>Melee Crowd Control</td>
-      <td>Power Klaw Cleave &amp; Waaagh! Morale Shout</td>
-      <td>Pair with Space Marine Captain &amp; Necron Lord</td>
-    </tr>
-    <tr>
-      <td><strong>Necron Overlord</strong></td>
-      <td>Resurrection &amp; AoE Blast</td>
-      <td>Resurrection Orb &amp; Tachyon Arrow</td>
-      <td>Essential for Wave 15+ Emergency Revives</td>
-    </tr>
-    <tr>
-      <td><strong>Tech-Priest Dominus</strong></td>
-      <td>Turret Support &amp; Ranged DPS</td>
-      <td>Omnissiah Turret Deployment &amp; Plasma Arc</td>
-      <td>Pairs with frontline tanks for choke defense</td>
-    </tr>
+    <tr><td><strong>Escalating waves</strong></td><td>Confirmed</td><td>Total waves, enemy tables, and boss timing</td></tr>
+    <tr><td><strong>Co-op support</strong></td><td>Confirmed</td><td>Final party size and matchmaking details</td></tr>
+    <tr><td><strong>Character levels</strong></td><td>Confirmed</td><td>Level cap and experience requirements</td></tr>
+    <tr><td><strong>Skills and equipment</strong></td><td>Confirmed</td><td>Complete unlock lists, statistics, and builds</td></tr>
+    <tr><td><strong>Post-launch scenarios</strong></td><td>Confirmed on the Year One roadmap</td><td>Scenario dates and objectives</td></tr>
   </tbody>
 </table>
-
-<h2>2. Key Survival Milestones (Waves 1 - 20)</h2>
+<h2>Progression between runs</h2>
+<p>Official material says players level up characters and unlock skills and equipment. That creates a persistent progression layer, but the publisher has not yet shown enough data for a trustworthy leveling route or equipment tier list. Claims about optimal loadouts should wait until the launch build can be tested repeatedly.</p>
+<h2>How Last Stand fits the wider game</h2>
+<p>The mode complements the story campaign, <a href="/blog/dawn-of-war-4-crusade-mode-guide">Crusade</a>, Skirmish, and competitive formats covered in our <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">modes guide</a>. Players who prefer small-team survival and character progression may find Last Stand more approachable than managing a full base and army.</p>
+<h2>Year One support</h2>
+<p>The official Year One roadmap includes free Commander scenarios for Last Stand and Crusade. This confirms planned post-launch support, but does not establish a fixed release month for every scenario. Our <a href="/blog/dawn-of-war-4-year-one-roadmap-dlc">roadmap tracker</a> will be updated when dates and scenario details are published.</p>
+<h2>What a real survival guide still needs</h2>
+<p>A dependable strategy guide requires the shipped hero roster, wave composition, maps, equipment effects, progression speed, difficulty settings, and revive rules. Once those can be tested, this page can expand into verified beginner builds and team strategies without replacing confirmed information with guesswork.</p>
 <div class="recommendation-box">
-  <h3>Wave Survival Roadmap</h3>
-  <ul>
-    <li><strong>Waves 1 - 5 (Early Waves):</strong> Conserve ability energy. Focus on basic melee attacks and capture point score multipliers.</li>
-    <li><strong>Waves 6 - 12 (Mid-Game Swarms):</strong> Large <a href="/factions/orks">Ork mobs</a> and armored transport waves spawn. Use crowd-control stuns to prevent hero isolation.</li>
-    <li><strong>Waves 13 - 20 (Endgame Bosses):</strong> Boss units including Monoliths and Greater Daemons spawn. Save Necron Resurrection Orbs for simultaneous down events.</li>
-  </ul>
+  <h3>Who should watch Last Stand?</h3>
+  <ul><li>Players who want co-op rather than competitive matches.</li><li>Players interested in character progression and equipment unlocks.</li><li>Returning Dawn of War II players curious about the revived mode.</li></ul>
 </div>
 `,
   },

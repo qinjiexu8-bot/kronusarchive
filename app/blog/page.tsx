@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndexPage() {
+  const publishedPosts = blogPosts.filter((post) => post.indexable !== false);
+
   return (
     <>
       <SiteHeader />
@@ -43,7 +45,7 @@ export default function BlogIndexPage() {
 
         <section className="shell" style={{ paddingBlock: "60px 100px" }}>
           <div className="faction-grid">
-            {blogPosts.map((post) => (
+            {publishedPosts.map((post) => (
               <article key={post.slug} className="faction-card" style={{ "--faction": "var(--accent-gold)" } as React.CSSProperties}>
                 <span className="card-index">{post.category}</span>
                 <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", margin: "16px 0 10px", lineHeight: 1.2 }}>
