@@ -1195,6 +1195,290 @@ export const blogPosts: BlogPost[] = [
 <p>Dawn of War IV Crusade mode is designed to turn individual RTS battles into a longer war for Kronus. Its confirmed foundation—limited actions, territory control, Requisition, persistent Strike Forces, and Commander-specific goals—gives players meaningful strategic choices before combat begins. Start with the objective, protect the campaign economy, and treat every battle result as part of the next turn.</p>
 `,
   },
+  {
+    slug: "dawn-of-war-4-commanders-guide",
+    title: "Dawn of War 4 Commanders Explained",
+    seoTitle: "Dawn of War 4 Commanders Guide",
+    shortTitle: "Dawn of War 4 Commanders Explained",
+    excerpt: "Learn how Dawn of War 4 Commanders work in multiplayer, including pre-match selection, headquarters production, custom settings, and confirmed characters.",
+    datePublished: "2026-08-07",
+    dateModified: "2026-08-07",
+    author: "Kronus Archive Tactical Desk",
+    category: "Faction Mechanics",
+    readTime: "8 min read",
+    keywords: ["Dawn of War 4 Commanders", "Dawn of War IV heroes", "Dawn of War 4 Commander system"],
+    officialStatus: "Based on official multiplayer AMA and faction previews",
+    sources: [
+      { label: "AMA Developer Blog – Multiplayer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Faction Deep Dive – Necrons", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/faction-deep-dive-necrons" },
+      { label: "Meet the new faces from the Story Trailer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/meet-the-new-faces-from-our-epic-story-trailer" },
+      { label: "Introducing the cast of Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/introducing-the-cast-of-warhammer-40-000-dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "How do Commanders work in Dawn of War 4 multiplayer?", answer: "Players select a generic faction Commander before the match alongside their faction and starting position. By default, the Commander is produced from headquarters for a cost, usually after mid-match unlocks." },
+      { question: "Can a Dawn of War 4 Commander start on the battlefield?", answer: "Yes, if the match settings are changed. Developers say custom settings can make the Commander a starting unit or disable Commanders entirely." },
+      { question: "Are multiplayer Commanders the same as campaign characters?", answer: "No. KING Art Games says multiplayer uses generic faction units outside the campaigns. Named characters still lead the story, but campaign identity should not be assumed to define every multiplayer Commander." },
+      { question: "Which Dawn of War 4 Commanders are confirmed?", answer: "Official previews name several story and playable leaders, including Cyrus, Jonah Orion, Gorgutz, Guzcutta, Thothmek, Ahmnok, Company Master Astoran, and other faction figures. A complete launch multiplayer roster is still TBA." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> In standard <em>Dawn of War IV</em> multiplayer, a Commander is selected before the match alongside the faction and starting position. The chosen Commander is normally produced from headquarters for a cost after required unlocks, rather than appearing automatically at the opening. Custom settings can instead make Commanders starting units or disable them.</div>
+
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#commander-rules">confirmed rules</a> · <a href="#commander-impact">strategic impact</a> · <a href="#confirmed-commanders">confirmed characters</a> · <a href="#commander-tba">what remains TBA</a></nav>
+
+<h2 id="commander-rules">How the Commander system works</h2>
+<p>Dawn of War 4 Commanders are powerful faction units, but the official multiplayer AMA makes an important distinction between competitive matches and the authored campaign. Outside the campaigns, Commanders are described as generic faction units. Players choose one before a match, at the same stage as their faction and starting position. That gives the opponent and the map context a role in the decision before either army begins building.</p>
+<p>The selected Commander does not normally arrive for free. KING Art Games says the default rule is to produce the unit from headquarters for a cost, usually during the middle of the match after unlocking it. The developer has not published the production price, exact tech requirement, build time, or whether those values differ by faction. Any pre-launch guide claiming precise timings is therefore speculation.</p>
+
+<table class="data-table">
+  <thead><tr><th>Commander rule</th><th>Official status</th><th>Practical meaning</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Pre-match selection</strong></td><td>Confirmed</td><td>The Commander is part of army planning, not a random mid-match choice.</td></tr>
+    <tr><td><strong>Headquarters production</strong></td><td>Default rule confirmed</td><td>A standard match requires resources and unlock progress before deployment.</td></tr>
+    <tr><td><strong>Generic multiplayer unit</strong></td><td>Confirmed outside campaigns</td><td>Do not assume a named story hero has identical multiplayer rules.</td></tr>
+    <tr><td><strong>Starting Commander option</strong></td><td>Confirmed custom setting</td><td>Custom games can change the opening economy and battlefield balance.</td></tr>
+    <tr><td><strong>Disable Commanders</strong></td><td>Confirmed custom setting</td><td>Players can create matches focused on conventional faction units.</td></tr>
+  </tbody>
+</table>
+
+<h2 id="commander-impact">What Commanders change strategically</h2>
+<p>Because a Commander is chosen before the match but paid for during it, the system creates two separate decisions. First, the player selects a tool that fits the intended army plan. Later, the player decides when unlocking and producing that tool is more valuable than spending the same economy on squads, research, structures, reinforcement, or map expansion.</p>
+<p>This distinction matters in an RTS. A powerful unit can influence a fight only after the economy supports it, and rushing toward that unlock may leave fewer resources for territory control. The official AMA also confirms that every faction has a powerful Stratagem regardless of Commander choice. A Commander therefore adds an option to the faction rather than replacing its core mechanics.</p>
+<p>Commanders are also one of the clearest ways sub-factions differ. Official story material says the Blood Ravens and Dark Angels share many units, while Commanders make the biggest gameplay difference between them. Our <a href="/blog/space-marines-dark-angels-sub-faction-differences">Blood Ravens vs Dark Angels guide</a> explains the confirmed Chapter distinction without inventing costs or matchups.</p>
+
+<h2>Campaign heroes versus multiplayer Commanders</h2>
+<p>The campaign contains named characters with specific roles in the story. Multiplayer, by contrast, uses generic faction Commander units according to the developer AMA. That means a character being named in a trailer or voice-cast announcement does not automatically prove that the same character is selectable in competitive play with identical abilities.</p>
+<p>This boundary protects players from a common pre-release mistake: turning story reveals into an unofficial multiplayer roster. Kronus Archive lists named characters below as confirmed campaign or faction figures and marks playable status only where the official source explicitly supports it.</p>
+
+<h2 id="confirmed-commanders">Confirmed Dawn of War 4 leaders and Commanders</h2>
+<table class="data-table">
+  <thead><tr><th>Faction</th><th>Confirmed figures</th><th>What is officially established</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Space Marines</strong></td><td>Cyrus, Jonah Orion, Company Master Astoran, Chaplain Ezrael</td><td>Named campaign leaders and characters; Dark Angels and Blood Ravens have distinct Commander identities.</td></tr>
+    <tr><td><strong>Orks</strong></td><td>Gorgutz, Beastboss Guzcutta</td><td>Both are named Ork leaders in official story material; Guzcutta is identified as a second Ork Commander.</td></tr>
+    <tr><td><strong>Necrons</strong></td><td>Chronomancer Thothmek, Ahmnok</td><td>The Necron deep dive explicitly describes Thothmek as the first Commander and Ahmnok as the second playable Necron Commander.</td></tr>
+    <tr><td><strong>Adeptus Mechanicus</strong></td><td>Marshal Sek-Ix-23, Magos Dominus Nulpherus-1, Potentia-Delta-9</td><td>Named faction characters appear in official cast material; complete multiplayer classifications remain TBA.</td></tr>
+  </tbody>
+</table>
+
+<h3>Necron Commander contrast</h3>
+<p>The July 29 Necron deep dive provides the clearest official example of a faction Commander choice. Chronomancer Thothmek manipulates time to empower his legions and disrupt enemies. Ahmnok is described as a more direct alternative who is willing to let bloodied claws do the fighting. The preview establishes contrasting identities but does not publish ability values, cooldowns, costs, or a competitive ranking.</p>
+
+<h3>Space Marine sub-factions</h3>
+<p>For Space Marines, Commander identity carries additional weight because Blood Ravens and Dark Angels operate as related Chapters within the same broader faction. Shared units preserve the Space Marine foundation, while different leaders can push the army toward a different tactical emphasis. Read the <a href="/blog/dawn-of-war-4-space-marines-faction-guide">Space Marines faction guide</a> for the systems both Chapters share.</p>
+
+<h2>How to choose before launch</h2>
+<p>There is not enough public balance data to recommend a best Commander. A useful pre-launch choice starts with role and faction identity rather than a tier list. Decide whether you want a Commander that supports the army’s existing strengths, covers a weakness, pressures a particular type of target, or changes how you plan the middle of the match.</p>
+<ol>
+  <li><strong>Choose the faction first.</strong> Its economy, structures, mobility, and preservation systems affect every minute of play.</li>
+  <li><strong>Identify the Commander’s confirmed role.</strong> Separate official descriptions from community assumptions.</li>
+  <li><strong>Plan the unlock as an economic decision.</strong> Headquarters production competes with other spending.</li>
+  <li><strong>Test the default rules before custom settings.</strong> Starting-unit matches will create different timings.</li>
+  <li><strong>Re-evaluate after patches.</strong> Competitive value may change even when the character fantasy remains the same.</li>
+</ol>
+
+<h2 id="commander-tba">What remains unconfirmed</h2>
+<ul>
+  <li>The complete launch Commander roster for all four factions and both Space Marine Chapters.</li>
+  <li>Commander prices, build times, prerequisites, statistics, veterancy, and population impact.</li>
+  <li>Every weapon, Wargear option, active ability, passive effect, and Stratagem interaction.</li>
+  <li>Whether every named campaign character has a separate multiplayer equivalent.</li>
+  <li>Matchup rankings, best picks, counters, and tournament rules.</li>
+</ul>
+<p>The reliable pre-launch conclusion is simple: Dawn of War 4 Commanders are a planned strategic layer selected before battle and purchased during it. Their exact competitive value cannot be measured until the final build is available. Until then, use the <a href="/blog/dawn-of-war-4-factions-compared">faction comparison</a> and <a href="/blog/dawn-of-war-4-resources-map-control-guide">resource guide</a> to understand the army and economy around the Commander.</p>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-base-building-guide",
+    title: "Dawn of War 4 Base Building Guide",
+    seoTitle: "Dawn of War 4 Base Building Guide",
+    shortTitle: "Dawn of War 4 Base Building Guide",
+    excerpt: "See how Dawn of War 4 base building works and compare Space Marine orbital drops, armed Ork outposts, the Necron Power Matrix, and the AdMech Noosphere.",
+    datePublished: "2026-08-07",
+    dateModified: "2026-08-07",
+    author: "Kronus Archive Tactical Desk",
+    category: "Faction Mechanics",
+    readTime: "9 min read",
+    keywords: ["Dawn of War 4 base building", "Dawn of War IV buildings", "Dawn of War 4 factions base mechanics"],
+    officialStatus: "Based on official developer AMA and gameplay previews",
+    sources: [
+      { label: "AMA Developer Blog – Multiplayer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Back to War In-Engine Trailer breakdown", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/a-closer-look-at-dawn-of-war-iv-s-back-to-war-in-engine-trailer" },
+      { label: "Dawn of War IV official overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
+      { label: "Faction Deep Dive – Necrons", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/faction-deep-dive-necrons" },
+    ],
+    faqs: [
+      { question: "Does Dawn of War 4 have base building?", answer: "Yes. Base construction is a core part of Dawn of War 4. Buildings produce units, unlock research and upgrades, open additional structures, support faction mechanics, and can be destroyed." },
+      { question: "Do all Dawn of War 4 factions build bases the same way?", answer: "No. Space Marines deploy structures from orbit, Orks spread armed buildings through infantry construction, Necrons expand a Power Matrix, and Adeptus Mechanicus connect structures into a Noosphere Network." },
+      { question: "Can buildings be destroyed in Dawn of War 4?", answer: "Yes. Deep Silver says player-created buildings collapse when sufficiently damaged, while parts of the environment can also be reduced to rubble." },
+      { question: "Are Dawn of War 4 build orders available?", answer: "Not reliably before launch. The publisher has not released starting resources, exact structure costs, build times, full prerequisites, or final balance values needed for a repeatable build order." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Base building is a core pillar of <em>Dawn of War IV</em>. Structures produce units, unlock research and upgrades, enable additional construction, and express each faction’s economy. Space Marines use orbital deployment, Orks spread cheap armed strongholds, Necrons expand the Power Matrix, and Adeptus Mechanicus build a connected Noosphere Network.</div>
+
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#building-basics">core rules</a> · <a href="#faction-bases">four faction systems</a> · <a href="#base-decisions">strategic decisions</a> · <a href="#base-tba">what remains TBA</a></nav>
+
+<h2 id="building-basics">What base building does in Dawn of War 4</h2>
+<p>Developer material describes Dawn of War 4 as a return to classic Dawn of War RTS foundations. Players construct a base, expand forces, capture territory, research technology, and unlock stronger units. The official trailer breakdown says the building system is similar to the first Dawn of War, while still giving all four launch factions distinct construction mechanics.</p>
+<p>Buildings do more than produce squads. The multiplayer AMA confirms that structures and their upgrades often unlock units, research, other buildings, and further building upgrades. As a result, the base acts as the army’s production centre, technology path, reinforcement destination, economic network, defensive position, and visible record of strategic investment.</p>
+
+<table class="data-table">
+  <thead><tr><th>Base function</th><th>Confirmed role</th><th>Player decision</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Production</strong></td><td>Creates units, including Commanders from headquarters by default</td><td>Which battlefield role should receive resources next?</td></tr>
+    <tr><td><strong>Technology</strong></td><td>Unlocks units, research, structures, and upgrades</td><td>Invest in immediate army strength or later options?</td></tr>
+    <tr><td><strong>Territory support</strong></td><td>Extends faction presence and can shorten reinforcement routes</td><td>Build safely at home or expose a forward position?</td></tr>
+    <tr><td><strong>Faction economy</strong></td><td>Power Matrix and Noosphere systems tie buildings to wider bonuses</td><td>Where should the network expand first?</td></tr>
+    <tr><td><strong>Defense</strong></td><td>Fortifications and armed structures help secure ground</td><td>How much economy should remain static?</td></tr>
+  </tbody>
+</table>
+
+<h2 id="faction-bases">How the four faction bases differ</h2>
+<p>The shared RTS loop—build, produce, research, expand—stays recognizable, but every faction changes how structures reach the map and what they contribute. These differences are confirmed at the system level. Exact costs, construction speeds, damage values, and optimal layouts remain unpublished.</p>
+
+<h3>Space Marines: orbital structure deployment</h3>
+<p>Space Marine buildings can be dropped from orbit anywhere within the player’s vision. The farther the destination is from headquarters, the longer deployment takes. Enemy players can see the planned landing position, which creates counterplay: a forward structure can establish pressure or support territory, but it announces its arrival and may be challenged before it becomes useful.</p>
+<p>Their structures can be upgraded to unlock additional units and research. The official faction overview also points to fortifications, Reserves, and the Thunderhawk Relay as ways to compensate for an elite army that cannot be everywhere. This makes base placement part of a broader mobility system, not simply a protected production grid. See the <a href="/blog/dawn-of-war-4-space-marines-faction-guide">Space Marines guide</a> for the complete confirmed framework.</p>
+
+<h3>Orks: armed expansion and base crawling</h3>
+<p>Almost any Ork infantry can construct Ork structures. Developers describe those buildings as relatively cheap and always armed, making it natural for Orks to spread several strongholds and move production closer to the front. The official overview specifically encourages multiple bases and plenty of Waaagh! Banners.</p>
+<p>This forward momentum has a weakness. Armed Ork buildings are described as relatively easy to destroy, so an opponent can chip away at an extended network. The Ork player gains shorter routes and territorial pressure, but every exposed stronghold becomes another target. Our <a href="/blog/dawn-of-war-4-orks-faction-guide">Orks faction guide</a> explains how fighting and expansion reinforce each other.</p>
+
+<h3>Necrons: Tomb Citadel and Power Matrix</h3>
+<p>The Necron base grows from an upgradeable Tomb Citadel, described in the July faction deep dive as both the strategic centre and the production engine. Many Necron buildings can only be placed on the Power Matrix, while those same structures extend the field farther. Expanding the base therefore enlarges the territory where construction can continue.</p>
+<p>The Matrix is also tied to economy and combat. A larger Matrix generates more Dominion, and friendly units fighting on it gain additional durability and faster healing. Tomb Pylons can create remote patches of Matrix and serve as translocation destinations from the Tomb Citadel. The base is therefore production, territory, economy, sustain, and mobility in one connected system. Read the <a href="/blog/dawn-of-war-4-necrons-faction-guide">Necrons guide</a> for more detail.</p>
+
+<h3>Adeptus Mechanicus: connected Noosphere Network</h3>
+<p>Adeptus Mechanicus structures link back to headquarters to form a Noosphere Network. The official AMA says that network is crucial for unlocking more powerful weaponry and provides economic and combat boons to units and structures inside it. The official faction overview advises building a strong network early, then expanding it toward key Resource Points.</p>
+<p>Cogitator Relays in important positions can become vulnerable links. An opponent who destroys them may weaken the network, so AdMech expansion is not only about reaching territory; it is also about maintaining connection. The <a href="/blog/dawn-of-war-4-adeptus-mechanicus-faction-guide">Adeptus Mechanicus guide</a> separates these confirmed mechanics from unsupported percentage bonuses and diagram claims.</p>
+
+<h2>Base upgrades, units, and research</h2>
+<p>The official in-engine trailer breakdown confirms that constructing buildings, performing research, and upgrading structures unlock new units. Stronger units require more Power and battlefield influence before they can be fielded. This establishes a tech progression but does not reveal a universal tier sequence or identical requirements across factions.</p>
+<p>Players should expect base choices to communicate intent. A new production structure, network extension, or visible orbital landing may reveal where resources are going. Scouting those changes can matter as much as seeing the army itself. Until the final interface and tech trees are public, however, named counter-builds would be premature.</p>
+
+<h2 id="base-decisions">Five base-building decisions that are already clear</h2>
+<ol>
+  <li><strong>Safety versus reach:</strong> distant structures support territory but face greater exposure.</li>
+  <li><strong>Units versus technology:</strong> research and upgrades compete with immediate production.</li>
+  <li><strong>Concentration versus coverage:</strong> one defensible base is harder to stretch, while multiple positions influence more of the map.</li>
+  <li><strong>Network continuity:</strong> Necron and AdMech structures gain meaning through connected faction systems.</li>
+  <li><strong>Information:</strong> visible construction and building choices reveal future capabilities to attentive opponents.</li>
+</ol>
+
+<h2>Can bases and terrain be destroyed?</h2>
+<p>Yes. Deep Silver says buildings collapse once sufficiently damaged, and the destruction system also affects scenic structures and vehicle wrecks. Annihilation uses headquarters destruction as its win condition, making base defense directly relevant to at least one default multiplayer format. For the other objectives, see the <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a>.</p>
+
+<h2 id="base-tba">What remains unconfirmed before launch</h2>
+<ul>
+  <li>Starting builders, resources, headquarters functions, and opening placement rules.</li>
+  <li>Complete tech trees, building names, prices, construction times, health, armor, and weapons.</li>
+  <li>Power and influence thresholds for every unit and upgrade.</li>
+  <li>Repair rules, cancellation refunds, rebuilding, and structure veterancy.</li>
+  <li>Map-specific building restrictions and every faction’s detection or stealth structures.</li>
+  <li>Verified build orders for competitive patches and matchups.</li>
+</ul>
+<p>A trustworthy Dawn of War 4 base building guide can explain the architecture now, but optimized build orders must wait for repeatable testing. The confirmed picture is already distinct: orbital reach, armed expansion, a growing Power Matrix, and a connected Noosphere make faction choice visible in the shape of every base.</p>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-resources-map-control-guide",
+    title: "Dawn of War 4 Resources & Map Control Guide",
+    seoTitle: "Dawn of War 4 Resources Guide",
+    shortTitle: "Resources & Map Control Guide",
+    excerpt: "Understand Dawn of War 4 resources, Resource Points, Power, Dominion, map control, reinforcement spending, and how faction economies shape expansion.",
+    datePublished: "2026-08-07",
+    dateModified: "2026-08-07",
+    author: "Kronus Archive Tactical Desk",
+    category: "Faction Mechanics",
+    readTime: "9 min read",
+    keywords: ["Dawn of War 4 resources", "Dawn of War IV Resource Points", "Dawn of War 4 map control"],
+    officialStatus: "Based on official overview, AMA, and faction previews",
+    sources: [
+      { label: "Dawn of War IV official overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
+      { label: "AMA Developer Blog – Multiplayer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "Faction Deep Dive – Necrons", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/faction-deep-dive-necrons" },
+      { label: "What we're building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
+    ],
+    faqs: [
+      { question: "What resources are in Dawn of War 4?", answer: "Official material confirms Resource Points, Power, the Necron Dominion resource, and faction-specific economic systems. Requisition is also used in Crusade, but campaign-layer Requisition should not automatically be treated as the complete multiplayer economy." },
+      { question: "How do Resource Points work in Dawn of War 4?", answer: "Players capture, control, and upgrade Resource Points to support their economy and territory. Exact income rates, upgrade prices, capture times, and decapture rules have not yet been published." },
+      { question: "Why is Power important in Dawn of War 4?", answer: "Power helps gate stronger units and upgrades. The official Space Marine counter-advice specifically recommends denying Power because their elite units are expensive and require a large amount of it." },
+      { question: "Does reinforcement spend resources?", answer: "Yes. On-field reinforcement commits resources to replace losses and keep units fighting. Developers warn that enabling auto-reinforce across many units can drain the economy quickly." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War 4 ties economy directly to territory and combat. Players capture, control, and upgrade Resource Points; Power helps unlock stronger units and technology; Necrons generate Dominion through the Power Matrix; and on-field reinforcement spends resources to keep squads active. Exact income rates and prices remain TBA.</div>
+
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#resource-points">Resource Points</a> · <a href="#power-resource">Power</a> · <a href="#faction-economies">faction economies</a> · <a href="#combat-spending">combat spending</a> · <a href="#resource-tba">what remains TBA</a></nav>
+
+<h2 id="resource-points">How Resource Points connect economy and territory</h2>
+<p>The official Dawn of War IV overview presents control as a core activity: players capture, hold, and upgrade Resource Points while fighting across large areas of the map. That means income is not isolated inside the starting base. Economic growth requires units to reach contested ground, secure it, and prevent opponents from doing the same.</p>
+<p>Resource Points also influence where faction infrastructure expands. Adeptus Mechanicus players are advised to extend the Noosphere Network toward key points, while Space Marine opponents are told to deny Resource Points—especially Power. Capturing a point can therefore affect income, building placement, defensive planning, reinforcement routes, and the locations where future battles occur.</p>
+
+<table class="data-table">
+  <thead><tr><th>Economic element</th><th>Confirmed role</th><th>Unknown before launch</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Resource Points</strong></td><td>Captured, controlled, and upgraded to support map-wide economy</td><td>Income, capture time, upgrade levels, and exact point types</td></tr>
+    <tr><td><strong>Power</strong></td><td>Supports stronger units, research, and upgrades</td><td>Generator rules, rates, prices, and faction modifiers</td></tr>
+    <tr><td><strong>Dominion</strong></td><td>Necron resource generated as the Power Matrix grows</td><td>Rate, cap, spending categories, and conversion rules</td></tr>
+    <tr><td><strong>Requisition</strong></td><td>Confirmed currency in Crusade’s strategic layer</td><td>Whether the same name and rules define standard multiplayer income</td></tr>
+    <tr><td><strong>Influence</strong></td><td>Needed alongside Power to reach stronger battlefield options</td><td>Acquisition, thresholds, interface, and exact terminology at launch</td></tr>
+  </tbody>
+</table>
+
+<h2 id="power-resource">What Power is used for</h2>
+<p>The in-engine trailer breakdown says stronger units require more Power and influence before they can be fielded. Building construction, research, and structure upgrades unlock those units, so Power sits inside the larger technology path rather than operating as a separate score. A player who controls territory but spends poorly may still reach important options later than an efficient opponent.</p>
+<p>Space Marines provide the clearest official example of Power dependence. Their elite units are expensive, and the official counter-strategy explicitly tells opponents to deny their Resource Points, especially Power. This supports a practical conclusion without inventing numbers: attacking Power access can delay or constrain an elite army even when direct combat trades are difficult.</p>
+
+<h2 id="faction-economies">How faction economies change map control</h2>
+<p>All four factions need territory and production, but each turns map control into strength differently. The systems below are confirmed descriptions, not claims that the economies have identical efficiency or fixed competitive rankings.</p>
+
+<h3>Space Marines: expensive force, selective coverage</h3>
+<p>Space Marines field powerful individual squads but cannot cover every location. Fortifications can secure points while Reserves and the Thunderhawk Relay move troops toward pressure. Their replacement costs and Power needs reward preserving upgraded units instead of treating squads as disposable. Read the <a href="/blog/dawn-of-war-4-space-marines-faction-guide">Space Marines guide</a> for the complete faction context.</p>
+
+<h3>Orks: expansion through pressure</h3>
+<p>Orks can build relatively cheap armed structures through almost any infantry unit. Spreading bases moves production closer to captured territory and lets aggression support further aggression. The trade-off is exposure: official guidance says Ork buildings are relatively easy to destroy, so opponents can reduce their map presence without defeating the entire army in one engagement.</p>
+
+<h3>Necrons: Dominion and the Power Matrix</h3>
+<p>The July Necron deep dive names Dominion as a resource generated by the Power Matrix. Many Necron buildings require the Matrix for placement and extend it after construction. A larger field produces more Dominion and strengthens friendly units fighting on it, so economic growth, buildable territory, healing, durability, and battlefield control reinforce one another.</p>
+<p>This snowball has spatial counterplay. Opponents are advised to fight Necrons outside the Matrix and strike vulnerable positions elsewhere. Necrons can answer distance later through Tomb Pylons, Translocation Science, and the Monolith. Our <a href="/blog/dawn-of-war-4-necrons-faction-guide">Necrons guide</a> records those confirmed mobility tools.</p>
+
+<h3>Adeptus Mechanicus: Noosphere connections</h3>
+<p>Adeptus Mechanicus buildings form a Noosphere Network linked to headquarters. The network unlocks technology and grants economic and combat boons within its reach. Expanding toward key Resource Points strengthens access, while the opponent can target Cogitator Relays in important positions to weaken the network. Map control is therefore valuable only while the connections survive.</p>
+
+<h2 id="combat-spending">How combat can drain the economy</h2>
+<p>On-field reinforcement makes resource management visible during a fight. Players can commit resources to replace squad members and extend a unit’s useful time at the front. According to the multiplayer AMA, auto-reinforced units become noticeably harder to eliminate, but using the setting across many squads can drain resources rapidly. Winning one engagement can still weaken the wider war if spending prevents production, technology, or expansion.</p>
+<p>Retreat creates the opposite option: give up local control to preserve the unit and reduce replacement pressure. Cover can also reduce damage before reinforcement is needed, although Necrons do not use cover and have their own variant of on-field reinforcement. The <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">preservation mechanics guide</a> explains these systems in detail.</p>
+
+<h2>Map control in each multiplayer objective</h2>
+<p>Economy is not the only reason to hold territory. Domination awards Victory Points for controlling more Strategic Positions than the opponent. Maelstrom creates changing objectives across the map, and Annihilation requires destroying enemy headquarters while protecting your own. The value of a location therefore depends on both its resources and the selected win condition.</p>
+<ul>
+  <li><strong>Annihilation:</strong> resources support the force and technology needed to attack or defend headquarters.</li>
+  <li><strong>Domination:</strong> control of Strategic Positions directly drives the victory score.</li>
+  <li><strong>Maelstrom:</strong> mobility and flexible territory coverage help answer objectives that appear dynamically.</li>
+</ul>
+<p>See the <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a> for the confirmed objective rules and the <a href="/blog/dawn-of-war-4-base-building-guide">base building guide</a> for how structures support that territory.</p>
+
+<h2>A pre-launch economic decision framework</h2>
+<ol>
+  <li><strong>Identify the current win condition.</strong> A valuable location must help the actual objective.</li>
+  <li><strong>Protect essential Power access.</strong> Stronger units and technology depend on it.</li>
+  <li><strong>Count reinforcement as spending.</strong> Auto-reinforce is not free durability.</li>
+  <li><strong>Preserve upgraded units when practical.</strong> Retreat can protect previous economic investment.</li>
+  <li><strong>Attack the opponent’s system, not only the point.</strong> Noosphere links and the Power Matrix create faction-specific vulnerabilities.</li>
+  <li><strong>Avoid unsupported timings.</strong> Reassess priorities after official rates and prices are available.</li>
+</ol>
+
+<h2 id="resource-tba">What remains unconfirmed</h2>
+<ul>
+  <li>The complete standard multiplayer resource list and interface.</li>
+  <li>Starting resources, income rates, storage caps, generators, and upkeep.</li>
+  <li>Capture, neutralization, upgrade, and recapture times for Resource Points.</li>
+  <li>Prices for units, buildings, research, Commanders, reinforcement, and repairs.</li>
+  <li>Dominion generation rates and every Power Matrix bonus.</li>
+  <li>Faction modifiers, team-game sharing, comeback mechanics, and map-specific point layouts.</li>
+</ul>
+<p>Dawn of War 4 resources matter because they connect the base, army, territory, and active battles. The official material already supports sound principles—control and upgrade points, protect access to Power, treat reinforcement as a real cost, and attack faction networks intelligently. Exact build orders and economic benchmarks must wait for launch data.</p>
+`,
+  },
 ];
 
 export function getBlogPost(slug: string) {

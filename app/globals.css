@@ -992,6 +992,11 @@ button:focus-visible {
   padding-block: 60px;
 }
 
+.dossier-body > *,
+.standards-layout > * {
+  min-width: 0;
+}
+
 .dossier-summary,
 .standards-nav {
   padding: 32px;
