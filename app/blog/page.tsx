@@ -14,7 +14,9 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndexPage() {
-  const publishedPosts = blogPosts.filter((post) => post.indexable !== false);
+  const publishedPosts = blogPosts
+    .filter((post) => post.indexable !== false)
+    .toSorted((a, b) => b.datePublished.localeCompare(a.datePublished));
 
   return (
     <>

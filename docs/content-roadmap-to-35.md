@@ -1,23 +1,24 @@
 # Kronus Archive Content Roadmap to 35 Indexable Articles
 
-Updated: 2026-08-07
+Updated: 2026-08-12
 
 ## Objective
 
-Grow Kronus Archive from 17 currently indexable, source-checked articles to 35 indexable articles without publishing unverified gameplay numbers. Every pre-launch article must rely on a first-party Deep Silver, KING Art Games, Steam, or Games Workshop source. Hands-on claims remain reserved for launch-week testing.
+Grow Kronus Archive from 18 currently indexable, source-checked articles to 35 indexable articles without publishing unverified gameplay numbers. Every pre-launch article must rely on a first-party Deep Silver, KING Art Games, Steam, or Games Workshop source. Hands-on claims remain reserved for launch-week testing.
 
 ## Publishing rules
 
 - One primary search intent and one primary keyword per page.
 - Cite at least two first-party sources when two are available.
-- Mark every unsupported detail as TBA; never infer costs, percentages, timers, player limits, or build orders.
+- Answer useful pre-launch questions with a labeled estimate when comparable games, series precedent, or multiple credible reports provide a defensible basis. State the comparison, confidence level, and what could change.
+- Never present inferred costs, percentages, timers, player limits, or build orders as confirmed. Exact tactical numbers require official data or repeatable testing.
 - Add three or four visible FAQs, matching FAQ JSON-LD, and two to five contextual internal links.
 - Keep SEO titles near 50–60 characters including the brand suffix.
 - Keep meta descriptions near 150–160 characters.
 - Publish in batches of two to four, then validate sitemap, canonical, schema, lint, build, and layout.
 - Restore an archived URL only after its article has been fully rewritten and rechecked.
 
-## Existing indexable foundation (17)
+## Existing indexable foundation (18)
 
 1. Dawn of War 4 System Requirements
 2. Dawn of War 4 Release Date & Editions
@@ -36,6 +37,7 @@ Grow Kronus Archive from 17 currently indexable, source-checked articles to 35 i
 15. Dawn of War 4 Commanders Explained
 16. Dawn of War 4 Base Building Guide
 17. Dawn of War 4 Resources & Map Control Guide
+18. Dawn of War 4 Voice Cast & Characters
 
 ## Archived pending rewrite (1)
 
@@ -63,7 +65,7 @@ Target indexable total after Batch 1: 14.
 | 7 | Dawn of War 4 Base Building Guide | Dawn of War 4 base building | Completed with a source-backed comparison of four structure systems |
 | 8 | Dawn of War 4 Resource Points Guide | Dawn of War 4 resources | Completed with Resource Points, Power, Dominion, reinforcement, and map control |
 
-Current indexable total during Batch 2: 17. Target after the remaining Veterancy guide: 18.
+Current indexable total: 18. The Voice Cast page was added as a freshness-led story query after Deep Silver's August 5 announcement. Target after the remaining Veterancy guide: 19.
 
 ## Batch 3 — multiplayer search cluster (+4)
 

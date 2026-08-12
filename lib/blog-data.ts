@@ -20,98 +20,108 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-system-requirements-speculations",
-    title: "Dawn of War 4 System Requirements: What Is Confirmed?",
+    title: "Dawn of War 4 System Requirements: Estimated PC Specs",
     seoTitle: "Dawn of War 4 PC Requirements",
     shortTitle: "Dawn of War 4 System Requirements",
-    excerpt: "See the confirmed Dawn of War 4 PC requirements, what remains unannounced, and how to prepare without relying on invented CPU, GPU, RAM, or storage specs.",
+    excerpt: "See our estimated Dawn of War 4 PC requirements, built from Iron Harvest, Company of Heroes 3, and Tempest Rising, plus practical upgrade advice.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Tech Desk",
     category: "System Specs",
-    readTime: "4 min read",
+    readTime: "8 min read",
     keywords: ["Dawn of War 4 system requirements", "Dawn of War IV PC specs", "Dawn of War 4 hardware"],
-    officialStatus: "Official specs: not yet announced",
+    officialStatus: "Editorial estimate — official specs not yet announced",
     sources: [
       { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
       { label: "Dawn of War IV official FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+      { label: "Iron Harvest system requirements", publisher: "Steam", href: "https://store.steampowered.com/app/826630/Iron_Harvest/" },
+      { label: "Company of Heroes 3 system requirements", publisher: "Steam", href: "https://store.steampowered.com/app/1677280/Company_of_Heroes_3/" },
+      { label: "Tempest Rising PC system requirements", publisher: "Saber Support", href: "https://support.saber.games/hc/en/tempest-rising/articles/pc-system-requirements-2" },
     ],
     faqs: [
-      { question: "Are the Dawn of War 4 system requirements official?", answer: "Not yet. Steam currently confirms only that a 64-bit processor and operating system are required; detailed minimum and recommended specifications remain unannounced." },
-      { question: "Will Dawn of War 4 require Windows?", answer: "Yes. Deep Silver lists the game for Windows PC through Steam, but the supported Windows version has not yet been specified." },
-      { question: "Should I upgrade my PC before launch?", answer: "Wait for the official specifications unless your PC already needs a general upgrade. Any specific CPU, GPU, RAM, or storage target published before then is an estimate." },
+      { question: "What are the estimated Dawn of War 4 system requirements?", answer: "Our working minimum is a Ryzen 5 1600 or Core i5-8600, GTX 1060 6GB or RX 580 8GB, 8 GB RAM, and roughly 60 GB of SSD space. For 1080p high settings, we would target a Ryzen 5 5600X or Core i5-11600K, RTX 3060 Ti or RX 6700 XT, and 16 GB RAM. These are estimates, not official requirements." },
+      { question: "Are the Dawn of War 4 system requirements official?", answer: "No. Steam currently confirms only a 64-bit processor and operating system. The named hardware on this page is an editorial estimate based on comparable RTS games and may change when Deep Silver publishes final specifications." },
+      { question: "Will Dawn of War 4 require Windows 11?", answer: "Probably not. Comparable modern RTS games support 64-bit Windows 10 and Windows 11, so Windows 10 is our medium-confidence minimum estimate. Deep Silver has not yet confirmed the exact version." },
+      { question: "Should I upgrade my PC before launch?", answer: "A system near the estimated recommended tier should be a sensible target for modern 1080p RTS gaming, but avoid buying a new GPU solely for Dawn of War 4 until official performance targets appear. An SSD and 16 GB RAM are lower-risk upgrades." },
     ],
     contentHtml: `
-<div class="official-notice-box">
-  <strong>Current official status:</strong> Steam confirms only a 64-bit processor and operating system. Every named CPU, GPU, memory, storage, OS-version, and performance target remains unannounced.
-</div>
+<div class="official-notice-box"><strong>Best current estimate:</strong> plan around a Core i5-8600 or Ryzen 5 1600, GTX 1060 6GB or RX 580 8GB, 8 GB RAM, and about 60 GB of SSD space as a likely minimum. For a safer 1080p high-settings target, aim for a Core i5-11600K or Ryzen 5 5600X, RTX 3060 Ti or RX 6700 XT, and 16 GB RAM. <strong>Confidence: medium-low.</strong> These are editorial estimates, not requirements published by Deep Silver.</div>
 
-<h2>1. Official vs. Estimated Hardware Baseline</h2>
-<p>
-  <em>Warhammer 40,000: Dawn of War IV</em> is confirmed for Windows PC through Steam. The store page currently says <em>"Coming soon"</em> for the minimum OS and provides no detailed recommended specification. The estimates below are intentionally left blank until official figures are published.
-</p>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#estimated-specs">estimated specs</a> · <a href="#comparison-method">comparison games</a> · <a href="#upgrade-advice">upgrade advice</a> · <a href="#estimate-limits">uncertainty</a></nav>
+
+<h2 id="estimated-specs">Estimated Dawn of War 4 PC requirements</h2>
+<p><em>Warhammer 40,000: Dawn of War IV</em> is confirmed for Windows PC through Steam. As checked on August 12, Steam still lists only a 64-bit processor and operating system; the minimum OS says “Coming soon.” The table therefore gives a practical planning range inferred from three relevant RTS references rather than leaving readers without an answer.</p>
 
 <table class="data-table">
   <thead>
     <tr>
       <th>Hardware Component</th>
-      <th>Official Status</th>
-      <th>Estimated Minimum (1080p / 30 FPS)</th>
-      <th>Estimated Recommended (1080p / 60 FPS High)</th>
+      <th>Official status</th>
+      <th>Our estimated minimum</th>
+      <th>Our safer 1080p target</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Operating System</strong></td>
-      <td>64-bit OS required; Windows version TBA</td>
-      <td>Not announced</td>
-      <td>Not announced</td>
+      <td>64-bit OS required</td>
+      <td>Windows 10 64-bit</td>
+      <td>Windows 10 or 11 64-bit</td>
     </tr>
     <tr>
       <td><strong>Processor (CPU)</strong></td>
-      <td>64-bit Processor Required (Confirmed)</td>
-      <td>Not announced</td>
-      <td>Not announced</td>
+      <td>64-bit processor required</td>
+      <td>Core i5-8600 / Ryzen 5 1600</td>
+      <td>Core i5-11600K / Ryzen 5 5600X</td>
     </tr>
     <tr>
       <td><strong>Memory (RAM)</strong></td>
-      <td>TBA by Publisher</td>
       <td>Not announced</td>
-      <td>Not announced</td>
+      <td>8 GB</td>
+      <td>16 GB</td>
     </tr>
     <tr>
       <td><strong>Graphics Card (GPU)</strong></td>
-      <td>TBA by Publisher</td>
       <td>Not announced</td>
-      <td>Not announced</td>
+      <td>GTX 1060 6GB / RX 580 8GB</td>
+      <td>RTX 3060 Ti / RX 6700 XT-class</td>
     </tr>
     <tr>
       <td><strong>Storage</strong></td>
-      <td>TBA by Publisher</td>
       <td>Not announced</td>
-      <td>Not announced</td>
+      <td>60 GB available; SSD recommended</td>
+      <td>60–80 GB available on SSD</td>
     </tr>
   </tbody>
 </table>
 
-<h2>2. What Official Material Shows — and What It Does Not Prove</h2>
-<p>
-  Official material shows large armies, base building, cover, and mechanically distinct factions such as the <a href="/factions/orks">Orks</a> and <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus</a>. It does not confirm a proprietary engine, a player-count ceiling, or how the game distributes work across CPU cores.
-</p>
-<ul>
-  <li><strong>CPU:</strong> No model, core count, or clock-speed target is official.</li>
-  <li><strong>GPU and VRAM:</strong> No graphics card, VRAM figure, preset, resolution, or frame-rate target is official.</li>
-  <li><strong>Storage:</strong> No capacity or SSD requirement is official.</li>
-</ul>
+<p>The “minimum” column should be read as a plausible low-settings entry point, not a promise of 1080p/60 FPS. The safer target deliberately leaves headroom for large battles, effects, later campaign missions, and multiplayer maps.</p>
 
-<h2>3. Should You Upgrade Before Launch?</h2>
-<p>
-  For most players, the safest choice is to wait for the official table. Upgrading against guessed requirements can mean spending money in the wrong area. Wishlist the game on Steam and compare your PC only after minimum and recommended targets are published.
-</p>
-<ol>
-  <li><strong>Wait for official minimum and recommended specs.</strong></li>
-  <li><strong>Check whether the official targets name a resolution and frame rate.</strong></li>
-  <li><strong>Treat all pre-release hardware calculators as estimates, not requirements.</strong></li>
-</ol>
+<h2 id="comparison-method">How we produced the estimate</h2>
+<p>We used games that overlap with Dawn of War IV in developer history, genre, battlefield scale, or release period. None is a perfect benchmark, so the estimate weights the newer, more demanding reference more heavily.</p>
+<table class="data-table">
+  <thead><tr><th>Reference game</th><th>Why it is relevant</th><th>Minimum</th><th>Recommended</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Iron Harvest</strong></td><td>Previous large-scale RTS from KING Art Games</td><td>i5-4460, GTX 960 4GB, 8 GB RAM</td><td>i7-8700K, RTX 2060, 16 GB RAM</td></tr>
+    <tr><td><strong>Company of Heroes 3</strong></td><td>Modern squad RTS with cover, destruction, and large tactical battles</td><td>6th-gen 4-core i5, GTX 950, 8 GB RAM</td><td>8th-gen 8-core i7, GTX 1660, 16 GB RAM</td></tr>
+    <tr><td><strong>Tempest Rising</strong></td><td>Recent cinematic base-building RTS with armies and modern effects</td><td>i5-8600, GTX 1060/RX 580, 8 GB RAM</td><td>i5-11600K, RTX 3060 Ti, 16 GB RAM</td></tr>
+  </tbody>
+</table>
+<p>Our estimate begins near Tempest Rising because Dawn of War IV launches in 2026 and advertises large armies, detailed Sync Kills, base construction, four asymmetric factions, and a campaign exceeding 70 missions. We do not assume identical engines or optimization; the comparison only provides a defensible planning band.</p>
+
+<h2 id="upgrade-advice">Can your PC probably run Dawn of War 4?</h2>
+<ul>
+  <li><strong>GTX 1060 / RX 580 with 8 GB RAM:</strong> likely in minimum territory. Expect compromises and wait for official targets before buying the game for this PC.</li>
+  <li><strong>GTX 1660 Super / RTX 2060 with 16 GB RAM:</strong> likely playable at 1080p with adjusted settings, but large-battle performance is uncertain.</li>
+  <li><strong>RTX 3060 Ti / RX 6700 XT with a Ryzen 5 5600X-class CPU:</strong> our current safer 1080p target.</li>
+  <li><strong>Integrated graphics:</strong> possible only if official optimization is unusually broad; do not plan around it yet.</li>
+  <li><strong>Steam Deck:</strong> no verified compatibility or performance target has been announced.</li>
+</ul>
+<p>RTS performance can become CPU-limited when unit counts, pathfinding, AI, and simulation load increase. A newer six-core processor may matter as much as moving one GPU tier higher. An SSD and 16 GB RAM are relatively safe general upgrades; buying a high-end graphics card solely for this game is harder to justify before official testing.</p>
+
+<h2 id="estimate-limits">What could make this estimate wrong?</h2>
+<p>The final engine, graphics presets, resolution targets, upscaling support, campaign scale, and optimization are unknown. Official “minimum” labels also vary: one publisher may target 720p/30 FPS while another expects 1080p. Our confidence is therefore <strong>medium-low</strong> for individual parts but <strong>medium</strong> for the broader conclusion that 16 GB RAM, an SSD, and an RTX 2060-to-3060-class GPU form a sensible pre-launch planning range.</p>
+<p>When Deep Silver publishes the real table, this article will replace estimated rows with official specifications while retaining the comparison for context.</p>
 `,
   },
   {
@@ -405,52 +415,87 @@ export const blogPosts: BlogPost[] = [
     title: "Dawn of War 4 Necrons Guide: Power Matrix & Strategy",
     seoTitle: "Dawn of War 4 Necrons Faction Guide",
     shortTitle: "Necrons Faction Guide",
-    excerpt: "Learn how Dawn of War 4's Necrons use the Power Matrix, Tomb Pylon teleportation, on-field reinforcement, and a slow, relentless advance.",
+    excerpt: "Learn how Dawn of War 4 Necrons use the Tomb Citadel, Power Matrix, Dominion, Resurrection Galleries, teleportation, and two confirmed Commanders.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
-    readTime: "7 min read",
+    readTime: "10 min read",
     keywords: ["Dawn of War 4 Necrons guide", "Dawn of War 4 Necrons", "Necron Power Matrix Dawn of War 4"],
-    officialStatus: "Based on official faction and developer material",
+    officialStatus: "Updated from the July 29 official faction deep dive",
     sources: [
       { label: "Dawn of War IV official faction overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
       { label: "Necron CGI trailer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/necron-cgi-trailer" },
       { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
       { label: "Battlefield Report: Necrons vs Adeptus Mechanicus", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/battlefield-report-1v1-multiplayer-necrons-vs-adeptus-mechanicus" },
+      { label: "Faction Deep Dive — Necrons", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/faction-deep-dive-necrons" },
     ],
     faqs: [
-      { question: "How do Necrons play in Dawn of War 4?", answer: "Necrons build strength through a slow, relentless advance. Their confirmed systems include the economy-linked Power Matrix, Tomb Pylon teleportation, and on-field reinforcement." },
-      { question: "What is the Necron Power Matrix?", answer: "It is a faction system connected to the Necron economy that empowers units within its influence. Exact bonuses, ranges, and upgrade values remain TBA." },
+      { question: "How do Necrons play in Dawn of War 4?", answer: "Necrons expand slowly and snowball through a Tomb Citadel and Power Matrix. Matrix territory generates Dominion and improves the durability and healing of friendly units, while teleportation tools offset the army's low speed." },
+      { question: "What is the Necron Power Matrix?", answer: "The Power Matrix is a field spread by Necron buildings. Many structures must be placed on it, its size increases Dominion income, and friendly units standing within it become tougher and heal faster." },
       { question: "Do Necrons use cover in Dawn of War 4?", answer: "No. The official faction overview says Necrons do not use cover, making positioning, reinforcement, and Power Matrix control especially important." },
-      { question: "Who leads the Necrons in the campaign?", answer: "Official story material identifies the Chronomancer Thothmek, who awakens after a 60-million-year slumber." },
+      { question: "Can Necrons revive destroyed units?", answer: "Yes. Resurrection Galleries can be assigned a preferred unit type and return a fallen unit of that type for free. The publisher has not yet disclosed cooldowns, limits, or construction costs." },
+      { question: "Who are the Necron Commanders?", answer: "Deep Silver identifies Chronomancer Thothmek and Ahmnok as the two playable Necron Commanders. Their complete abilities, costs, and multiplayer balance values remain unpublished." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Quick answer:</strong> Necrons are designed around a slow, relentless advance. Their confirmed toolkit links economic expansion to a Power Matrix, supports teleportation through the Tomb Pylon, and allows reinforcement on the battlefield. They do not use cover, so maintaining formation and finishing damaged enemies matter.</div>
+<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV Necrons are a slow, resilient snowball faction. Their upgradeable Tomb Citadel produces units, buildings spread a Power Matrix that generates Dominion, Matrix territory improves healing and toughness, and Resurrection Galleries can return selected fallen units for free. Tomb Pylons, Translocation Science, and the Monolith give this otherwise slow army late-game mobility.</div>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#necron-core">core economy</a> · <a href="#necron-survival">healing and resurrection</a> · <a href="#necron-units">confirmed units</a> · <a href="#necron-mobility">teleportation</a> · <a href="#necron-commanders">Commanders</a> · <a href="#necron-tba">what remains unknown</a></nav>
 <h2>Necrons playstyle at a glance</h2>
-<p>The official faction overview presents Necrons as an army that becomes more dangerous as its controlled territory and economy grow. A battlefield report reinforces that identity by showing pressure that escalates over time. This does not yet justify a timed build order, but it does establish the faction's strategic direction: expand the Matrix, preserve the advance, and deny opponents clean opportunities to eliminate isolated units.</p>
+<p>Deep Silver's July 29 faction deep dive resolves several questions that were still open when this guide was first published. The Necron game plan is now officially described as slow, steady expansion that develops into a snowballing threat. Their army does not simply become stronger through conventional technology: base reach, resource generation, territorial durability, resurrection, and teleportation are connected parts of one system.</p>
+<p>This guide is for players comparing factions before the September 17 launch. It explains confirmed rules and the decisions they create, but it does not pretend that final costs, cooldowns, build times, or competitive openings are public.</p>
 <table class="data-table">
   <thead><tr><th>Confirmed system</th><th>Battlefield role</th><th>Evidence boundary</th></tr></thead>
   <tbody>
-    <tr><td><strong>Power Matrix</strong></td><td>Links economic presence with unit empowerment</td><td>Exact bonuses and radius remain TBA</td></tr>
-    <tr><td><strong>Tomb Pylon</strong></td><td>Teleports forces from headquarters</td><td>Costs, cooldowns, and limits remain TBA</td></tr>
-    <tr><td><strong>On-field reinforcement</strong></td><td>Supports a sustained forward army</td><td>Rates and resource costs remain TBA</td></tr>
-    <tr><td><strong>No cover use</strong></td><td>Shifts survival toward formation and faction systems</td><td>Full defensive statistics remain TBA</td></tr>
-    <tr><td><strong>Slow advance</strong></td><td>Builds pressure over time</td><td>Unit speeds and matchup timings remain TBA</td></tr>
+    <tr><td><strong>Tomb Citadel</strong></td><td>Upgradeable centre of operations and unit-production engine</td><td>Upgrade costs and production timings remain unpublished</td></tr>
+    <tr><td><strong>Power Matrix</strong></td><td>Enables many buildings, generates Dominion, and buffs friendly units</td><td>Exact income and combat values remain unpublished</td></tr>
+    <tr><td><strong>Resurrection Galleries</strong></td><td>Return a selected type of fallen unit for free</td><td>Cooldowns, capacity, and exclusions remain unpublished</td></tr>
+    <tr><td><strong>Translocation Science</strong></td><td>Teleports up to five units between visible battlefield locations</td><td>Unlock cost and cooldown remain unpublished</td></tr>
+    <tr><td><strong>Monolith</strong></td><td>Uses its Eternity Gate as an exit for Tomb Citadel reserves</td><td>Tech tier, cost, and reserve rules remain unpublished</td></tr>
   </tbody>
 </table>
-<h2>Power Matrix and economy</h2>
-<p>The Power Matrix is tied to the Necron economy and empowers units. That makes map control more than a source of income: the territory supporting the Matrix also shapes where the army is strongest. Until the interface, values, and structure rules are published, players should treat this as a positioning principle rather than follow made-up layouts or percentage bonuses.</p>
-<h2>Tomb Pylon mobility</h2>
-<p>The Tomb Pylon lets Necrons teleport forces from headquarters. This gives an otherwise methodical army a way to reinforce its advance or respond away from the main base. The official description confirms the capability, but not a safe teleport destination, charge system, cooldown, or production interaction. Those details require hands-on testing.</p>
-<h2>Reinforcement instead of cover</h2>
-<p>Necrons do not use the game's cover system. Their survival instead depends on their own faction mechanics, positioning, and on-field reinforcement. The general <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a> explains how this differs from the other armies.</p>
-<p>When fighting Necrons, the official advice is to focus fire and destroy units outright. Leaving damaged units alive may allow the Necron player to sustain the formation. For the Necron player, the inverse lesson is clear: avoid exposing single units that an opponent can finish before support arrives.</p>
-<h2>Campaign identity</h2>
-<p>The Necron CGI trailer introduces Chronomancer Thothmek, awakened after a 60-million-year slumber. The Necrons are one of the four fully playable factions in the 70-plus-mission campaign and in multiplayer. See our <a href="/blog/dawn-of-war-4-factions-compared">four-faction comparison</a> before choosing a first army.</p>
-<h2>What remains TBA</h2>
-<ul><li>Complete unit, structure, and Commander rosters.</li><li>Power Matrix values, influence radius, and expansion rules.</li><li>Tomb Pylon cost, cooldown, and teleport restrictions.</li><li>Reinforcement costs, reanimation rules, and veterancy interaction.</li><li>Verified openings, counters, and late-game compositions.</li></ul>
+<h2 id="necron-core">Tomb Citadel, Power Matrix, and Dominion</h2>
+<p>The Tomb Citadel is the strategic centre of the Necron base and the production engine for units. As the base expands, Necron buildings spread the Power Matrix. Many buildings can only be constructed on this field, and each new building can extend it farther. This makes construction placement an economic and territorial decision rather than a purely defensive one.</p>
+<p>A larger Matrix generates more Dominion for the war effort. The official preview does not publish a Dominion-per-area formula, so the safe conclusion is qualitative: extending the Matrix supports the economy, but the final game will determine whether every extension is worth its cost and exposure.</p>
+<p>The Matrix also affects combat. Friendly units standing on it heal faster, become tougher, and are more difficult to kill. Necron units already receive out-of-combat healing, so fighting on connected territory layers a positional advantage onto their inherent durability. Opponents have a reason to force battles away from the Matrix or attack the structures spreading it.</p>
+
+<h2 id="necron-survival">Healing, cover, and Resurrection Galleries</h2>
+<p>Necrons do not use conventional cover. Their survival model instead revolves around formation, healing, Matrix territory, and bringing back losses. The publisher confirms that Resurrection Galleries allow the player to select a preferred unit type; when a unit of that type falls, the Gallery can return it for free.</p>
+<p>“Free” describes the returning unit, not the complete system. Building the Gallery may still require resources, and official material has not disclosed its cooldown, capacity, whether several Galleries can target the same type, or which units are excluded. Those details will decide how aggressively players can trade valuable units.</p>
+<p>For opponents, Deep Silver's advice is to focus fire and kill Necron units outright. Damaging several targets without securing a kill gives healing systems more opportunity to erase that damage. For the Necron player, the inverse principle applies: keep the formation connected and withdraw a vulnerable unit before concentrated fire finishes it.</p>
+
+<h2 id="necron-units">Confirmed Necron units and battlefield roles</h2>
+<table class="data-table">
+  <thead><tr><th>Unit</th><th>Confirmed role</th><th>Practical use to verify at launch</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Scarabs</strong></td><td>Cheap, small, relatively fast swarms that can tie up ranged units in melee</td><td>Which ranged squads they can suppress cost-effectively</td></tr>
+    <tr><td><strong>Deathmarks</strong></td><td>Snipers capable of outranging and eliminating Commanders and elite infantry</td><td>Range, detection, accuracy, and target breakpoints</td></tr>
+    <tr><td><strong>Doomstalkers</strong></td><td>Large constructs armed with Doomsday Blasters</td><td>Damage profile, setup behavior, and counters</td></tr>
+    <tr><td><strong>Canoptek Spyders</strong></td><td>Construct Tomb Pylons anywhere on the map</td><td>Build restrictions, vulnerability, and expansion timing</td></tr>
+    <tr><td><strong>Monolith</strong></td><td>Heavy machine and reserve exit point through its Eternity Gate</td><td>Tech timing and whether teleporting it creates viable flanks</td></tr>
+  </tbody>
+</table>
+<p>Scarabs are especially important to the faction's tempo. They give a mostly slow roster a low-cost, faster unit that can engage enemy ranged forces in melee, preventing those targets from using their strongest weapons while heavier Necrons close the distance. That role is confirmed; a universal Scarab opening is not.</p>
+
+<h2 id="necron-mobility">Three confirmed teleportation tools</h2>
+<p>The Necrons' low movement speed has deliberate counterplay, but it does not leave them immobile in the late game. Deep Silver has now confirmed three distinct movement systems:</p>
+<ol>
+  <li><strong>Tomb Pylons:</strong> Canoptek Spyders build them anywhere on the map. Each creates a new patch of Power Matrix and becomes a translocation target for units entering the Tomb Citadel.</li>
+  <li><strong>Translocation Science:</strong> this unlockable Stratagem teleports up to <strong>five units</strong> from anywhere on the battlefield to any other visible location.</li>
+  <li><strong>Monolith Eternity Gate:</strong> units placed in reserve at the Tomb Citadel can exit through a deployed Monolith, even after the vehicle moves behind enemy lines.</li>
+</ol>
+<p>These systems solve different problems. A Tomb Pylon establishes infrastructure, Translocation Science provides a limited group relocation, and the Monolith creates a mobile reserve exit. Their costs and cooldowns will determine whether they are emergency responses, planned attacks, or both.</p>
+
+<h2 id="necron-commanders">Thothmek and Ahmnok</h2>
+<p>The deep dive confirms two playable Necron Commanders. Chronomancer Thothmek uses chronomantic powers to manipulate time, empower his legions, and disrupt enemies. Ahmnok is positioned as the more direct alternative, favoring close violence over Thothmek's remote battlefield manipulation.</p>
+<p>The contrast establishes two playstyle identities, but it does not reveal complete ability trees, Wargear, prices, or competitive roles. Our <a href="/blog/dawn-of-war-4-commanders-guide">Dawn of War 4 Commanders guide</a> explains how pre-match selection and headquarters production work across factions.</p>
+
+<h2>Campaign premise</h2>
+<p>Kronus is a dormant tomb world, and the Necrons return after receiving a mysterious signal from the planet. Thothmek wants to claim the source of that power for his dynasty's wider war effort. This story sits inside one of four faction campaigns that feed into Dawn of War IV's overarching narrative.</p>
+
+<h2 id="necron-tba">What remains unconfirmed before launch</h2>
+<ul><li>The complete unit, structure, research, and multiplayer Commander rosters.</li><li>Tomb Citadel upgrade costs, production times, and technology tiers.</li><li>Dominion income rates and exact Matrix healing or toughness bonuses.</li><li>Resurrection Gallery cooldowns, limits, targeting rules, and exclusions.</li><li>Teleportation costs, cooldowns, visibility rules, and counterplay.</li><li>Verified openings, matchups, counters, and late-game compositions.</li></ul>
 <div class="recommendation-box"><h3>Who should choose Necrons?</h3><ul><li>Players who enjoy methodical pressure rather than constant early mobility.</li><li>Players who want territory and economy to reinforce battlefield strength.</li><li>Players comfortable protecting a formation while it advances.</li></ul></div>
+<p>For a side-by-side view of every army, read the <a href="/blog/dawn-of-war-4-factions-compared">four-faction comparison</a>. For shared preservation rules, see the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a>.</p>
 `,
   },
   {
@@ -539,30 +584,31 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Last Stand Mode Explained",
     excerpt: "Learn what is confirmed about Dawn of War 4's returning Last Stand mode: escalating enemy waves, co-op, progression, skills, and equipment.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
-    readTime: "6 min read",
+    readTime: "7 min read",
     keywords: ["Dawn of War 4 Last Stand", "Dawn of War 4 Last Stand mode", "Dawn of War 4 co-op"],
-    officialStatus: "Based on official mode and roadmap announcements",
+    officialStatus: "Confirmed mode; party size is an editorial estimate",
     sources: [
       { label: "What we're building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
       { label: "Release date, pre-order and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
+      { label: "Dawn of War II: The Last Stand reference", publisher: "Dawn of War Wiki", href: "https://dawnofwar2.wiki.gg/wiki/The_Last_Stand" },
     ],
     faqs: [
       { question: "Is Last Stand returning in Dawn of War 4?", answer: "Yes. Deep Silver has officially confirmed that Last Stand returns as a horde-like mode built around increasingly deadly waves." },
-      { question: "Does Dawn of War 4 Last Stand support co-op?", answer: "Yes. Official material identifies Last Stand among the modes with co-op support, though the final player limit has not been published in the cited announcements." },
+      { question: "How many players are in Dawn of War 4 Last Stand?", answer: "Three players is our best current estimate because the original Dawn of War II Last Stand used a three-hero team. Dawn of War 4 co-op is confirmed, but Deep Silver has not yet published its final Last Stand party size." },
       { question: "Does Last Stand have progression?", answer: "Yes. Players can level up characters and unlock skills and equipment. Exact progression trees, unlock rates, and launch equipment remain TBA." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Quick answer:</strong> Last Stand returns in <em>Dawn of War IV</em> as a horde-like mode with increasingly deadly enemy waves. It supports cooperative play and includes character levels, skills, and equipment. Hero rosters, player limits, wave counts, and detailed progression values remain TBA.</div>
+<div class="official-notice-box"><strong>Quick answer:</strong> Last Stand returns in <em>Dawn of War IV</em> as a co-op horde mode with increasingly deadly waves, character levels, skills, and equipment. <strong>Our best party-size estimate is three players</strong>, matching Dawn of War II's established three-hero format, but Deep Silver has not confirmed that number for Dawn of War IV.</div>
 <h2>What is Last Stand?</h2>
 <p>Last Stand is a survival-focused alternative to the game's army-scale campaign and competitive multiplayer. The official description centers on enduring waves that become progressively more dangerous. Rather than inventing a fixed wave count or boss schedule before release, this guide tracks the structure that Deep Silver and KING Art Games have actually announced.</p>
 <table class="data-table">
   <thead><tr><th>Feature</th><th>Official status</th><th>What remains TBA</th></tr></thead>
   <tbody>
     <tr><td><strong>Escalating waves</strong></td><td>Confirmed</td><td>Total waves, enemy tables, and boss timing</td></tr>
-    <tr><td><strong>Co-op support</strong></td><td>Confirmed</td><td>Final party size and matchmaking details</td></tr>
+    <tr><td><strong>Co-op support</strong></td><td>Confirmed</td><td>Three players estimated; final party size unconfirmed</td></tr>
     <tr><td><strong>Character levels</strong></td><td>Confirmed</td><td>Level cap and experience requirements</td></tr>
     <tr><td><strong>Skills and equipment</strong></td><td>Confirmed</td><td>Complete unlock lists, statistics, and builds</td></tr>
     <tr><td><strong>Post-launch scenarios</strong></td><td>Confirmed on the Year One roadmap</td><td>Scenario dates and objectives</td></tr>
@@ -570,6 +616,9 @@ export const blogPosts: BlogPost[] = [
 </table>
 <h2>Progression between runs</h2>
 <p>Official material says players level up characters and unlock skills and equipment. That creates a persistent progression layer, but the publisher has not yet shown enough data for a trustworthy leveling route or equipment tier list. Claims about optimal loadouts should wait until the launch build can be tested repeatedly.</p>
+<h2>Our best player-count estimate</h2>
+<p>Dawn of War II's Last Stand was built for three players, each controlling one hero against escalating waves. Because Dawn of War IV explicitly revives that named mode and again emphasizes characters, skills, and equipment, a three-player team is the strongest working assumption. We rate this estimate <strong>medium confidence</strong>: the historical format is directly relevant, but KING Art Games could expand or redesign the lobby.</p>
+<p>Players planning a group should provisionally expect a trio, while avoiding purchases or schedules that depend on the number until Deep Silver confirms it. A two-player fallback or larger custom lobby remains possible.</p>
 <h2>How Last Stand fits the wider game</h2>
 <p>The mode complements the story campaign, <a href="/blog/dawn-of-war-4-crusade-mode-guide">Crusade</a>, Skirmish, and competitive formats covered in our <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">modes guide</a>. Players who prefer small-team survival and character progression may find Last Stand more approachable than managing a full base and army.</p>
 <h2>Year One support</h2>
@@ -589,7 +638,7 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Dawn of War 4 Multiplayer Modes Explained",
     excerpt: "See every confirmed Dawn of War 4 multiplayer mode, including Annihilation, Domination, Maelstrom, campaign co-op, Skirmish, and Last Stand.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
     readTime: "7 min read",
@@ -598,16 +647,17 @@ export const blogPosts: BlogPost[] = [
     sources: [
       { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
       { label: "Dawn of War IV official overview and FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+      { label: "Dawn of War IV gameplay preview", publisher: "GamesRadar+", href: "https://www.gamesradar.com/games/real-time-strategy/dawn-of-war-4-has-its-sights-set-on-gameplay-that-feels-authentic-to-the-fantasy-of-each-faction-in-warhammer-40k-and-it-already-looks-like-my-most-wanted-rts-of-2026/" },
     ],
     faqs: [
       { question: "What multiplayer modes are confirmed for Dawn of War 4?", answer: "Quick Match supports Annihilation, Domination, and Maelstrom. The official site also confirms competitive multiplayer, Skirmish, Last Stand, and campaign co-op." },
       { question: "Does Dawn of War 4 have co-op?", answer: "Yes. The 70-plus-mission campaign supports solo or two-player co-op, and official material says several other modes support cooperative play." },
-      { question: "Does Dawn of War 4 have 4v4 multiplayer?", answer: "The developer has discussed team games but has not published a final player-cap table confirming 4v4. This guide will update when that information is official." },
+      { question: "Does Dawn of War 4 have 4v4 multiplayer?", answer: "Probably not at launch. Public previews consistently describe 1v1, 2v2, and 3v3 battles, making 3v3 the strongest current ceiling estimate. A 4v4 mode has not been confirmed." },
     ],
     contentHtml: `
 <h2>1. Overview of Game Modes & Player Capacities</h2>
 <p>
-  <em>Warhammer 40,000: Dawn of War IV</em> includes modes for solo narrative players, cooperative commanders, and competitive multiplayer players. Where the developer has not published player limits or detailed rules, this guide marks them as unannounced.
+  <em>Warhammer 40,000: Dawn of War IV</em> includes modes for solo narrative players, cooperative commanders, and competitive multiplayer players. Campaign capacity is official. For other modes, the table combines confirmed formats with clearly labeled estimates from public previews and series precedent.
 </p>
 
 <table class="data-table">
@@ -628,26 +678,27 @@ export const blogPosts: BlogPost[] = [
     </tr>
     <tr>
       <td><strong>Annihilation Mode</strong></td>
-      <td>Quick Match; final team-size limits not published</td>
+      <td>Likely 1v1, 2v2, and 3v3; 3v3 estimated ceiling</td>
       <td>Destroy all enemy headquarters &amp; production bases</td>
       <td>Hardcore RTS purists</td>
     </tr>
     <tr>
       <td><strong>Domination Mode</strong></td>
-      <td>Quick Match; final team-size limits not published</td>
+      <td>Likely 1v1, 2v2, and 3v3; 3v3 estimated ceiling</td>
       <td>Capture &amp; hold Strategic Victory Points for score</td>
       <td>Objective-focused multiplayer players</td>
     </tr>
-    <tr><td><strong>Maelstrom</strong></td><td>Quick Match; final team-size limits not published</td><td>Secure dynamically appearing objectives for Victory Points</td><td>Players who prefer shifting objectives</td></tr>
-    <tr><td><strong>Last Stand</strong></td><td>Co-op support confirmed; capacity TBA</td><td>Returning mode; detailed rules still to be showcased</td><td>Co-op and hero-mode fans</td></tr>
+    <tr><td><strong>Maelstrom</strong></td><td>Likely 1v1, 2v2, and 3v3; 3v3 estimated ceiling</td><td>Secure dynamically appearing objectives for Victory Points</td><td>Players who prefer shifting objectives</td></tr>
+    <tr><td><strong>Last Stand</strong></td><td>Co-op confirmed; 3-player party estimated</td><td>Survive escalating waves and progress characters</td><td>Co-op and hero-mode fans</td></tr>
     <tr>
       <td><strong>Skirmish Mode</strong></td>
-      <td>Player capacity TBA</td>
+      <td>Likely supports the same maps up to 3v3; unconfirmed</td>
       <td>Offline/custom rules not yet fully detailed</td>
       <td>Practice and custom-match players</td>
     </tr>
   </tbody>
 </table>
+<p><strong>Confidence note:</strong> 1v1, 2v2, and 3v3 are repeatedly reported from game previews, while 4v4 has not appeared in the publisher's current mode table. We therefore treat 3v3 as the likely launch ceiling rather than leaving the question unanswered. Last Stand's three-player estimate comes from the original mode's established format.</p>
 
 <h2>2. Campaign Co-op: What Is Confirmed</h2>
 <p>
@@ -1477,6 +1528,106 @@ export const blogPosts: BlogPost[] = [
   <li>Faction modifiers, team-game sharing, comeback mechanics, and map-specific point layouts.</li>
 </ul>
 <p>Dawn of War 4 resources matter because they connect the base, army, territory, and active battles. The official material already supports sound principles—control and upgrade points, protect access to Power, treat reinforcement as a real cost, and attack faction networks intelligently. Exact build orders and economic benchmarks must wait for launch data.</p>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-voice-cast-characters",
+    title: "Dawn of War 4 Voice Cast & Characters",
+    seoTitle: "Dawn of War 4 Voice Cast & Characters",
+    shortTitle: "Dawn of War 4 Voice Cast",
+    excerpt: "See the confirmed Dawn of War 4 voice cast, including Brian Drummond as Gorgutz, Steve Blum as Cyrus, Alistair Petrie as the Lion, and every named role.",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    author: "Kronus Archive Narrative Desk",
+    category: "Campaign & Co-op",
+    readTime: "9 min read",
+    keywords: ["Dawn of War 4 voice cast", "Dawn of War IV actors", "Dawn of War 4 characters"],
+    officialStatus: "Official cast announced August 5, 2026",
+    sources: [
+      { label: "Introducing the cast of Warhammer 40,000: Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/introducing-the-cast-of-warhammer-40-000-dawn-of-war-iv" },
+      { label: "Meet the new faces from the Story Trailer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/meet-the-new-faces-from-our-epic-story-trailer" },
+      { label: "Crafting an epic Dawn of War IV story", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/crafting-an-epic-dawn-of-war-iv-story-fit-for-the-warhammer-40-000-universe" },
+    ],
+    faqs: [
+      { question: "Who voices Gorgutz in Dawn of War 4?", answer: "Brian Drummond returns as Ork Warboss Gorgutz. Deep Silver identifies him as the actor behind the character's established Dawn of War voice." },
+      { question: "Who voices Cyrus in Dawn of War 4?", answer: "Steve Blum voices Cyrus, the Blood Ravens leader who returns to Kronus with Chief Librarian Jonah Orion." },
+      { question: "Is the Lion in Dawn of War 4?", answer: "Yes. Deep Silver's official cast announcement lists Alistair Petrie as the Lion. The publisher has not explained the full extent of the character's role, so story details beyond the casting remain unconfirmed." },
+      { question: "Does Dawn of War 4 have returning voice actors?", answer: "Yes. Brian Drummond returns as Gorgutz, while the announced ensemble also includes veteran Warhammer and game performers. The official article does not state that every returning character keeps a previous actor." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Deep Silver announced the Dawn of War IV voice cast on August 5, 2026. Confirmed performers include Brian Drummond as Gorgutz, Steve Blum as Cyrus, Aaron Neil as Jonah Orion, Alistair Petrie as the Lion, James Alexander as Thothmek, Joshua Manning as Guzcutta, and actors representing the Dark Angels, Adeptus Mechanicus, Orks, and Imperial forces.</div>
+
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#cast-list">complete cast list</a> · <a href="#returning-characters">returning characters</a> · <a href="#new-characters">new characters</a> · <a href="#story-clues">what the casting confirms</a> · <a href="#cast-tba">what remains unknown</a></nav>
+
+<p>This article is for players looking for the confirmed Dawn of War 4 actors and the characters they portray. The table below follows Deep Silver's official announcement rather than fan databases or voice comparisons. Character descriptions use the publisher's story material and avoid revealing roles that have not been explained.</p>
+
+<h2 id="cast-list">Confirmed Dawn of War 4 voice cast</h2>
+<table class="data-table">
+  <thead><tr><th>Actor</th><th>Confirmed role</th><th>Faction or group</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Brian Drummond</strong></td><td>Warboss Gorgutz</td><td>Orks</td></tr>
+    <tr><td><strong>Alex Jordan</strong></td><td>Chaplain Ezrael</td><td>Space Marines</td></tr>
+    <tr><td><strong>Toby Longworth</strong></td><td>Various Space Marines, including the Redemptor Dreadnought</td><td>Space Marines</td></tr>
+    <tr><td><strong>James Alexander</strong></td><td>Chronomancer Thothmek</td><td>Necrons</td></tr>
+    <tr><td><strong>Alistair Petrie</strong></td><td>The Lion</td><td>Dark Angels</td></tr>
+    <tr><td><strong>Steve Blum</strong></td><td>Cyrus</td><td>Blood Ravens</td></tr>
+    <tr><td><strong>Chris Tester</strong></td><td>Ork voices</td><td>Orks</td></tr>
+    <tr><td><strong>Richard Reed</strong></td><td>Marshal Sek-Ix-23</td><td>Adeptus Mechanicus</td></tr>
+    <tr><td><strong>Trev Fleming</strong></td><td>Engram</td><td>Not specified in the cast announcement</td></tr>
+    <tr><td><strong>Joseph Capp</strong></td><td>Buzzsnap</td><td>Not specified in the cast announcement</td></tr>
+    <tr><td><strong>Ben Whitehead</strong></td><td>Magos Dominus Nulpherus-1</td><td>Adeptus Mechanicus</td></tr>
+    <tr><td><strong>Jess Nesling</strong></td><td>Potentia-Delta-9</td><td>Adeptus Mechanicus</td></tr>
+    <tr><td><strong>Joshua Manning</strong></td><td>Beastboss Guzcutta</td><td>Orks</td></tr>
+    <tr><td><strong>Bethan Bixton Bate</strong></td><td>Governor Augusta Vorn</td><td>Imperial government</td></tr>
+    <tr><td><strong>Ashley Zhangazha</strong></td><td>Company Master Astoran</td><td>Dark Angels</td></tr>
+    <tr><td><strong>Aaron Neil</strong></td><td>Chief Librarian Jonah Orion</td><td>Blood Ravens</td></tr>
+  </tbody>
+</table>
+<p>The announcement names 16 performers or role groups. It should not be treated as a guarantee that the list covers every campaign character, multiplayer unit voice, narrator, or localization cast. Deep Silver presents it as an introduction to the ensemble, not final credits.</p>
+
+<h2 id="returning-characters">Returning Dawn of War characters</h2>
+<h3>Brian Drummond as Gorgutz</h3>
+<p>Brian Drummond returns as Warboss Gorgutz, one of the series' most recognizable Ork leaders. Gorgutz appears in the opening story setup as the Ork force that ambushes the Blood Ravens above Kronus. His presence connects the new campaign to earlier Dawn of War conflicts without making the story a direct continuation of every previous plot.</p>
+<p>For players interested in how the character's army works rather than the performance, our <a href="/blog/dawn-of-war-4-orks-faction-guide">Dawn of War 4 Orks guide</a> covers the confirmed Waaagh! system, armed buildings, inexpensive expansion, and Guzcutta's role.</p>
+
+<h3>Steve Blum as Cyrus</h3>
+<p>Steve Blum voices Cyrus, who returns as a leader of the Blood Ravens. The official story material says Cyrus and Chief Librarian Jonah Orion travel to Kronus to recruit new aspirants and rebuild their Chapter. The Ork ambush interrupts that mission and brings both forces to the planet's surface.</p>
+
+<h3>Aaron Neil as Jonah Orion</h3>
+<p>Aaron Neil plays Chief Librarian Jonah Orion. Jonah's presence alongside Cyrus establishes the Blood Ravens leadership at the centre of the returning Chapter's campaign. Deep Silver has not published a mission-by-mission account of his abilities or playable appearances.</p>
+
+<h2 id="new-characters">New and newly identified characters</h2>
+<h3>Alistair Petrie as the Lion</h3>
+<p>The cast announcement officially lists Alistair Petrie as the Lion. This is a major character confirmation for Dark Angels followers, but the casting alone does not establish how many missions feature him, whether he is directly playable, or how his appearance affects the larger Warhammer 40,000 timeline. Those questions should remain open until the publisher reveals more or the campaign launches.</p>
+
+<h3>Dark Angels leadership</h3>
+<p>Alex Jordan voices Chaplain Ezrael, while Ashley Zhangazha voices Company Master Astoran. The Dark Angels make a critical intervention when Imperial forces on Kronus call for aid, and players command both Dark Angels and Blood Ravens during the Space Marines campaign. For the gameplay distinction, see the <a href="/blog/space-marines-dark-angels-sub-faction-differences">Blood Ravens vs Dark Angels guide</a>.</p>
+
+<h3>Adeptus Mechanicus ensemble</h3>
+<p>Richard Reed voices Marshal Sek-Ix-23, Jess Nesling voices Potentia-Delta-9, and Ben Whitehead voices Magos Dominus Nulpherus-1. Their faction has discovered a Necron complex beneath Kronus and initially struggles to identify whether it is a tomb or a prison. The cast establishes all three as story figures, but it does not prove that every named character is a selectable multiplayer Commander.</p>
+<p>The distinction matters because KING Art Games describes competitive Commanders as generic faction units outside the campaign. Our <a href="/blog/dawn-of-war-4-commanders-guide">Commander guide</a> separates named story roles from confirmed multiplayer rules.</p>
+
+<h3>Necrons and Orks</h3>
+<p>James Alexander voices Chronomancer Thothmek, the first confirmed Necron Commander, while the official Necron preview identifies Ahmnok as a second playable Commander. Joshua Manning plays Beastboss Guzcutta, a new Ork rival who begins on foot and later unlocks a Squigosaur mount. Chris Tester supplies additional Ork voices.</p>
+
+<h2 id="story-clues">What the cast list confirms about the story</h2>
+<p>The cast announcement reinforces several source-backed conclusions. The campaign includes returning Blood Ravens leaders, Gorgutz, a Dark Angels intervention, a substantial Adeptus Mechanicus expedition, and a Necron conflict centred on a hidden power beneath Kronus. The Lion's casting also confirms his presence even though the scope of that appearance remains undisclosed.</p>
+<p>Dawn of War IV takes place roughly 200 years after Dawn of War: Dark Crusade. The Great Rift has divided the galaxy and left Kronus—and some Blood Ravens—stranded. KING Art Games and Black Library author John French built four separate faction campaigns that connect to one overarching story. The announced 70-plus missions can be played solo or with one friend.</p>
+<p>Those facts provide context, not a complete plot summary. A character appearing in the cast does not reveal survival, allegiance, mission count, boss status, or multiplayer availability. Treating credits as spoilers would go beyond what Deep Silver has announced.</p>
+
+<h2>Are all of these actors in every language?</h2>
+<p>The announced list describes the English-language cast. Steam currently lists full audio only for English, while 13 languages receive interface and subtitle support. Localization availability can change, so players should verify the language table on Steam before purchase rather than assuming every subtitle language has a separate dub.</p>
+
+<h2 id="cast-tba">What remains unconfirmed</h2>
+<ul>
+  <li>The complete end-credit cast and every minor or multiplayer unit role.</li>
+  <li>Whether every previously known character is voiced by a returning performer.</li>
+  <li>The full narrative role, mission count, and playable status of the Lion.</li>
+  <li>How Engram and Buzzsnap fit into the four faction campaigns.</li>
+  <li>Whether additional full-audio languages will be announced.</li>
+  <li>Performance details that would reveal campaign spoilers.</li>
+</ul>
+<p>The reliable answer is the official roster above: Dawn of War 4 combines returning franchise voices with a large new ensemble. This page will be updated if Deep Silver publishes additional actors or final credits before the September 17 release.</p>
 `,
   },
 ];

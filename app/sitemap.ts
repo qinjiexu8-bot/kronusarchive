@@ -3,7 +3,7 @@ import { blogPosts } from "@/lib/blog-data";
 import { factions, site } from "@/lib/site-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const updated = new Date("2026-08-02T00:00:00Z");
+  const updated = new Date("2026-08-12T00:00:00Z");
   
   const baseRoutes: MetadataRoute.Sitemap = [
     {

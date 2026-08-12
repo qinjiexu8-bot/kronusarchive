@@ -34,7 +34,7 @@ export default function StandardsPage() {
                   Trust Is a Battlefield Asset.
                 </h1>
                 <p style={{ color: "var(--ink-muted)", fontSize: "18px", maxWidth: "680px" }}>
-                  We strictly separate developer-confirmed intelligence, observed video mechanics, and player-tested results so readers always know the exact foundation of every claim.
+                  We separate confirmed facts, observed mechanics, evidence-based estimates, and player-tested results so readers know both the best current answer and the evidence behind it.
                 </p>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function StandardsPage() {
             <p className="kicker">Archive Status</p>
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", margin: "8px 0 16px" }}>Pre-Launch Edition 0.1</h2>
             <p style={{ color: "var(--ink-muted)", fontSize: "14px" }}>
-              The current archive contains first-party confirmed records and clearly identified analysis. Hands-on strategy records begin only after launch verification.
+              The current archive combines first-party records with labeled estimates based on comparable games, series precedent, and observed material. Hands-on results begin after playable access.
             </p>
           </aside>
 
@@ -73,11 +73,12 @@ export default function StandardsPage() {
             <article className="record-block">
               <p className="kicker">02 // Evidence Labels</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", textTransform: "uppercase", margin: "8px 0 16px" }}>
-                Confirmed, Observed, or Tested.
+                Confirmed, Observed, Estimated, or Tested.
               </h2>
               <p style={{ color: "var(--ink-muted)" }}>
                 <strong>“Confirmed”</strong> means a primary source explicitly supports the claim.
                 <strong>“Observed”</strong> means a mechanic is visible in official gameplay footage but lacks published rules.
+                <strong>“Estimated”</strong> means we provide a useful range or likely answer derived from comparable games, series precedent, or several credible reports; the page must name the basis and confidence level.
                 <strong>“Tested”</strong> requires a live game version, repeatable method, and verification date.
               </p>
             </article>
@@ -88,7 +89,7 @@ export default function StandardsPage() {
                 No Fabricated Data.
               </h2>
               <p style={{ color: "var(--ink-muted)" }}>
-                We do not publish “best units”, optimal build orders, or damage values before those claims can be measured in the released game.
+                We do not present estimates as official facts. Before launch, we may publish useful ranges, likely player counts, hardware targets, and provisional recommendations when a defensible comparison exists. Exact damage values and optimal build orders still require observable or repeatable evidence.
               </p>
             </article>
           </div>
