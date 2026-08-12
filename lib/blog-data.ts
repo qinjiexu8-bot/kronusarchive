@@ -131,10 +131,10 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Dawn of War 4 Release Date & Editions",
     excerpt: "Dawn of War 4 launches September 17, 2026. Compare Standard and Commander Editions, US Steam prices, three-day early unlock, and confirmed DLC.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Commercial Desk",
     category: "Pre-order & Editions",
-    readTime: "6 min read",
+    readTime: "9 min read",
     keywords: ["Dawn of War 4 release date", "Dawn of War 4 Commander Edition", "Dawn of War 4 pre-order bonus"],
     officialStatus: "Publisher Confirmed: September 17, 2026 Launch",
     sources: [
@@ -143,11 +143,13 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       { question: "When does Dawn of War 4 release?", answer: "Dawn of War IV releases for Windows PC on September 17, 2026. Commander Edition pre-purchases include a three-day early unlock beginning September 14." },
-      { question: "How much is the Commander Edition?", answer: "The US Steam list price is $89.99, with a 10% pre-purchase price of $80.99 as checked on August 2, 2026. Regional prices can differ." },
+      { question: "How much is the Commander Edition?", answer: "The US Steam list price is $89.99, with a 10% pre-purchase price of $80.99 as checked on August 12, 2026. Regional prices can differ." },
       { question: "What is included in the Commander Edition?", answer: "It includes the base game, Blood Ravens Story Prologue, Aftermath campaign expansion with a new faction, digital soundtrack, and the announced Year One expansion content." },
     ],
     contentHtml: `
-<h2>1. Launch Timeline & Early Unlock Access</h2>
+<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV releases on <strong>September 17, 2026</strong> for Windows PC through Steam. Commander Edition owners receive advance access from <strong>September 14</strong>. The Standard Edition costs $59.99 in the US and the Commander Edition costs $89.99 before the current 10% pre-purchase discount.</div>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#release-timeline">release timeline</a> · <a href="#edition-comparison">edition comparison</a> · <a href="#unlock-questions">preload and unlock</a> · <a href="#buying-advice">buying advice</a></nav>
+<h2 id="release-timeline">1. Launch Timeline & Early Unlock Access</h2>
 <p>
   Publisher Deep Silver has confirmed that <em>Warhammer 40,000: Dawn of War IV</em> launches worldwide on <strong>September 17, 2026</strong> for Windows PC via Steam. However, players who acquire the digital <em>Commander Edition</em> receive a 72-hour early unlock starting <strong>September 14, 2026</strong>.
 </p>
@@ -179,9 +181,9 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>2. Standard vs. Commander Edition Feature Comparison</h2>
+<h2 id="edition-comparison">2. Standard vs. Commander Edition Feature Comparison</h2>
 <p>
-  The practical choice is between the base game and a larger Year One bundle. US prices below are Steam list prices checked on August 2, 2026; the 10% pre-purchase discount and regional pricing can change what you pay.
+  The practical choice is between the base game and a larger Year One bundle. US prices below are Steam list prices checked on August 12, 2026; the 10% pre-purchase discount and regional pricing can change what you pay.
 </p>
 
 <table class="data-table">
@@ -221,7 +223,28 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>3. Buyer Recommendation & Verdict</h2>
+<h2 id="unlock-questions">Preload, exact unlock time, and advance access</h2>
+<p>Steam confirms the September 14 advance-access date and September 17 standard release date, but an exact global unlock hour and preload schedule are not displayed in the cited store information. Players should treat countdowns from third-party stores as estimates until the Steam library shows a download or unlock timer.</p>
+<p>The three-day benefit is advance access to the release build, not a public beta and not Steam Early Access. That distinction matters: the game has a fixed full-release date, and the Commander Edition simply opens it earlier. Balance updates or technical fixes can still arrive during and after that window.</p>
+<table class="data-table">
+  <thead><tr><th>Question</th><th>Best current answer</th><th>Confidence</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Will there be a preload?</strong></td><td>Likely for a major Steam release, but not officially listed</td><td>Medium-low</td></tr>
+    <tr><td><strong>When is the exact unlock hour?</strong></td><td>Not yet published; check the Steam countdown close to release</td><td>Officially unknown</td></tr>
+    <tr><td><strong>Is September 14 a beta?</strong></td><td>No; Steam describes it as advance access to the purchased edition</td><td>High</td></tr>
+    <tr><td><strong>Is a console version included?</strong></td><td>No; only Windows PC via Steam is currently confirmed</td><td>High</td></tr>
+  </tbody>
+</table>
+
+<h2>What the base game includes at launch</h2>
+<p>Both editions include the same base game: four mechanically distinct factions, four connected campaigns totaling more than 70 missions, competitive multiplayer, Skirmish, and the returning Last Stand mode. Campaign missions support solo play or two-player co-op. Paying for Commander Edition does not unlock a stronger launch army or exclusive competitive statistics.</p>
+<p>The four launch factions are Space Marines, Orks, Necrons, and Adeptus Mechanicus. Before choosing an edition for a preferred army, compare their confirmed systems in our <a href="/blog/dawn-of-war-4-factions-compared">Dawn of War 4 factions guide</a>.</p>
+
+<h2>What the Commander Edition adds</h2>
+<p>The higher-priced edition bundles the Blood Ravens Story Prologue, the Aftermath campaign expansion with an additional faction, the digital soundtrack, and announced Year One expansion content. The publisher roadmap places post-launch additions across fall 2026 through spring 2027, but individual premium-content dates remain subject to later announcements.</p>
+<p>The price difference is $30 at US list prices. That premium should be evaluated as a content bundle, not only as payment for three early days. Players who want both campaign expansions are the clearest audience; players focused on the launch campaign or competitive multiplayer can begin with Standard without losing a confirmed launch faction.</p>
+
+<h2 id="buying-advice">3. Buyer Recommendation & Verdict</h2>
 <div class="recommendation-box">
   <h3>Which Edition Should You Buy?</h3>
   <ul>
@@ -229,6 +252,10 @@ export const blogPosts: BlogPost[] = [
     <li><strong>Buy Commander Edition ($89.99 US list price) if:</strong> You value the three-day early unlock, both announced premium DLCs, and the digital soundtrack enough to pay the higher price.</li>
   </ul>
 </div>
+<h2>Refund and purchase considerations</h2>
+<p>Steam's normal refund eligibility depends on purchase timing and recorded playtime, and advance-access play may count toward that playtime. Buyers should read the current Steam refund terms in their own region before using most of the three-day window. Kronus Archive does not treat a preorder discount as evidence that the game will run well on a particular PC.</p>
+<p>If hardware compatibility is the deciding factor, compare our clearly labeled <a href="/blog/dawn-of-war-4-system-requirements-speculations">estimated PC requirements</a> and wait for Deep Silver's official specification table. If post-launch content is the deciding factor, review the <a href="/blog/dawn-of-war-4-year-one-roadmap-dlc">Year One roadmap tracker</a>.</p>
+<p><strong>Bottom line:</strong> Standard is the lower-risk purchase for most players. Commander Edition makes sense when the two announced campaign additions and soundtrack already justify the $30 list-price difference; advance access alone is a weak reason to upgrade.</p>
 `,
   },
   {
@@ -238,10 +265,10 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Dawn of War 4 Factions & Army Comparison Guide",
     excerpt: "Compare all four confirmed Dawn of War 4 factions—Space Marines, Orks, Necrons, and Adeptus Mechanicus—and find the army that fits your RTS style.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
-    readTime: "9 min read",
+    readTime: "12 min read",
     keywords: ["Dawn of War 4 factions comparison", "Dawn of War 4 best faction", "Dawn of War 4 army pick guide"],
     officialStatus: "Developer Confirmed Faction Roster",
     sources: [
@@ -254,7 +281,9 @@ export const blogPosts: BlogPost[] = [
       { question: "Is there a confirmed best faction?", answer: "No. Balance is still being refined before release, and the developers plan to use launch data and player feedback for further changes." },
     ],
     contentHtml: `
-<h2>1. Four Launch Armies: Side-by-Side Comparison</h2>
+<div class="official-notice-box"><strong>Quick answer:</strong> Space Marines are the clearest beginner choice; Orks suit aggressive expansion; Necrons reward slow territorial snowballing; and Adeptus Mechanicus offer the deepest network-based base planning. This is a playstyle recommendation, not a pre-launch tier list.</div>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#faction-matrix">comparison matrix</a> · <a href="#space-marines-choice">Space Marines</a> · <a href="#orks-choice">Orks</a> · <a href="#necrons-choice">Necrons</a> · <a href="#admech-choice">Adeptus Mechanicus</a> · <a href="#faction-verdict">recommendation</a></nav>
+<h2 id="faction-matrix">1. Four Launch Armies: Side-by-Side Comparison</h2>
 <p>
   Selecting a faction changes buildings, economy, commanders, units, and battlefield mechanics. The roster and faction identities below are developer-confirmed; difficulty and mobility labels are editorial guidance based on current official descriptions, not launch balance data.
 </p>
@@ -271,28 +300,28 @@ export const blogPosts: BlogPost[] = [
   </thead>
   <tbody>
     <tr>
-      <td><a href="/factions/space-marines"><strong>Space Marines</strong></a></td>
+      <td><a href="/blog/dawn-of-war-4-space-marines-faction-guide"><strong>Space Marines</strong></a></td>
       <td>⭐ Low (Beginner Friendly)</td>
       <td>⭐⭐ Mid (Drop-Pod Support)</td>
       <td>Elite durable squads, flexible commanders</td>
       <td>Players who prefer disciplined, low-attrition tactical play</td>
     </tr>
     <tr>
-      <td><a href="/factions/orks"><strong>Orks</strong></a></td>
+      <td><a href="/blog/dawn-of-war-4-orks-faction-guide"><strong>Orks</strong></a></td>
       <td>⭐⭐ Mid (Horde Management)</td>
       <td>⭐⭐⭐ High (Waaagh! Charges)</td>
       <td>Mass numbers, ramshackle tech, aggressive rushes</td>
       <td>Players who enjoy swarm tactics, constant pressure &amp; aggression</td>
     </tr>
     <tr>
-      <td><a href="/factions/necrons"><strong>Necrons</strong></a></td>
+      <td><a href="/blog/dawn-of-war-4-necrons-faction-guide"><strong>Necrons</strong></a></td>
       <td>⭐⭐⭐ High (Macro Tech Tree)</td>
       <td>⭐ Low (Methodical Push)</td>
       <td>Reanimation protocols, immortal war engines</td>
       <td>Players who favor defensive scaling &amp; crushing late-game war engines</td>
     </tr>
     <tr>
-      <td><a href="/factions/adeptus-mechanicus"><strong>Adeptus Mechanicus</strong></a></td>
+      <td><a href="/blog/dawn-of-war-4-adeptus-mechanicus-faction-guide"><strong>Adeptus Mechanicus</strong></a></td>
       <td>⭐⭐⭐ High (Network Micro)</td>
       <td>⭐⭐ Mid (Linked Nodes)</td>
       <td>Noosphere building links, turret overcharges</td>
@@ -301,7 +330,34 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>2. Summary & Army Recommendation Verdict</h2>
+<p>The difficulty and mobility labels are editorial assessments with medium confidence. They are derived from the official faction previews and multiplayer AMA, not from a playable review build. Exact balance, economy efficiency, and matchup strength can change before and after launch.</p>
+
+<h2 id="space-marines-choice">Choose Space Marines for elite squad preservation</h2>
+<p>Space Marines field expensive, powerful squads and are expected to win many equal early engagements. Their structures can deploy from orbit anywhere within vision, with longer deployment times farther from headquarters and a visible warning for opponents. Fortifications, Reserves, and the Thunderhawk Relay help compensate for an elite army that cannot occupy every part of a large map.</p>
+<p>They are our best beginner recommendation because KING Art Games calls their building progression the most straightforward. Beginner-friendly does not mean mechanically shallow: upgrades, veterancy, retreat timing, on-field reinforcement, and the choice between Blood Ravens and Dark Angels create meaningful decisions. Read the full <a href="/blog/dawn-of-war-4-space-marines-faction-guide">Space Marines faction guide</a>.</p>
+
+<h2 id="orks-choice">Choose Orks for numbers and forward pressure</h2>
+<p>Orks combine relatively inexpensive units and buildings with a Waaagh! meter charged by fielding more Orks and killing enemies. Almost any Ork infantry can construct structures; those structures are armed and can bring production closer to contested ground. Orks can also construct their own cover.</p>
+<p>This makes them attractive to players who prefer initiative over perfect efficiency. The main risk is overextension: forward infrastructure is relatively easy to destroy, and replacing models can consume the same economy needed for technology. Our <a href="/blog/dawn-of-war-4-orks-faction-guide">Orks guide</a> explains the confirmed units, Gorgutz, Guzcutta, and Waaagh! framework.</p>
+
+<h2 id="necrons-choice">Choose Necrons for resilience and territorial snowballing</h2>
+<p>Necrons expand a Power Matrix from their Tomb Citadel. Many structures require this field, a larger Matrix produces Dominion, and friendly units on it heal faster and become tougher. Resurrection Galleries can return a selected fallen unit type for free, although cooldowns and limitations remain unpublished.</p>
+<p>The faction is deliberately slow, but Tomb Pylons, Translocation Science, and the Monolith provide later mobility. Choose Necrons if you enjoy establishing favorable territory and forcing opponents to dismantle a growing system. See the updated <a href="/blog/dawn-of-war-4-necrons-faction-guide">Necrons guide</a> for confirmed teleportation and unit roles.</p>
+
+<h2 id="admech-choice">Choose Adeptus Mechanicus for connected infrastructure</h2>
+<p>The Adeptus Mechanicus link buildings to headquarters through a Noosphere Network. Adding connected structures increases network level, unlocks stronger technology, and benefits production and units within its influence. Auger Vision provides imperfect intelligence under fog of war, while the Void Shield changes ranged firing lines without preventing enemies from walking through it.</p>
+<p>This is the strongest fit for players who enjoy base topology, information tools, ranged combined arms, and protecting critical connections. The same dependencies create a higher expected learning curve. The <a href="/blog/dawn-of-war-4-adeptus-mechanicus-faction-guide">Adeptus Mechanicus guide</a> separates confirmed mechanics from unsupported build orders.</p>
+
+<h2>How to choose without a pre-launch tier list</h2>
+<ol>
+  <li><strong>Choose the economy you want to manage:</strong> elite preservation, aggressive expansion, Matrix snowball, or connected Noosphere.</li>
+  <li><strong>Choose the map-control style:</strong> selective rapid response, forward pressure, fortified territory, or network reach.</li>
+  <li><strong>Choose the acceptable complexity:</strong> Space Marines appear clearest to start, while AdMech adds more infrastructure dependencies.</li>
+  <li><strong>Ignore “best faction” claims without a version and test method:</strong> no reliable competitive sample exists before release.</li>
+  <li><strong>Reassess after launch:</strong> maps, mode, Commander selection, and balance patches may matter more than a general ranking.</li>
+</ol>
+
+<h2 id="faction-verdict">2. Summary & Army Recommendation Verdict</h2>
 <div class="recommendation-box">
   <h3>Which Army Should You Pick First?</h3>
   <ul>
@@ -311,6 +367,7 @@ export const blogPosts: BlogPost[] = [
     <li><strong>Pick Adeptus Mechanicus if:</strong> You enjoy intricate base building and networked defense systems.</li>
   </ul>
 </div>
+<p><strong>Final recommendation:</strong> start with Space Marines if you are uncertain, choose Orks for relentless initiative, choose Necrons for methodical scaling, and choose Adeptus Mechanicus when base-network planning is the main appeal. These recommendations describe learning style and faction fantasy, not expected win rate.</p>
 `,
   },
   {
@@ -320,10 +377,10 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Blood Ravens vs Dark Angels",
     excerpt: "Compare Dawn of War 4's Blood Ravens and Dark Angels, including their campaign roles, commanders, Deathwing, Ravenwing, and confirmed differences.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
-    readTime: "6 min read",
+    readTime: "9 min read",
     keywords: ["Dawn of War 4 Dark Angels", "Blood Ravens vs Dark Angels Dawn of War IV", "Space Marines sub-factions"],
     officialStatus: "Based on official story and faction material",
     sources: [
@@ -338,25 +395,36 @@ export const blogPosts: BlogPost[] = [
     ],
     contentHtml: `
 <div class="official-notice-box"><strong>Quick answer:</strong> The Blood Ravens and Dark Angels share the Space Marines faction foundation, but official material gives them distinct identities. Blood Ravens favor flexible strategic combat; Dark Angels bring shock-and-awe through Deathwing and Ravenwing formations. Commander selection is the clearest confirmed gameplay difference.</div>
-<h2>What Blood Ravens and Dark Angels share</h2>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#shared-foundation">shared units</a> · <a href="#chapter-differences">confirmed differences</a> · <a href="#dark-angels-units">Deathwing and Ravenwing</a> · <a href="#chapter-choice">which Chapter fits you</a></nav>
+<h2 id="shared-foundation">What Blood Ravens and Dark Angels share</h2>
 <p>Both Chapters belong to the <a href="/factions/space-marines">Space Marines</a>, an elite army built around strong individual squads, upgrades, preservation, fortifications, and rapid redeployment. The official campaign includes both Chapters, so this is more than a cosmetic paint choice. However, the publisher has not released a complete side-by-side roster or balance sheet.</p>
 <p>For faction-wide systems—including orbital structures, Reserves, the Thunderhawk Relay, and on-field reinforcement—see our <a href="/blog/dawn-of-war-4-space-marines-faction-guide">Space Marines faction guide</a>.</p>
-<h2>Confirmed Chapter differences</h2>
+<h2 id="chapter-differences">Confirmed Chapter differences</h2>
 <table class="data-table">
   <thead><tr><th>Area</th><th>Blood Ravens</th><th>Dark Angels</th></tr></thead>
   <tbody>
     <tr><td><strong>Official identity</strong></td><td>Flexible strategic combat</td><td>Shock-and-awe warfare</td></tr>
-    <tr><td><strong>Named characters</strong></td><td>Cyrus and Jonah Orion return in the story</td><td>Master Korahael and Chaplain Redemptus are introduced</td></tr>
+    <tr><td><strong>Named characters</strong></td><td>Cyrus and Jonah Orion return in the story</td><td>Company Master Astoran, Chaplain Ezrael, and the Lion appear in the official cast</td></tr>
     <tr><td><strong>Named elite formations</strong></td><td>Complete Chapter-specific roster remains TBA</td><td>Deathwing and Ravenwing</td></tr>
     <tr><td><strong>Commander selection</strong></td><td>Distinct commander options are confirmed</td><td>Distinct commander options are confirmed</td></tr>
   </tbody>
 </table>
-<h2>How the Dark Angels identity may shape play</h2>
+<h2 id="dark-angels-units">How Deathwing and Ravenwing shape the Dark Angels</h2>
 <p>Deep Silver describes the Deathwing as slow and punishing, while the Ravenwing uses hit-and-run tactics. Together, those formations suggest a choice between heavy battlefield presence and mobile pressure. That is a useful strategic frame, but it is not yet a verified build order: unit costs, tech requirements, availability, and exact counters remain unpublished.</p>
+<p>Deathwing should appeal to players who want an elite unit to anchor an engagement or punish enemies that commit into its reach. Ravenwing offers the opposite battlefield idea: reach a vulnerable location, apply pressure, and reposition. This interpretation follows the publisher's role descriptions, but exact speed, durability, weapons, and production tiers still require testing.</p>
+<p>The important distinction is that Dark Angels do not appear to be a wholly separate fifth launch faction. They are a playable Space Marine sub-faction and campaign Chapter, sharing many units with the Blood Ravens while gaining distinctive elite access and Commanders.</p>
 <h2>Why commanders matter</h2>
 <p>In the multiplayer developer AMA, KING Art Games says commanders are selected before a match and produced from headquarters. The developers also call commanders the biggest difference between sub-factions. That means Chapter selection should affect more than appearance, although the full set of abilities and matchups is still TBA.</p>
-<h2>Which Chapter should you follow?</h2>
+<p>Campaign names should not automatically be converted into a multiplayer roster. The official cast confirms story characters, while the AMA says multiplayer generally uses generic faction Commander units outside campaigns. Our <a href="/blog/dawn-of-war-4-commanders-guide">Commander guide</a> maintains that evidence boundary.</p>
+
+<h2>Campaign role and story context</h2>
+<p>The Blood Ravens travel to Kronus under Cyrus and Chief Librarian Jonah Orion to recruit aspirants and rebuild their Chapter. An Ork ambush disrupts that mission and leaves the Imperial forces under pressure. The Dark Angels answer a call for aid and make a critical intervention, allowing the Space Marines campaign to place both Chapters under player control.</p>
+<p>Deep Silver also lists Alistair Petrie as the Lion in the English voice cast. That confirms the character's presence but not mission count, playable status, or the extent of his involvement. See the <a href="/blog/dawn-of-war-4-voice-cast-characters">voice cast and character guide</a> for the complete announced ensemble.</p>
+
+<h2 id="chapter-choice">Which Chapter should you follow?</h2>
 <div class="recommendation-box"><ul><li><strong>Follow Blood Ravens</strong> if you care most about the returning Dawn of War cast and a flexible Chapter identity.</li><li><strong>Follow Dark Angels</strong> if Deathwing resilience, Ravenwing mobility, and a more specialized shock-assault theme appeal to you.</li><li><strong>Wait for hands-on data</strong> before choosing based on competitive strength; no reliable tier list exists before launch.</li></ul></div>
+<h2>Evidence-based pre-launch verdict</h2>
+<p>Blood Ravens are the safer recommendation for players who want the main returning narrative and a broadly flexible identity. Dark Angels are the more distinctive choice for players already attracted to Deathwing, Ravenwing, and shock assaults. Confidence is medium because the high-level identities are official, while exact multiplayer rosters and balance remain unpublished.</p>
 <h2>What remains unconfirmed</h2>
 <ul><li>Complete Chapter-specific unit and Commander rosters.</li><li>Unit prices, statistics, production times, and tech requirements.</li><li>Whether every faction-wide unit is shared by both Chapters.</li><li>Matchup-specific strengths, counters, and competitive tier placement.</li></ul>
 `,
@@ -368,10 +436,10 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Space Marines Faction Guide",
     excerpt: "Learn how Dawn of War 4 Space Marines use elite squads, orbital structures, fortifications, Reserves, reinforcement, and two playable Chapters.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-12",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
-    readTime: "7 min read",
+    readTime: "10 min read",
     keywords: ["Dawn of War 4 Space Marines guide", "Dawn of War 4 Blood Ravens", "Dawn of War 4 Space Marine units"],
     officialStatus: "Based on official faction overview and developer AMA",
     sources: [
@@ -386,7 +454,9 @@ export const blogPosts: BlogPost[] = [
     ],
     contentHtml: `
 <div class="official-notice-box"><strong>Quick answer:</strong> Space Marines are elite fighters whose individual squads are powerful but expensive. Their confirmed toolkit emphasizes early harassment, upgrades, preservation, fortifications, orbital structure deployment, and rapid movement through Reserves and the Thunderhawk Relay.</div>
-<h2>Space Marines playstyle at a glance</h2>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#marine-playstyle">playstyle</a> · <a href="#orbital-buildings">orbital buildings</a> · <a href="#marine-economy">economy</a> · <a href="#marine-match-plan">match plan</a> · <a href="#marine-chapters">Chapters</a></nav>
+<p>This guide is for players deciding whether Space Marines fit their first Dawn of War IV army. It uses Deep Silver's faction overview, story material, and KING Art Games' multiplayer AMA. Strategic recommendations are interpretations of confirmed systems, not claims from a review build.</p>
+<h2 id="marine-playstyle">Space Marines playstyle at a glance</h2>
 <p>The official faction overview says Space Marines will usually win equal one-on-one engagements, especially early. That strength is balanced by cost and limited map coverage: opponents are encouraged to stretch them across several fights and deny Power. Space Marine players therefore need to trade efficiently and keep experienced units alive.</p>
 <table class="data-table">
   <thead><tr><th>Confirmed system</th><th>Purpose</th><th>Risk</th></tr></thead>
@@ -398,16 +468,30 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>Reserves and Thunderhawk Relay</strong></td><td>Move troops to threatened areas</td><td>Exact rules and timings remain TBA</td></tr>
   </tbody>
 </table>
-<h2>Orbital construction and map presence</h2>
+<h2 id="orbital-buildings">Orbital construction and map presence</h2>
 <p>Space Marine structures can drop from orbit anywhere the player has vision. Distance from headquarters increases deployment time, and enemies can see where a structure will arrive. This produces a clear trade-off: orbital placement can establish a forward position, but an ambitious landing gives the opponent time and information to react.</p>
 <p>The official overview also names fortifications, Reserves, and the Thunderhawk Relay as tools for covering a wide map. Until costs and cooldowns are published, these should be treated as confirmed capabilities rather than a finished build order.</p>
-<h2>Squad preservation and Power economy</h2>
+<h3>How to evaluate an orbital deployment</h3>
+<ol><li><strong>Confirm vision:</strong> a legal forward landing requires current sight of the location.</li><li><strong>Account for warning:</strong> opponents can see the intended landing point.</li><li><strong>Account for distance:</strong> farther structures take longer to arrive.</li><li><strong>Define the payoff:</strong> the building should secure production, research, reinforcement, or a valuable point.</li><li><strong>Plan a fallback:</strong> a visible landing may attract a counterattack before completion.</li></ol>
+
+<h2 id="marine-economy">Squad preservation and Power economy</h2>
 <p>Space Marines are encouraged to upgrade units, reinforce in the field, and retreat when necessary. Their expensive roster also depends heavily on Power. A good opponent can trade cheaper units, attack Resource Points, and force the elite army to respond in several places. Read the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">preservation mechanics guide</a> for confirmed retreat and reinforcement rules.</p>
-<h2>Blood Ravens and Dark Angels</h2>
+<p>On-field reinforcement can keep an upgraded squad in fighting condition, but the multiplayer developers warn that auto-reinforcing many units drains resources quickly. Space Marines therefore face a repeated choice between saving the current army and funding the next upgrade, structure, Commander, or territory expansion.</p>
+<p>Veterancy raises the value of preservation. KING Art Games says faction units benefit from experience in different ways, including statistical improvements or new abilities. Exact thresholds remain unknown, but the strategic conclusion is strong: losing an upgraded veteran squad costs more than its replacement price alone.</p>
+
+<h2 id="marine-match-plan">A source-led Space Marine match plan</h2>
+<p>This is a decision framework rather than a timed build order. Starting resources, prices, production times, and maps are not public.</p>
+<ol><li><strong>Seek favorable local fights:</strong> use elite early strength to harass without exposing an expensive squad to isolation.</li><li><strong>Protect Power access:</strong> official counter-advice specifically tells opponents to deny Space Marine Power.</li><li><strong>Upgrade units you can preserve:</strong> retreat and reinforcement protect previous investment.</li><li><strong>Fortify selective locations:</strong> static defenses cover points while the smaller army operates elsewhere.</li><li><strong>Use mobility to answer pressure:</strong> Reserves and the Thunderhawk Relay are designed to move troops where needed.</li><li><strong>Avoid fighting everywhere:</strong> the faction's elite cost makes simultaneous coverage a structural weakness.</li></ol>
+
+<h2>How opponents are expected to fight Space Marines</h2>
+<p>The publisher advises opponents to deny Resource Points—especially Power—stretch the elite force across several locations, and punish costly losses. Ork buildings can chip away at map control, Necrons can make territorial fights increasingly difficult, and Adeptus Mechanicus can use networked information and ranged tools. These are faction-level pressures, not guaranteed counters.</p>
+
+<h2 id="marine-chapters">Blood Ravens and Dark Angels</h2>
 <p>The Space Marines campaign includes both Blood Ravens and Dark Angels. Official story material describes Blood Ravens as flexible strategic fighters, while Dark Angels favor shock-and-awe through Deathwing and Ravenwing elite units. The <a href="/blog/space-marines-dark-angels-sub-faction-differences">Chapter comparison</a> records only confirmed differences.</p>
 <h2>What remains TBA</h2>
 <ul><li>Opening production sequence and starting resources.</li><li>Unit prices, build times, and tech tiers.</li><li>Exact Reserves and Thunderhawk Relay rules.</li><li>Complete multiplayer roster and Commander loadouts.</li><li>Map-specific fortification and orbital deployment strategy.</li></ul>
 <div class="recommendation-box"><h3>Who should choose Space Marines?</h3><ul><li>Players who prefer fewer, stronger squads.</li><li>Players who enjoy upgrades and unit preservation.</li><li>Players comfortable defending several locations with mobility and fortifications.</li></ul></div>
+<p><strong>Pre-launch verdict:</strong> Space Marines are the clearest first faction for players learning the shared RTS systems, but their expensive squads make careless losses unusually punishing. Our beginner recommendation has medium confidence because the structure progression is officially described as straightforward; it is not a claim that Space Marines will be the strongest faction.</p>
 `,
   },
   {
@@ -602,7 +686,9 @@ export const blogPosts: BlogPost[] = [
     ],
     contentHtml: `
 <div class="official-notice-box"><strong>Quick answer:</strong> Last Stand returns in <em>Dawn of War IV</em> as a co-op horde mode with increasingly deadly waves, character levels, skills, and equipment. <strong>Our best party-size estimate is three players</strong>, matching Dawn of War II's established three-hero format, but Deep Silver has not confirmed that number for Dawn of War IV.</div>
-<h2>What is Last Stand?</h2>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#last-stand-basics">confirmed format</a> · <a href="#last-stand-progression">progression</a> · <a href="#last-stand-party">party size estimate</a> · <a href="#last-stand-prep">how to prepare</a></nav>
+<p>This guide is for co-op players deciding what to expect before launch. Confirmed facts come from Deep Silver; the party-size estimate is based on the directly related Dawn of War II mode and is labeled separately.</p>
+<h2 id="last-stand-basics">What is Last Stand?</h2>
 <p>Last Stand is a survival-focused alternative to the game's army-scale campaign and competitive multiplayer. The official description centers on enduring waves that become progressively more dangerous. Rather than inventing a fixed wave count or boss schedule before release, this guide tracks the structure that Deep Silver and KING Art Games have actually announced.</p>
 <table class="data-table">
   <thead><tr><th>Feature</th><th>Official status</th><th>What remains TBA</th></tr></thead>
@@ -614,11 +700,16 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>Post-launch scenarios</strong></td><td>Confirmed on the Year One roadmap</td><td>Scenario dates and objectives</td></tr>
   </tbody>
 </table>
-<h2>Progression between runs</h2>
+<h2 id="last-stand-progression">Progression between runs</h2>
 <p>Official material says players level up characters and unlock skills and equipment. That creates a persistent progression layer, but the publisher has not yet shown enough data for a trustworthy leveling route or equipment tier list. Claims about optimal loadouts should wait until the launch build can be tested repeatedly.</p>
-<h2>Our best player-count estimate</h2>
+<h2 id="last-stand-party">Our best player-count estimate</h2>
 <p>Dawn of War II's Last Stand was built for three players, each controlling one hero against escalating waves. Because Dawn of War IV explicitly revives that named mode and again emphasizes characters, skills, and equipment, a three-player team is the strongest working assumption. We rate this estimate <strong>medium confidence</strong>: the historical format is directly relevant, but KING Art Games could expand or redesign the lobby.</p>
 <p>Players planning a group should provisionally expect a trio, while avoiding purchases or schedules that depend on the number until Deep Silver confirms it. A two-player fallback or larger custom lobby remains possible.</p>
+<h2>How Dawn of War IV may differ from the original mode</h2>
+<p>The Dawn of War II version used three heroes against 20 escalating waves. That history supports the estimated trio, but it does not establish a 20-wave limit for the sequel. Dawn of War IV can change arenas, objectives, enemy composition, revive rules, progression, or team size while retaining the Last Stand name.</p>
+<p>Deep Silver's Year One roadmap promises additional Commander scenarios, abilities, loadouts, and playstyles. This indicates that the mode is intended as an evolving character-based activity rather than a one-off side mission. It does not prove that every campaign Commander will be playable in Last Stand.</p>
+<h2 id="last-stand-prep">How players can prepare without invented builds</h2>
+<ol><li><strong>Plan for complementary roles:</strong> a likely three-player team benefits from damage, control, and survival rather than three identical loadouts.</li><li><strong>Expect progression to matter:</strong> skills and equipment are confirmed, so early runs may focus on learning and unlocking options.</li><li><strong>Separate wave clearing from boss damage:</strong> escalating modes usually punish a team that can solve only one target type; this is planning guidance, not a confirmed enemy table.</li><li><strong>Track official Commander reveals:</strong> role descriptions will be more useful than unsupported tier lists.</li><li><strong>Rebuild advice after launch:</strong> every recommended loadout needs a game version, difficulty, and repeatable test.</li></ol>
 <h2>How Last Stand fits the wider game</h2>
 <p>The mode complements the story campaign, <a href="/blog/dawn-of-war-4-crusade-mode-guide">Crusade</a>, Skirmish, and competitive formats covered in our <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">modes guide</a>. Players who prefer small-team survival and character progression may find Last Stand more approachable than managing a full base and army.</p>
 <h2>Year One support</h2>
@@ -629,6 +720,7 @@ export const blogPosts: BlogPost[] = [
   <h3>Who should watch Last Stand?</h3>
   <ul><li>Players who want co-op rather than competitive matches.</li><li>Players interested in character progression and equipment unlocks.</li><li>Returning Dawn of War II players curious about the revived mode.</li></ul>
 </div>
+<p><strong>Pre-launch verdict:</strong> expect a progression-driven co-op survival mode, probably for three players, with expanding post-launch Commander support. The format and progression are confirmed; the trio is a medium-confidence estimate; exact waves and builds remain genuinely unknown.</p>
 `,
   },
   {
@@ -641,7 +733,7 @@ export const blogPosts: BlogPost[] = [
     dateModified: "2026-08-12",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
-    readTime: "7 min read",
+    readTime: "10 min read",
     keywords: ["Dawn of War 4 multiplayer modes", "Dawn of War 4 Last Stand mode", "Dawn of War 4 co-op campaign"],
     officialStatus: "Developer Confirmed Game Modes",
     sources: [
@@ -655,7 +747,9 @@ export const blogPosts: BlogPost[] = [
       { question: "Does Dawn of War 4 have 4v4 multiplayer?", answer: "Probably not at launch. Public previews consistently describe 1v1, 2v2, and 3v3 battles, making 3v3 the strongest current ceiling estimate. A 4v4 mode has not been confirmed." },
     ],
     contentHtml: `
-<h2>1. Overview of Game Modes & Player Capacities</h2>
+<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV Quick Match includes Annihilation, Domination, and Maelstrom. The 70-plus-mission campaign supports solo or two-player co-op, while Skirmish and Last Stand add non-competitive options. Public previews point to 1v1, 2v2, and 3v3 battles; 4v4 is not currently confirmed.</div>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#mode-table">all modes</a> · <a href="#quick-match">Quick Match</a> · <a href="#team-sizes">player counts</a> · <a href="#coop-options">co-op choices</a> · <a href="#mode-choice">which mode to play</a></nav>
+<h2 id="mode-table">1. Overview of Game Modes & Player Capacities</h2>
 <p>
   <em>Warhammer 40,000: Dawn of War IV</em> includes modes for solo narrative players, cooperative commanders, and competitive multiplayer players. Campaign capacity is official. For other modes, the table combines confirmed formats with clearly labeled estimates from public previews and series precedent.
 </p>
@@ -700,10 +794,31 @@ export const blogPosts: BlogPost[] = [
 </table>
 <p><strong>Confidence note:</strong> 1v1, 2v2, and 3v3 are repeatedly reported from game previews, while 4v4 has not appeared in the publisher's current mode table. We therefore treat 3v3 as the likely launch ceiling rather than leaving the question unanswered. Last Stand's three-player estimate comes from the original mode's established format.</p>
 
-<h2>2. Campaign Co-op: What Is Confirmed</h2>
+<h2 id="quick-match">How the three Quick Match win conditions differ</h2>
+<h3>Annihilation</h3>
+<p>Annihilation is the default Quick Match selection. Victory requires destroying every enemy headquarters while protecting your own. Production, territory, and battles matter because they support the final base-destruction objective; they do not replace it.</p>
+<h3>Domination</h3>
+<p>Domination awards Victory Points to the side controlling more Strategic Positions than its opponent. The mode creates stable locations that both players can identify and contest. A force that wins fights but ignores the scoring condition can still lose.</p>
+<h3>Maelstrom</h3>
+<p>Maelstrom also uses Victory Points, but objectives appear dynamically around the map. The shifting target rewards mobility, scouting, and the ability to abandon one area for another. Read the dedicated <a href="/blog/dawn-of-war-4-maelstrom-mode-guide">Maelstrom guide</a> for the confirmed win condition and remaining unknowns.</p>
+
+<h2 id="team-sizes">Does Dawn of War 4 support 1v1, 2v2, 3v3, or 4v4?</h2>
+<p>The developer AMA explicitly discusses default 1v1 matchmaking and balance across 1v1 and team games. Reputable previews describe 1v1, 2v2, and 3v3 battles. We therefore rate support through 3v3 as a <strong>medium-confidence expectation</strong>, while 4v4 remains unsupported by current evidence.</p>
+<p>This distinction is important for E-E-A-T: “team games exist” is developer-confirmed, while the complete queue-size table is not. The article gives the most likely answer without presenting preview reporting as a final platform specification.</p>
+
+<h2>Custom match settings</h2>
+<p>KING Art Games confirms that Commander rules can be changed in custom settings: Commanders may be produced normally, enabled as starting units, or disabled. This shows that custom matches support meaningful rule variation, but the complete lobby settings—resource rates, population, victory conditions, observers, AI slots, and map filters—have not been published.</p>
+<p>Skirmish is the appropriate mode to watch for practice against AI and experimentation. The publisher says a dedicated Skirmish showcase is still planned, so capacity and customization should be updated when that presentation arrives.</p>
+
+<h2 id="coop-options">2. Campaign Co-op: What Is Confirmed</h2>
 <p>
   The 70-plus-mission campaign can be played solo or with one friend. The publisher has not confirmed that partners can freely mix factions inside a campaign, nor has it documented shared Commander cooldowns, so those details remain open until a co-op showcase or launch documentation appears.
 </p>
+<p>Last Stand provides a second co-op path focused on characters, increasingly deadly waves, skills, and equipment rather than full base management. Three players is our current medium-confidence estimate based on Dawn of War II's established format. See the <a href="/blog/dawn-of-war-4-last-stand-mode-guide">Last Stand guide</a> for the evidence and uncertainty.</p>
+
+<h2 id="mode-choice">Which Dawn of War 4 mode should you play?</h2>
+<table class="data-table"><thead><tr><th>If you want…</th><th>Start with</th><th>Why</th></tr></thead><tbody><tr><td>A long story with a friend</td><td>Campaign co-op</td><td>70+ missions; two-player support confirmed</td></tr><tr><td>Classic base destruction</td><td>Annihilation</td><td>Default Quick Match condition</td></tr><tr><td>Predictable scoring locations</td><td>Domination</td><td>Control more Strategic Positions</td></tr><tr><td>Changing map objectives</td><td>Maelstrom</td><td>Dynamic objectives award Victory Points</td></tr><tr><td>AI practice and custom rules</td><td>Skirmish</td><td>Non-ranked environment; full settings pending</td></tr><tr><td>Character progression with teammates</td><td>Last Stand</td><td>Co-op waves, skills, and equipment</td></tr></tbody></table>
+<p><strong>Bottom line:</strong> Dawn of War IV is not built around one multiplayer format. Quick Match serves competitive players through three objectives, campaign co-op serves narrative pairs, Skirmish supports practice, and Last Stand offers character-based survival. Player-count estimates will be replaced when Deep Silver publishes the final lobby table.</p>
 `,
   },
   {

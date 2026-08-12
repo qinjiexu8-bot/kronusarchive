@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-data";
-import { factions, site } from "@/lib/site-data";
+import { site } from "@/lib/site-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const updated = new Date("2026-08-12T00:00:00Z");
@@ -44,13 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const factionRoutes: MetadataRoute.Sitemap = factions.map((faction) => ({
-    url: `${site.url}/factions/${faction.slug}`,
-    lastModified: updated,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
-
   const blogRoutes: MetadataRoute.Sitemap = blogPosts
     .filter((post) => post.indexable !== false)
     .map((post) => ({
@@ -60,5 +53,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     }));
 
-  return [...baseRoutes, ...factionRoutes, ...blogRoutes];
+  return [...baseRoutes, ...blogRoutes];
 }

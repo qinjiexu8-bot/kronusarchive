@@ -9,6 +9,13 @@ type FactionPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+const factionGuideRoutes: Record<string, string> = {
+  "space-marines": "/blog/dawn-of-war-4-space-marines-faction-guide",
+  orks: "/blog/dawn-of-war-4-orks-faction-guide",
+  necrons: "/blog/dawn-of-war-4-necrons-faction-guide",
+  "adeptus-mechanicus": "/blog/dawn-of-war-4-adeptus-mechanicus-faction-guide",
+};
+
 export function generateStaticParams() {
   return factions.map((faction) => ({ slug: faction.slug }));
 }
@@ -28,6 +35,10 @@ export async function generateMetadata({
     description: `Learn how the ${faction.name} faction plays in Dawn of War IV, including confirmed mechanics, campaign details and launch strategy topics.`,
     alternates: {
       canonical: `/factions/${faction.slug}`,
+    },
+    robots: {
+      index: false,
+      follow: true,
     },
   };
 }
@@ -149,7 +160,7 @@ export default async function FactionPage({ params }: FactionPageProps) {
             </div>
             <div className="status-row">
               <span>Last reviewed</span>
-              <span>01 Aug 2026</span>
+              <span>12 Aug 2026</span>
             </div>
           </aside>
 
@@ -188,19 +199,17 @@ export default async function FactionPage({ params }: FactionPageProps) {
               <p className="kicker">Primary briefing</p>
               <h2>Continue the record.</h2>
               <p>
-                Read the official overview for the latest developer-confirmed
-                faction information, then review how this archive handles
-                corrections and test data.
+                Continue to the complete source-checked faction guide for
+                mechanics, units, strategic interpretation, FAQs, and launch
+                verification priorities.
               </p>
               <div className="hero-actions">
-                <a
+                <Link
                   className="button button-primary"
-                  href="https://www.deepsilver.com/games/dawn-of-war-iv"
-                  target="_blank"
-                  rel="noreferrer"
+                  href={factionGuideRoutes[faction.slug]}
                 >
-                  Official game site ↗
-                </a>
+                  Read Complete Guide ↗
+                </Link>
                 <Link className="button button-quiet" href="/standards">
                   Editorial standards
                 </Link>
