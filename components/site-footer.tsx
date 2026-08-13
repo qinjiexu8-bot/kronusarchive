@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CookieSettingsButton } from "@/components/analytics-consent";
 import { site, sources } from "@/lib/site-data";
 
 export function SiteFooter() {
@@ -31,6 +32,7 @@ export function SiteFooter() {
       <div className="footer-links">
         <strong style={{ color: "var(--ink)", marginBottom: "4px" }}>Legal &amp; Compliance</strong>
         <Link href="/privacy">Privacy Policy</Link>
+        <CookieSettingsButton />
         <Link href="/terms">Terms of Service</Link>
         <Link href="/copyright">Copyright &amp; IP Notice</Link>
       </div>

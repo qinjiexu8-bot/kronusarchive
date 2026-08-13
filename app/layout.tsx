@@ -1,7 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Barlow_Condensed } from "next/font/google";
+import {
+  AnalyticsConsentBanner,
+  GoogleAnalytics,
+} from "@/components/analytics-consent";
 import { site } from "@/lib/site-data";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-YXLNLVJ1E8";
 
 const archivo = Archivo({
   variable: "--font-body",
@@ -74,8 +80,34 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        {process.env.NODE_ENV === "production" ? (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied',
+  functionality_storage: 'granted',
+  security_storage: 'granted',
+  wait_for_update: 500
+});`,
+            }}
+          />
+        ) : null}
+      </head>
       <body className={`${archivo.variable} ${barlowCondensed.variable}`}>
         {children}
+        {process.env.NODE_ENV === "production" ? (
+          <>
+            <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
+            <AnalyticsConsentBanner />
+          </>
+        ) : null}
       </body>
     </html>
   );

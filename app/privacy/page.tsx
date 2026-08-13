@@ -28,7 +28,7 @@ export default function PrivacyPage() {
               Privacy Policy.
             </h1>
             <p style={{ color: "var(--ink-muted)", fontSize: "18px" }}>
-              Last updated: August 1, 2026. Transparency regarding user privacy and data processing.
+              Last updated: August 13, 2026. Transparency regarding user privacy and data processing.
             </p>
           </div>
         </section>
@@ -36,9 +36,9 @@ export default function PrivacyPage() {
         <section className="dossier-body shell">
           <aside className="dossier-summary">
             <p className="kicker">Compliance</p>
-            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "24px", margin: "8px 0 12px" }}>Zero PII Collection</h2>
+            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "24px", margin: "8px 0 12px" }}>Privacy Controls</h2>
             <p style={{ color: "var(--ink-muted)", fontSize: "14px" }}>
-              Kronus Archive does not sell, trade, or monetize personal user data.
+              Kronus Archive does not sell personal data. Optional analytics storage is disabled until a visitor accepts it.
             </p>
           </aside>
 
@@ -59,12 +59,25 @@ export default function PrivacyPage() {
                 Analytics &amp; Technical Log Data
               </h2>
               <p style={{ color: "var(--ink-muted)" }}>
-                To optimize website performance and ensure search indexing, server hosting providers (e.g. Vercel) may collect standard technical logs, including IP address, browser type, operating system, and page view metrics. These analytics are aggregated anonymously.
+                We use Google Analytics 4 to understand aggregate traffic, popular pages, referral sources, device categories, countries, and engagement. Google Analytics is configured with advertising signals and ad personalization disabled. Analytics storage is denied by default and enabled only after a visitor selects “Accept analytics.” Visitors may reject optional analytics or reopen Cookie settings from the footer at any time.
+              </p>
+              <p style={{ color: "var(--ink-muted)" }}>
+                Google may process online identifiers, device and browser information, approximate location, page URLs, referral information, and interaction events when analytics is accepted. Consent preferences are stored in the visitor&apos;s browser. Our hosting provider, Vercel, may separately process standard security and delivery logs needed to operate the site.
               </p>
             </article>
 
             <article className="record-block">
-              <p className="kicker">03 // External Links</p>
+              <p className="kicker">03 // Retention &amp; User Choices</p>
+              <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
+                Control Your Analytics Preference
+              </h2>
+              <p style={{ color: "var(--ink-muted)" }}>
+                Rejecting analytics does not restrict access to any guide or site feature. Visitors can change their preference through the Cookie settings control in the footer. They may also clear site data in their browser to remove the saved preference and any analytics cookies previously created after consent.
+              </p>
+            </article>
+
+            <article className="record-block">
+              <p className="kicker">04 // External Links</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
                 Third-Party Websites
               </h2>
