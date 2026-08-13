@@ -812,13 +812,110 @@ export const blogPosts: BlogPost[] = [
 
 <h2 id="coop-options">2. Campaign Co-op: What Is Confirmed</h2>
 <p>
-  The 70-plus-mission campaign can be played solo or with one friend. The publisher has not confirmed that partners can freely mix factions inside a campaign, nor has it documented shared Commander cooldowns, so those details remain open until a co-op showcase or launch documentation appears.
+  The 70-plus-mission campaign can be played solo or with one friend. The publisher has not confirmed that partners can freely mix factions inside a campaign, nor has it documented shared Commander cooldowns, so those details remain open until a co-op showcase or launch documentation appears. Our dedicated <a href="/blog/dawn-of-war-4-co-op-campaign-guide">Dawn of War 4 co-op campaign guide</a> separates those confirmed facts from the most reasonable launch expectations.
 </p>
 <p>Last Stand provides a second co-op path focused on characters, increasingly deadly waves, skills, and equipment rather than full base management. Three players is our current medium-confidence estimate based on Dawn of War II's established format. See the <a href="/blog/dawn-of-war-4-last-stand-mode-guide">Last Stand guide</a> for the evidence and uncertainty.</p>
 
 <h2 id="mode-choice">Which Dawn of War 4 mode should you play?</h2>
 <table class="data-table"><thead><tr><th>If you want…</th><th>Start with</th><th>Why</th></tr></thead><tbody><tr><td>A long story with a friend</td><td>Campaign co-op</td><td>70+ missions; two-player support confirmed</td></tr><tr><td>Classic base destruction</td><td>Annihilation</td><td>Default Quick Match condition</td></tr><tr><td>Predictable scoring locations</td><td>Domination</td><td>Control more Strategic Positions</td></tr><tr><td>Changing map objectives</td><td>Maelstrom</td><td>Dynamic objectives award Victory Points</td></tr><tr><td>AI practice and custom rules</td><td>Skirmish</td><td>Non-ranked environment; full settings pending</td></tr><tr><td>Character progression with teammates</td><td>Last Stand</td><td>Co-op waves, skills, and equipment</td></tr></tbody></table>
 <p><strong>Bottom line:</strong> Dawn of War IV is not built around one multiplayer format. Quick Match serves competitive players through three objectives, campaign co-op serves narrative pairs, Skirmish supports practice, and Last Stand offers character-based survival. Player-count estimates will be replaced when Deep Silver publishes the final lobby table.</p>
+`,
+  },
+  {
+    slug: "dawn-of-war-4-co-op-campaign-guide",
+    title: "Dawn of War 4 Co-op Campaign: Player Count & How It May Work",
+    seoTitle: "Dawn of War 4 Co-op Campaign Guide",
+    shortTitle: "Dawn of War 4 Co-op Campaign Guide",
+    excerpt: "Dawn of War 4 supports campaign co-op. See the confirmed player count, campaign scope, other cooperative modes, and what remains unannounced.",
+    datePublished: "2026-08-13",
+    dateModified: "2026-08-13",
+    author: "Kronus Archive Campaign Desk",
+    category: "Campaign & Co-op",
+    readTime: "9 min read",
+    keywords: ["Dawn of War 4 co-op campaign", "Dawn of War 4 co-op", "Dawn of War 4 campaign multiplayer"],
+    officialStatus: "Campaign co-op confirmed; detailed rules pending",
+    sources: [
+      { label: "Dawn of War IV official overview and FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+      { label: "What we're building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
+      { label: "How the four campaigns form one story", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/crafting-an-epic-dawn-of-war-iv-story-fit-for-the-warhammer-40-000-universe" },
+      { label: "Iron Harvest campaign co-op reference", publisher: "Steam", href: "https://store.steampowered.com/app/826630/Iron_Harvest/" },
+    ],
+    faqs: [
+      { question: "Does Dawn of War 4 have a co-op campaign?", answer: "Yes. Deep Silver confirms that the Dawn of War IV campaign supports both solo and cooperative play. The campaign contains more than 70 missions across four faction storylines." },
+      { question: "How many players can play the Dawn of War 4 campaign together?", answer: "The best current answer is two players. Official material confirms campaign co-op, while the site's existing publisher-confirmed summary identifies it as two-player co-op. No four-player campaign has been announced." },
+      { question: "Can both players choose different factions in campaign co-op?", answer: "That has not been confirmed. Each campaign belongs to a specific faction storyline, so we expect mission-controlled armies rather than unrestricted cross-faction selection, but the final lobby and army-sharing rules remain unannounced." },
+      { question: "Does Dawn of War 4 have co-op outside the campaign?", answer: "Yes. Deep Silver says Skirmish and Last Stand support cooperative play. Competitive team multiplayer also lets players fight alongside teammates, but it is not the same as PvE co-op." },
+    ],
+    contentHtml: `
+<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV has an online co-op campaign and the best confirmed player-count answer is <strong>two players</strong>. More than 70 campaign missions are spread across four connected faction storylines. Deep Silver has not yet explained army sharing, host saves, mission voting, drop-in play, or whether both players control separate bases.</div>
+
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#confirmed">confirmed co-op facts</a> · <a href="#player-count">player count</a> · <a href="#likely-structure">how it may work</a> · <a href="#other-coop">other co-op modes</a> · <a href="#open-questions">unconfirmed details</a></nav>
+
+<h2 id="confirmed">Is the Dawn of War 4 campaign co-op?</h2>
+<p>Yes. Deep Silver's official Dawn of War IV FAQ states that Campaign mode supports solo or co-op play, and Steam classifies the game as Online Co-op. This is a launch feature, not a post-release promise. The campaign itself contains more than 70 missions and tells four faction stories—Space Marines, Orks, Necrons, and Adeptus Mechanicus—that contribute to one larger narrative on Kronus.</p>
+<p>That confirmation answers the main search question, but not every practical question a pair of players will have. The publisher has not yet shown the campaign lobby or documented how two commanders divide units, structures, resources, story decisions, or progress. We therefore separate facts from expectations instead of turning familiar RTS conventions into invented features.</p>
+
+<table class="data-table">
+  <thead><tr><th>Co-op question</th><th>Best current answer</th><th>Evidence status</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Is campaign co-op available?</strong></td><td>Yes, alongside solo play</td><td>Publisher confirmed</td></tr>
+    <tr><td><strong>Campaign party size</strong></td><td>Two players</td><td>Confirmed in current campaign summaries; no larger party announced</td></tr>
+    <tr><td><strong>Campaign length</strong></td><td>70+ missions across four storylines</td><td>Publisher confirmed</td></tr>
+    <tr><td><strong>Connection type</strong></td><td>Online co-op</td><td>Steam feature listing</td></tr>
+    <tr><td><strong>Cross-platform co-op</strong></td><td>Not applicable at present; only Windows PC is announced</td><td>Publisher confirmed platform</td></tr>
+    <tr><td><strong>Drop-in/drop-out</strong></td><td>Not announced</td><td>Unknown</td></tr>
+  </tbody>
+</table>
+
+<h2 id="player-count">How many players does campaign co-op support?</h2>
+<p>Plan for a two-player campaign rather than a four-player story mode. The official material confirms co-op, and the published campaign summary identifies it as a two-player experience. Deep Silver has separately announced 1v1, 2v2, and 3v3 support for competitive multiplayer; those team sizes should not be applied to the story campaign.</p>
+<p>The distinction also prevents a common misunderstanding. “2v2” means four people divided into opposing competitive teams. “Two-player campaign co-op” means two people working through authored missions together against the mission's AI and scripted objectives. A Steam Online Co-op tag confirms networked cooperation but does not, by itself, prove a particular lobby capacity.</p>
+
+<h2 id="likely-structure">How is Dawn of War 4 co-op likely to work?</h2>
+<p>The safest expectation is that both players enter the same authored mission and cooperate with forces permitted by that mission. Dawn of War IV has four distinct faction campaigns rather than a free-form cooperative sandbox, so unrestricted faction mixing would be surprising unless a specific mission supports it. This is an inference from the announced campaign structure, not a confirmed restriction.</p>
+<p>KING Art's previous major RTS, <em>Iron Harvest</em>, allowed a friend to master its campaigns side by side in co-op. That precedent makes shared mission play a reasonable comparison because the same studio built both games. It does <strong>not</strong> prove that Dawn of War IV will copy Iron Harvest's save ownership, unit allocation, difficulty scaling, or lobby rules.</p>
+
+<table class="data-table">
+  <thead><tr><th>Likely design question</th><th>Practical expectation</th><th>Confidence</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Do players share one mission?</strong></td><td>Very likely; this is an authored campaign rather than a versus queue</td><td>High</td></tr>
+    <tr><td><strong>Can players mix any two factions?</strong></td><td>Probably not by default; campaigns are faction-specific</td><td>Medium-low</td></tr>
+    <tr><td><strong>Does each player control separate squads?</strong></td><td>Likely, but the exact unit and base split is unknown</td><td>Medium-low</td></tr>
+    <tr><td><strong>Will enemy strength scale?</strong></td><td>Likely in some form, but no scaling rules are published</td><td>Low</td></tr>
+    <tr><td><strong>Who owns campaign progress?</strong></td><td>Unknown; wait for the co-op UI or support documentation</td><td>Unknown</td></tr>
+  </tbody>
+</table>
+
+<p>The campaign includes choices on a world map and missions that can have consequences for other locations. That makes host progression and decision authority especially important. Until KING Art shows the interface, players should not assume that both accounts receive identical story completion or that a guest can resume the same campaign independently.</p>
+
+<h2>What will two players do during a mission?</h2>
+<p>The confirmed core systems offer a useful picture even though the control split is unannounced. Players will build bases, capture and upgrade resource points, manage squads, use cover, reinforce units in the field, and protect experienced forces through retreat. A pair could naturally divide attention between economy and combat or operate on different fronts, but that is advice based on RTS structure—not evidence of a formal commander-role system.</p>
+<p>Dawn of War IV also treats campaign balance separately from competitive balance. KING Art has said campaign units can remain unusually powerful when that serves the story, even if their multiplayer versions need adjustment. Co-op players should therefore expect authored scenarios and faction fantasy rather than a copy of ranked-match tuning.</p>
+
+<h2 id="other-coop">What other co-op modes are confirmed?</h2>
+<p>Campaign is not the only cooperative option. Deep Silver says the other announced modes support co-op as well, giving pairs and groups alternatives when they do not want to advance the story.</p>
+<ul>
+  <li><strong>Skirmish:</strong> configurable battles with choices such as map, factions, and difficulty. It should be the clearest place to practise with a friend against AI.</li>
+  <li><strong>Last Stand:</strong> a returning survival mode built around increasingly dangerous waves, character levels, skills, and equipment. Co-op is confirmed, while the final party size remains unannounced.</li>
+  <li><strong>Team multiplayer:</strong> 2v2 and 3v3 let friends join the same side against human opponents. This is cooperative teamwork, but it is PvP rather than campaign or Skirmish co-op.</li>
+</ul>
+<p>Compare all competitive objectives and capacities in the <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a>. Players who prefer hero progression over full army control can use the <a href="/blog/dawn-of-war-4-last-stand-mode-guide">Last Stand guide</a>.</p>
+
+<h2 id="open-questions">What has not been confirmed?</h2>
+<ul>
+  <li>Whether campaign co-op supports drop-in/drop-out joining or requires a lobby before each mission.</li>
+  <li>Whether both players receive achievements, unlocks, and independent campaign completion.</li>
+  <li>How units, buildings, Commanders, resources, and population capacity are divided.</li>
+  <li>Who selects world-map missions and makes narrative choices.</li>
+  <li>Whether difficulty or enemy numbers scale for a second player.</li>
+  <li>Whether pause, save, replay, and checkpoint behavior changes online.</li>
+  <li>Whether campaign co-op requires both players to own the same premium story content.</li>
+</ul>
+<p>These omissions are not signs that the feature is missing; they are normal pre-launch details that usually appear in a dedicated showcase, review build, or support article. This guide will replace expectations with tested answers when that evidence becomes available.</p>
+
+<h2>Should you buy Dawn of War 4 primarily for co-op?</h2>
+<p>The confirmed foundation is substantial: a two-player campaign spanning a 70-plus-mission package, plus cooperative Skirmish and Last Stand. That is enough to treat co-op as a major part of the game rather than a small bonus. It is not enough to promise seamless guest progression or unrestricted faction combinations.</p>
+<p><strong>Bottom line:</strong> two friends can plan to play the Dawn of War IV story together online. If shared saves, drop-in play, or DLC ownership rules are deal-breakers, wait for the co-op showcase or launch documentation before buying two copies.</p>
 `,
   },
   {

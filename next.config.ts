@@ -16,7 +16,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/blog/campaign-co-op-modes-breakdown",
-        destination: "/blog/dawn-of-war-4-multiplayer-modes-guide",
+        destination: "/blog/dawn-of-war-4-co-op-campaign-guide",
+        permanent: true,
+      },
+      {
+        source: "/blog/adeptus-mechanicus-build-orders-noosphere-patterns",
+        destination: "/blog/dawn-of-war-4-adeptus-mechanicus-faction-guide",
         permanent: true,
       },
       {
