@@ -21,11 +21,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-system-requirements-speculations",
     title: "Dawn of War 4 System Requirements: Estimated PC Specs",
-    seoTitle: "Dawn of War 4 PC Requirements",
+    seoTitle: "Dawn of War 4 System Requirements Estimate",
     shortTitle: "Dawn of War 4 System Requirements",
     excerpt: "See our estimated Dawn of War 4 PC requirements, built from Iron Harvest, Company of Heroes 3, and Tempest Rising, plus practical upgrade advice.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-12",
+    dateModified: "2026-08-29",
     author: "Kronus Archive Tech Desk",
     category: "System Specs",
     readTime: "8 min read",
@@ -34,6 +34,7 @@ export const blogPosts: BlogPost[] = [
     sources: [
       { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
       { label: "Dawn of War IV official FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
+      { label: "Release date update and optimization note", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/release-date-update" },
       { label: "Iron Harvest system requirements", publisher: "Steam", href: "https://store.steampowered.com/app/826630/Iron_Harvest/" },
       { label: "Company of Heroes 3 system requirements", publisher: "Steam", href: "https://store.steampowered.com/app/1677280/Company_of_Heroes_3/" },
       { label: "Tempest Rising PC system requirements", publisher: "Saber Support", href: "https://support.saber.games/hc/en/tempest-rising/articles/pc-system-requirements-2" },
@@ -50,7 +51,7 @@ export const blogPosts: BlogPost[] = [
 <nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#estimated-specs">estimated specs</a> · <a href="#comparison-method">comparison games</a> · <a href="#upgrade-advice">upgrade advice</a> · <a href="#estimate-limits">uncertainty</a></nav>
 
 <h2 id="estimated-specs">Estimated Dawn of War 4 PC requirements</h2>
-<p><em>Warhammer 40,000: Dawn of War IV</em> is confirmed for Windows PC through Steam. As checked on August 12, Steam still lists only a 64-bit processor and operating system; the minimum OS says “Coming soon.” The table therefore gives a practical planning range inferred from three relevant RTS references rather than leaving readers without an answer.</p>
+<p><em>Warhammer 40,000: Dawn of War IV</em> is confirmed for Windows PC through Steam. As checked on August 29, Steam still lists only a 64-bit processor and operating system; the minimum OS says “Coming soon.” Deep Silver's August delay announcement specifically mentions further polish and optimization, but it does not provide hardware specifications. The table therefore gives a practical planning range inferred from three relevant RTS references rather than leaving readers without an answer.</p>
 
 <table class="data-table">
   <thead>
@@ -126,33 +127,40 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dawn-of-war-4-release-date-editions-early-access",
-    title: "Dawn of War 4 Release Date & Editions",
-    seoTitle: "Dawn of War 4 Release Date & Editions",
+    title: "Dawn of War 4 Release Date Delayed to December 3",
+    seoTitle: "Dawn of War 4 Release Date: December 3 Delay",
     shortTitle: "Dawn of War 4 Release Date & Editions",
-    excerpt: "Dawn of War 4 launches September 17, 2026. Compare Standard and Commander Editions, US Steam prices, three-day early unlock, and confirmed DLC.",
+    excerpt: "Dawn of War 4 was delayed to December 3, 2026. See the new November 30 Commander unlock, why the date moved, editions, and roadmap impact.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-12",
+    dateModified: "2026-08-29",
     author: "Kronus Archive Commercial Desk",
     category: "Pre-order & Editions",
     readTime: "9 min read",
     keywords: ["Dawn of War 4 release date", "Dawn of War 4 Commander Edition", "Dawn of War 4 pre-order bonus"],
-    officialStatus: "Publisher Confirmed: September 17, 2026 Launch",
+    officialStatus: "Publisher Confirmed: December 3, 2026 Launch",
     sources: [
-      { label: "Release date, editions and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
+      { label: "Release date update", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/release-date-update" },
+      { label: "Editions and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
       { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
     ],
     faqs: [
-      { question: "When does Dawn of War 4 release?", answer: "Dawn of War IV releases for Windows PC on September 17, 2026. Commander Edition pre-purchases include a three-day early unlock beginning September 14." },
+      { question: "When does Dawn of War 4 release?", answer: "Dawn of War IV now releases for Windows PC on December 3, 2026. Deep Silver delayed the game from its previous September 17 date." },
+      { question: "When does Commander Edition advance access begin?", answer: "The revised three-day advance-access date is November 30, 2026 for eligible Commander Edition purchases." },
       { question: "How much is the Commander Edition?", answer: "The US Steam list price is $89.99, with a 10% pre-purchase price of $80.99 as checked on August 12, 2026. Regional prices can differ." },
       { question: "What is included in the Commander Edition?", answer: "It includes the base game, Blood Ravens Story Prologue, Aftermath campaign expansion with a new faction, digital soundtrack, and the announced Year One expansion content." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV releases on <strong>September 17, 2026</strong> for Windows PC through Steam. Commander Edition owners receive advance access from <strong>September 14</strong>. The Standard Edition costs $59.99 in the US and the Commander Edition costs $89.99 before the current 10% pre-purchase discount.</div>
+<div class="official-notice-box"><strong>Updated August 29:</strong> Deep Silver delayed Dawn of War IV from September 17 to <strong>December 3, 2026</strong>. Commander Edition advance access now begins <strong>November 30</strong>. The publisher says the extra development time will be used for additional polish and optimization.</div>
 <nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#release-timeline">release timeline</a> · <a href="#edition-comparison">edition comparison</a> · <a href="#unlock-questions">preload and unlock</a> · <a href="#buying-advice">buying advice</a></nav>
 <h2 id="release-timeline">1. Launch Timeline & Early Unlock Access</h2>
 <p>
-  Publisher Deep Silver has confirmed that <em>Warhammer 40,000: Dawn of War IV</em> launches worldwide on <strong>September 17, 2026</strong> for Windows PC via Steam. However, players who acquire the digital <em>Commander Edition</em> receive a 72-hour early unlock starting <strong>September 14, 2026</strong>.
+  Publisher Deep Silver has confirmed that <em>Warhammer 40,000: Dawn of War IV</em> now launches worldwide on <strong>December 3, 2026</strong> for Windows PC via Steam. Players who acquire the eligible digital <em>Commander Edition</em> retain a three-day advance-access benefit, now beginning <strong>November 30, 2026</strong>.
 </p>
+<p>The game was previously scheduled for September 17, with advance access on September 14. Those dates are no longer current. This page keeps the old dates only as historical context so players can distinguish outdated store copy, videos, and search snippets from the revised schedule.</p>
+
+<h2>Why was Dawn of War 4 delayed?</h2>
+<p>Deep Silver says the additional development time gives KING Art Games an opportunity to further enhance the game and deliver the intended quality. The publisher specifically points to extra polish and optimization rather than announcing a change in platforms, factions, or campaign scope.</p>
+<p>That explanation is broad, so it should not be turned into an unsupported claim about a particular bug, performance target, or unfinished mode. The confirmed takeaway is simply that the release moved by eleven weeks and the team will use that time on quality improvements. New hardware requirements, beta dates, or feature cuts have not been announced with the delay.</p>
 
 <table class="data-table">
   <thead>
@@ -164,19 +172,19 @@ export const blogPosts: BlogPost[] = [
   </thead>
   <tbody>
     <tr>
-      <td><strong>14 SEP 2026</strong></td>
+      <td><strong>30 NOV 2026</strong></td>
       <td>Commander Edition ($89.99 US list price)</td>
-      <td>3-day early unlock; Steam lists access from September 14</td>
+      <td>Revised three-day advance-access date</td>
     </tr>
     <tr>
-      <td><strong>17 SEP 2026</strong></td>
+      <td><strong>03 DEC 2026</strong></td>
       <td>Standard Edition ($59.99 US list price)</td>
-      <td>Global Steam Unlock for Standard Digital Pre-orders</td>
+      <td>Revised worldwide Windows PC release</td>
     </tr>
     <tr>
-      <td><strong>FALL 2026</strong></td>
+      <td><strong>2027 · DATES TBA</strong></td>
       <td>All Game Owners</td>
-      <td>Crusade mode and new map packs begin in the announced free-DLC window</td>
+      <td>Revised Year One rollout; individual content dates remain unannounced</td>
     </tr>
   </tbody>
 </table>
@@ -206,8 +214,8 @@ export const blogPosts: BlogPost[] = [
       <td>✅ Included</td>
     </tr>
     <tr>
-      <td>3-Day Early Access Unlock (Sep 14)</td>
-      <td>❌ Standard Unlock (Sep 17)</td>
+      <td>3-Day Advance Access (Nov 30)</td>
+      <td>❌ Standard Unlock (Dec 3)</td>
       <td><strong>✅ Included (72h Early Unlock)</strong></td>
     </tr>
     <tr>
@@ -224,14 +232,14 @@ export const blogPosts: BlogPost[] = [
 </table>
 
 <h2 id="unlock-questions">Preload, exact unlock time, and advance access</h2>
-<p>Steam confirms the September 14 advance-access date and September 17 standard release date, but an exact global unlock hour and preload schedule are not displayed in the cited store information. Players should treat countdowns from third-party stores as estimates until the Steam library shows a download or unlock timer.</p>
+<p>The publisher confirms the November 30 advance-access date and December 3 standard release date, but an exact global unlock hour and preload schedule are not included in the cited announcement. Players should treat countdowns from third-party stores as estimates until Steam displays a download or unlock timer.</p>
 <p>The three-day benefit is advance access to the release build, not a public beta and not Steam Early Access. That distinction matters: the game has a fixed full-release date, and the Commander Edition simply opens it earlier. Balance updates or technical fixes can still arrive during and after that window.</p>
 <table class="data-table">
   <thead><tr><th>Question</th><th>Best current answer</th><th>Confidence</th></tr></thead>
   <tbody>
     <tr><td><strong>Will there be a preload?</strong></td><td>Likely for a major Steam release, but not officially listed</td><td>Medium-low</td></tr>
     <tr><td><strong>When is the exact unlock hour?</strong></td><td>Not yet published; check the Steam countdown close to release</td><td>Officially unknown</td></tr>
-    <tr><td><strong>Is September 14 a beta?</strong></td><td>No; Steam describes it as advance access to the purchased edition</td><td>High</td></tr>
+    <tr><td><strong>Is November 30 a beta?</strong></td><td>No; it is advance access to the purchased release edition</td><td>High</td></tr>
     <tr><td><strong>Is a console version included?</strong></td><td>No; only Windows PC via Steam is currently confirmed</td><td>High</td></tr>
   </tbody>
 </table>
@@ -241,14 +249,14 @@ export const blogPosts: BlogPost[] = [
 <p>The four launch factions are Space Marines, Orks, Necrons, and Adeptus Mechanicus. Before choosing an edition for a preferred army, compare their confirmed systems in our <a href="/blog/dawn-of-war-4-factions-compared">Dawn of War 4 factions guide</a>.</p>
 
 <h2>What the Commander Edition adds</h2>
-<p>The higher-priced edition bundles the Blood Ravens Story Prologue, the Aftermath campaign expansion with an additional faction, the digital soundtrack, and announced Year One expansion content. The publisher roadmap places post-launch additions across fall 2026 through spring 2027, but individual premium-content dates remain subject to later announcements.</p>
+<p>The higher-priced edition bundles the Blood Ravens Story Prologue, the Aftermath campaign expansion with an additional faction, the digital soundtrack, and announced Year One expansion content. The delay also shifts the post-launch calendar: the revised roadmap moves the Year One rollout into 2027, while individual content dates remain subject to later announcements.</p>
 <p>The price difference is $30 at US list prices. That premium should be evaluated as a content bundle, not only as payment for three early days. Players who want both campaign expansions are the clearest audience; players focused on the launch campaign or competitive multiplayer can begin with Standard without losing a confirmed launch faction.</p>
 
 <h2 id="buying-advice">3. Buyer Recommendation & Verdict</h2>
 <div class="recommendation-box">
   <h3>Which Edition Should You Buy?</h3>
   <ul>
-    <li><strong>Buy Standard Edition ($59.99) if:</strong> You plan to play solo campaign missions at your own pace and do not mind waiting until September 17.</li>
+    <li><strong>Buy Standard Edition ($59.99) if:</strong> You plan to play solo campaign missions at your own pace and do not mind waiting until December 3.</li>
     <li><strong>Buy Commander Edition ($89.99 US list price) if:</strong> You value the three-day early unlock, both announced premium DLCs, and the digital soundtrack enough to pay the higher price.</li>
   </ul>
 </div>
@@ -436,7 +444,7 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Space Marines Faction Guide",
     excerpt: "Learn how Dawn of War 4 Space Marines use elite squads, orbital structures, fortifications, Reserves, reinforcement, and two playable Chapters.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-12",
+    dateModified: "2026-08-29",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
     readTime: "10 min read",
@@ -526,7 +534,7 @@ export const blogPosts: BlogPost[] = [
 <nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#necron-core">core economy</a> · <a href="#necron-survival">healing and resurrection</a> · <a href="#necron-units">confirmed units</a> · <a href="#necron-mobility">teleportation</a> · <a href="#necron-commanders">Commanders</a> · <a href="#necron-tba">what remains unknown</a></nav>
 <h2>Necrons playstyle at a glance</h2>
 <p>Deep Silver's July 29 faction deep dive resolves several questions that were still open when this guide was first published. The Necron game plan is now officially described as slow, steady expansion that develops into a snowballing threat. Their army does not simply become stronger through conventional technology: base reach, resource generation, territorial durability, resurrection, and teleportation are connected parts of one system.</p>
-<p>This guide is for players comparing factions before the September 17 launch. It explains confirmed rules and the decisions they create, but it does not pretend that final costs, cooldowns, build times, or competitive openings are public.</p>
+<p>This guide is for players comparing factions before the revised December 3 launch. It explains confirmed rules and the decisions they create, but it does not pretend that final costs, cooldowns, build times, or competitive openings are public.</p>
 <table class="data-table">
   <thead><tr><th>Confirmed system</th><th>Battlefield role</th><th>Evidence boundary</th></tr></thead>
   <tbody>
@@ -726,11 +734,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-multiplayer-modes-guide",
     title: "Dawn of War 4 Multiplayer Modes Explained",
-    seoTitle: "Dawn of War 4 Multiplayer Modes",
+    seoTitle: "Dawn of War 4 Multiplayer: 1v1, 2v2 & 3v3",
     shortTitle: "Dawn of War 4 Multiplayer Modes Explained",
-    excerpt: "See every confirmed Dawn of War 4 multiplayer mode, including Annihilation, Domination, Maelstrom, campaign co-op, Skirmish, and Last Stand.",
+    excerpt: "Dawn of War 4 supports 1v1, 2v2 and likely 3v3 battles. Compare Annihilation, Domination, Maelstrom, campaign co-op, Skirmish and Last Stand.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-12",
+    dateModified: "2026-08-29",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
     readTime: "10 min read",
@@ -824,11 +832,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-co-op-campaign-guide",
     title: "Dawn of War 4 Co-op Campaign: Player Count & How It May Work",
-    seoTitle: "Dawn of War 4 Co-op Campaign Guide",
+    seoTitle: "Dawn of War 4 Co-op Campaign: 2-Player Details",
     shortTitle: "Dawn of War 4 Co-op Campaign Guide",
-    excerpt: "Dawn of War 4 supports campaign co-op. See the confirmed player count, campaign scope, other cooperative modes, and what remains unannounced.",
+    excerpt: "Dawn of War 4 has a two-player online co-op campaign with 70+ missions. See what is confirmed, how shared play may work, and what remains unknown.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-13",
+    dateModified: "2026-08-29",
     author: "Kronus Archive Campaign Desk",
     category: "Campaign & Co-op",
     readTime: "9 min read",
@@ -1077,42 +1085,43 @@ export const blogPosts: BlogPost[] = [
     title: "Dawn of War 4 Year One Roadmap: Free & Paid DLC",
     seoTitle: "Dawn of War 4 Year One DLC Roadmap",
     shortTitle: "Year One DLC Roadmap",
-    excerpt: "See the confirmed Dawn of War 4 Year One roadmap: free Crusade mode, maps, mission editor, Commander scenarios, and two premium campaign DLC releases.",
+    excerpt: "See the revised Dawn of War 4 Year One roadmap after the December delay, including free Crusade mode, maps, mission editor, scenarios and premium DLC.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-02",
+    dateModified: "2026-08-29",
     author: "Kronus Archive Commercial Desk",
     category: "Pre-order & Editions",
     readTime: "6 min read",
     keywords: ["Dawn of War 4 DLC roadmap", "Dawn of War 4 Year One expansion", "Dawn of War 4 Crusade mode"],
     officialStatus: "Year One plan confirmed by publisher",
     sources: [
-      { label: "Release date, editions and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
+      { label: "Release date update and revised roadmap", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/release-date-update" },
+      { label: "Original editions and DLC plan", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
       { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
     ],
     faqs: [
-      { question: "What free DLC is planned for Dawn of War 4?", answer: "Deep Silver plans free Crusade mode, new map packs, a mission editor, and additional Commander scenarios for Last Stand and Crusade between fall 2026 and spring 2027." },
+      { question: "What free DLC is planned for Dawn of War 4?", answer: "Deep Silver still plans free Crusade mode, new map packs, a mission editor, and additional Commander scenarios for Last Stand and Crusade. The August delay moved the post-launch rollout into 2027; individual dates remain TBA." },
       { question: "What paid DLC is in the Year One expansion?", answer: "The two announced premium releases are the Blood Ravens Story Prologue and Aftermath, a campaign expansion that introduces an additional faction." },
       { question: "Does the Commander Edition include the Year One DLC?", answer: "Yes. The publisher says Commander Edition owners receive the announced free and paid DLC, alongside the base game and digital soundtrack." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Roadmap summary:</strong> From fall 2026 through spring 2027, Dawn of War IV is scheduled to receive free modes, maps, editing tools, and scenarios plus two premium story releases. Exact dates and finer details remain unannounced.</div>
+<div class="official-notice-box"><strong>Updated roadmap:</strong> Dawn of War IV's move to December 3 also shifted its post-launch calendar. Free modes, maps, editing tools and scenarios plus two premium story releases remain planned, with the rollout now moving through 2027. Exact dates remain unannounced.</div>
 
 <h2>Confirmed Dawn of War 4 DLC roadmap</h2>
-<p>Deep Silver describes the post-launch plan as the Year One Expansion. The roadmap separates free updates available to game owners from two premium story packages that are included with the Commander Edition or sold separately. This page records only announced content and does not assign dates the publisher has not given.</p>
+<p>Deep Silver describes the post-launch plan as the Year One Expansion. After delaying the base game from September 17 to December 3, the publisher also issued a revised roadmap. It separates free updates available to game owners from two premium story packages included with the Commander Edition or sold separately. This page records announced content without inventing exact dates from the roadmap artwork.</p>
 <table class="data-table">
   <thead><tr><th>Content</th><th>Type</th><th>Confirmed window or status</th><th>What the publisher says</th></tr></thead>
   <tbody>
-    <tr><td><strong>Crusade mode</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>Post-launch game mode</td></tr>
-    <tr><td><strong>Map packs</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>New maps</td></tr>
-    <tr><td><strong>Mission editor</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>Player-facing mission creation tool</td></tr>
-    <tr><td><strong>Commander scenarios</strong></td><td>Free</td><td>Fall 2026–Spring 2027 window</td><td>New scenarios for Last Stand and Crusade</td></tr>
+    <tr><td><strong>Crusade mode</strong></td><td>Free</td><td>Revised 2027 rollout; exact date TBA</td><td>Post-launch game mode</td></tr>
+    <tr><td><strong>Map packs</strong></td><td>Free</td><td>Revised 2027 rollout; exact dates TBA</td><td>New maps</td></tr>
+    <tr><td><strong>Mission editor</strong></td><td>Free</td><td>Revised 2027 rollout; exact date TBA</td><td>Player-facing mission creation tool</td></tr>
+    <tr><td><strong>Commander scenarios</strong></td><td>Free</td><td>Revised 2027 rollout; exact dates TBA</td><td>New scenarios for Last Stand and Crusade</td></tr>
     <tr><td><strong>Blood Ravens Story Prologue</strong></td><td>Premium</td><td>Date TBA</td><td>Story leading into the main campaign</td></tr>
     <tr><td><strong>Aftermath</strong></td><td>Premium</td><td>Date TBA</td><td>Campaign expansion plus an additional faction</td></tr>
   </tbody>
 </table>
 
 <h2>What is free for all game owners?</h2>
-<p>The publisher groups Crusade, maps, the mission editor, and Commander scenarios under free DLC. “Free” does not mean every feature arrives on launch day: the announced release window runs from fall 2026 through spring 2027. The order and individual dates are not yet public.</p>
+<p>The publisher groups Crusade, maps, the mission editor, and Commander scenarios under free DLC. “Free” does not mean every feature arrives on launch day: following the base-game delay, the revised schedule places this work in the 2027 post-launch period. The order and individual dates are not yet public.</p>
 <p>Crusade is separate from the launch campaign and from the three Quick Match win conditions described in our <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a>. Until a dedicated feature reveal appears, rules such as progression, map structure, and co-op capacity remain TBA.</p>
 
 <h2>What are the two premium expansions?</h2>
@@ -1125,7 +1134,7 @@ export const blogPosts: BlogPost[] = [
 <p>Standard Edition includes the base game, while Commander Edition packages the base game, both premium releases, the digital soundtrack, and the three-day early unlock offered to pre-purchasers. Use our <a href="/blog/dawn-of-war-4-release-date-editions-early-access">edition comparison</a> for current US Steam pricing and the exact inclusions.</p>
 
 <h2>What the roadmap does not promise</h2>
-<p>A roadmap describes current plans, not a guarantee that every feature will ship on the first possible date. Deep Silver has provided a broad fall 2026 to spring 2027 window for the free content and has said that finer details are not ready to share. It has not assigned a public release date to either premium DLC.</p>
+<p>A roadmap describes current plans, not a guarantee that every feature will ship on the first possible date. Deep Silver revised the schedule when it moved the base game to December, but has not assigned a precise public release date to each free update or either premium DLC.</p>
 <ul>
   <li>No exact launch date for Crusade mode.</li>
   <li>No number or names for the free maps.</li>
@@ -1749,7 +1758,7 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Dawn of War 4 Voice Cast",
     excerpt: "See the confirmed Dawn of War 4 voice cast, including Brian Drummond as Gorgutz, Steve Blum as Cyrus, Alistair Petrie as the Lion, and every named role.",
     datePublished: "2026-08-12",
-    dateModified: "2026-08-12",
+    dateModified: "2026-08-29",
     author: "Kronus Archive Narrative Desk",
     category: "Campaign & Co-op",
     readTime: "9 min read",
@@ -1839,7 +1848,7 @@ export const blogPosts: BlogPost[] = [
   <li>Whether additional full-audio languages will be announced.</li>
   <li>Performance details that would reveal campaign spoilers.</li>
 </ul>
-<p>The reliable answer is the official roster above: Dawn of War 4 combines returning franchise voices with a large new ensemble. This page will be updated if Deep Silver publishes additional actors or final credits before the September 17 release.</p>
+<p>The reliable answer is the official roster above: Dawn of War 4 combines returning franchise voices with a large new ensemble. This page will be updated if Deep Silver publishes additional actors or final credits before the December 3 release.</p>
 `,
   },
 ];

@@ -4,8 +4,8 @@ export const site = {
   description:
     "An independent, source-led field guide to Warhammer 40,000: Dawn of War IV.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kronusarchive.com",
-  releaseDate: "2026-09-17",
-  earlyUnlockDate: "2026-09-14",
+  releaseDate: "2026-12-03",
+  earlyUnlockDate: "2026-11-30",
   steamUrl:
     "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/",
 } as const;
@@ -13,7 +13,7 @@ export const site = {
 export const editorial = {
   name: "Kronus Archive Editorial Desk",
   published: "2026-08-01",
-  modified: "2026-08-01",
+  modified: "2026-08-29",
 } as const;
 
 export type Faction = {
@@ -148,19 +148,19 @@ export const features = [
 
 export const roadmap = [
   {
-    date: "14 SEP 2026",
+    date: "30 NOV 2026",
     label: "Commander Edition",
     detail: "Three-day early unlock begins.",
   },
   {
-    date: "17 SEP 2026",
+    date: "03 DEC 2026",
     label: "Global PC launch",
     detail: "Standard release on Steam.",
   },
   {
-    date: "FALL 2026 → SPRING 2027",
+    date: "2027 · DATES TBA",
     label: "Free operations",
-    detail: "Crusade mode, map packs, mission editor, and commander scenarios.",
+    detail: "Crusade mode, map packs, mission editor, and commander scenarios remain planned on the revised roadmap.",
   },
   {
     date: "POST-LAUNCH",
@@ -170,8 +170,8 @@ export const roadmap = [
 ] as const;
 
 export const facts = [
-  ["Release date", "September 17, 2026"],
-  ["Early unlock", "September 14 · Commander Edition"],
+  ["Release date", "December 3, 2026"],
+  ["Early unlock", "November 30 · Commander Edition"],
   ["Platform", "Windows PC via Steam"],
   ["Launch factions", "Space Marines, Orks, Necrons, Adeptus Mechanicus"],
   ["Campaign", "70+ missions · solo or two-player co-op"],
@@ -184,7 +184,7 @@ export const faqs = [
   {
     question: "When is Dawn of War 4 coming out?",
     answer:
-      "Warhammer 40,000: Dawn of War IV launches on September 17, 2026 for Windows PC via Steam. The Commander Edition includes a three-day early unlock beginning September 14.",
+      "Deep Silver moved Warhammer 40,000: Dawn of War IV from September 17 to December 3, 2026 for Windows PC via Steam. Commander Edition advance access now begins November 30.",
   },
   {
     question: "What factions are in Dawn of War IV?",
@@ -204,12 +204,12 @@ export const faqs = [
   {
     question: "Is Dawn of War IV coming to PlayStation or Xbox?",
     answer:
-      "Only the Windows PC version has been officially confirmed. No PlayStation or Xbox release has been announced as of August 1, 2026.",
+      "Only the Windows PC version has been officially confirmed. No PlayStation or Xbox release has been announced as of August 29, 2026.",
   },
   {
     question: "Are the Dawn of War 4 system requirements available?",
     answer:
-      "The final PC system requirements are not yet included in this archive. We will publish them after they appear on an official store or publisher page.",
+      "Final PC requirements remain unpublished. Our system-requirements guide provides a clearly labeled estimate based on comparable modern RTS games until Deep Silver posts official specifications.",
   },
 ] as const;
 
@@ -220,7 +220,12 @@ export const sources = [
     href: "https://www.deepsilver.com/games/dawn-of-war-iv",
   },
   {
-    label: "Release date & roadmap",
+    label: "Release date update",
+    publisher: "Deep Silver",
+    href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/release-date-update",
+  },
+  {
+    label: "Editions & original roadmap",
     publisher: "Deep Silver",
     href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed",
   },

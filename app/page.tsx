@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Dawn of War 4 Guide, Factions & Release Date",
   description:
-    "Explore the Dawn of War 4 release date, four factions, campaign, co-op, multiplayer modes and roadmap in this source-checked guide.",
+    "Dawn of War 4 now releases December 3, 2026. Explore its four factions, campaign, co-op, multiplayer modes and revised roadmap.",
   alternates: {
     canonical: "/",
   },
@@ -28,6 +28,16 @@ const releaseLabel = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
   timeZone: "UTC",
 }).format(new Date(`${site.releaseDate}T00:00:00Z`));
+
+const releaseDateParts = new Intl.DateTimeFormat("en-US", {
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
+  timeZone: "UTC",
+}).formatToParts(new Date(`${site.releaseDate}T00:00:00Z`));
+
+const releasePart = (type: Intl.DateTimeFormatPartTypes) =>
+  releaseDateParts.find((part) => part.type === type)?.value ?? "";
 
 export default function Home() {
   const websiteJsonLd = {
@@ -103,7 +113,7 @@ export default function Home() {
               <span>FIELD GUIDE &amp; MATRIX</span>
             </h1>
             <p className="hero-lede">
-              An independent, source-led intelligence field guide tracking the September 17 launch,
+              An independent, source-led intelligence field guide tracking the revised December 3 launch,
               four confirmed factions, 70+ mission campaign, co-op tactics, and verified post-launch roadmaps.
             </p>
             <div className="hero-actions">
@@ -122,9 +132,9 @@ export default function Home() {
               <span className="verified">Verified Source</span>
             </div>
             <p className="release-date">
-              <span>17</span>
-              <strong>SEP</strong>
-              <small>2026</small>
+              <span>{releasePart("day")}</span>
+              <strong>{releasePart("month").toUpperCase()}</strong>
+              <small>{releasePart("year")}</small>
             </p>
             <dl>
               <div>
@@ -141,7 +151,7 @@ export default function Home() {
               </div>
               <div>
                 <dt>Early Access</dt>
-                <dd>14 Sep · Commander</dd>
+                <dd>30 Nov · Commander</dd>
               </div>
             </dl>
             <a href={site.steamUrl} target="_blank" rel="noreferrer">
@@ -179,7 +189,7 @@ export default function Home() {
             ))}
           </dl>
           <p className="update-note">
-            <span>Last Reviewed:</span> August 1, 2026
+            <span>Last Reviewed:</span> August 29, 2026
             <span style={{ marginLeft: "auto" }}><span>Evidence Protocol:</span> First-Party Verified</span>
           </p>
         </section>
