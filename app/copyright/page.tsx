@@ -49,7 +49,7 @@ export default function CopyrightPage() {
                 Warhammer 40,000 Copyrights
               </h2>
               <p style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
-                *Warhammer 40,000*, *Dawn of War*, *Space Marine*, *Blood Ravens*, *Dark Angels*, *Orks*, *Necrons*, *Adeptus Mechanicus*, and all associated marks, names, races, vehicles, weapons, and campaign lore are trademarks or registered trademarks of <strong>Games Workshop Limited</strong>, variable registered around the world, and used under non-commercial community reference context.
+                <em>Warhammer 40,000</em>, <em>Dawn of War</em>, <em>Space Marine</em>, <em>Blood Ravens</em>, <em>Dark Angels</em>, <em>Orks</em>, <em>Necrons</em>, <em>Adeptus Mechanicus</em>, and associated marks, names, characters, vehicles, weapons, and lore belong to their respective rights holders. References on this site identify and discuss the game; they do not claim ownership or official status.
               </p>
             </article>
 
@@ -66,10 +66,20 @@ export default function CopyrightPage() {
             <article className="record-block">
               <p className="kicker">03 // Games Workshop Fan Content Policy Compliance</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
-                Non-Commercial Community Compliance
+                Independent Commentary &amp; Advertising
               </h2>
               <p style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
-                {site.name} adheres to the Games Workshop Fan Content Guidelines. This archive is maintained strictly for community discussion, player assistance, news tracking, and educational field guide purposes. No financial paywalls or commercial selling of IP assets occurs on this site.
+                {site.name} publishes original commentary, research summaries, comparisons, and player guidance. It does not sell third-party game assets or place editorial content behind a paywall. The site may display third-party advertising; advertisements are operational funding and do not indicate sponsorship, licensing, or endorsement by Games Workshop or any other rights holder.
+              </p>
+            </article>
+
+            <article className="record-block">
+              <p className="kicker">04 // Rights Contact</p>
+              <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
+                Report a Rights Concern
+              </h2>
+              <p style={{ color: "var(--ink-muted)", lineHeight: 1.7 }}>
+                Rights holders can identify an affected URL and the material at issue through our <Link href="/contact" style={{ color: "var(--accent-gold)" }}>Contact &amp; Corrections</Link> process. Valid concerns will be reviewed promptly.
               </p>
             </article>
           </div>

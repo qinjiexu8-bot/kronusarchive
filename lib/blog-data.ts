@@ -128,7 +128,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-release-date-editions-early-access",
     title: "Dawn of War 4 Release Date Delayed to December 3",
-    seoTitle: "Dawn of War 4 Release Date: December 3 Delay",
+    seoTitle: "Dawn of War 4 Release Date: Dec 3 Delay",
     shortTitle: "Dawn of War 4 Release Date & Editions",
     excerpt: "Dawn of War 4 was delayed to December 3, 2026. See the new November 30 Commander unlock, why the date moved, editions, and roadmap impact.",
     datePublished: "2026-08-01",
@@ -381,7 +381,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "space-marines-dark-angels-sub-faction-differences",
     title: "Blood Ravens vs Dark Angels in Dawn of War 4",
-    seoTitle: "Blood Ravens vs Dark Angels in Dawn of War 4",
+    seoTitle: "Dawn of War 4: Blood Ravens vs Dark Angels",
     shortTitle: "Blood Ravens vs Dark Angels",
     excerpt: "Compare Dawn of War 4's Blood Ravens and Dark Angels, including their campaign roles, commanders, Deathwing, Ravenwing, and confirmed differences.",
     datePublished: "2026-08-01",
@@ -832,7 +832,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-co-op-campaign-guide",
     title: "Dawn of War 4 Co-op Campaign: Player Count & How It May Work",
-    seoTitle: "Dawn of War 4 Co-op Campaign: 2-Player Details",
+    seoTitle: "Dawn of War 4 Co-op: 2-Player Campaign",
     shortTitle: "Dawn of War 4 Co-op Campaign Guide",
     excerpt: "Dawn of War 4 has a two-player online co-op campaign with 70+ missions. See what is confirmed, how shared play may work, and what remains unknown.",
     datePublished: "2026-08-13",

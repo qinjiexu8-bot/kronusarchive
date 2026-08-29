@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { TacticalSearch } from "@/components/tactical-search";
+import { blogPosts } from "@/lib/blog-data";
 import {
   factions,
   facts,
@@ -38,6 +39,16 @@ const releaseDateParts = new Intl.DateTimeFormat("en-US", {
 
 const releasePart = (type: Intl.DateTimeFormatPartTypes) =>
   releaseDateParts.find((part) => part.type === type)?.value ?? "";
+
+const featuredBriefingSlugs = [
+  "dawn-of-war-4-release-date-editions-early-access",
+  "dawn-of-war-4-system-requirements-speculations",
+  "dawn-of-war-4-multiplayer-modes-guide",
+];
+
+const featuredBriefings = featuredBriefingSlugs
+  .map((slug) => blogPosts.find((post) => post.slug === slug))
+  .filter((post): post is NonNullable<typeof post> => Boolean(post));
 
 export default function Home() {
   const websiteJsonLd = {
@@ -192,6 +203,40 @@ export default function Home() {
             <span>Last Reviewed:</span> August 29, 2026
             <span style={{ marginLeft: "auto" }}><span>Evidence Protocol:</span> First-Party Verified</span>
           </p>
+        </section>
+
+        <section className="section shell" aria-labelledby="latest-briefings-title">
+          <div className="section-heading">
+            <p className="kicker">
+              Latest Updates <span aria-hidden="true">{"//"}</span> Priority Briefings
+            </p>
+            <h2 id="latest-briefings-title">What Changed &amp; What to Know.</h2>
+            <p>
+              Start with the revised release schedule, our transparent PC hardware estimate, and the confirmed multiplayer formats.
+            </p>
+          </div>
+          <div className="faction-grid">
+            {featuredBriefings.map((post) => (
+              <article
+                key={post.slug}
+                className="faction-card"
+                style={{ "--faction": "var(--accent-gold)" } as React.CSSProperties}
+              >
+                <span className="card-index">UPDATED {post.dateModified}</span>
+                <h3 style={{ marginTop: "20px" }}>
+                  <Link href={`/blog/${post.slug}`} style={{ color: "var(--ink)" }}>
+                    {post.title}
+                  </Link>
+                </h3>
+                <p style={{ textTransform: "none", letterSpacing: "normal", fontWeight: 400 }}>
+                  {post.excerpt}
+                </p>
+                <Link className="open-record" href={`/blog/${post.slug}`}>
+                  Read Briefing ↗
+                </Link>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section className="section shell" id="factions">

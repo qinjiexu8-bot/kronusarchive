@@ -46,15 +46,25 @@ export default function TermsPage() {
             <article className="record-block">
               <p className="kicker">01 // Independent Project Scope</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
-                Non-Commercial Reference Archive
+                Independent Reference Archive
               </h2>
               <p style={{ color: "var(--ink-muted)" }}>
-                {site.name} is an independent, non-commercial player reference and field guide created to track announced details for *Warhammer 40,000: Dawn of War IV*. Content is provided for informational and educational purposes only.
+                {site.name} is an independent, unofficial player reference and field guide created to track announced details for <em>Warhammer 40,000: Dawn of War IV</em>. Content is provided for informational and educational purposes. The site may display third-party advertising to support its operation; advertising does not imply endorsement by a game developer, publisher, platform, or rights holder.
               </p>
             </article>
 
             <article className="record-block">
-              <p className="kicker">02 // Disclaimer of Warranties</p>
+              <p className="kicker">02 // Advertising &amp; External Services</p>
+              <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
+                Commercial Disclosure
+              </h2>
+              <p style={{ color: "var(--ink-muted)" }}>
+                Advertising, analytics, store links, and other third-party services may appear on the site. Unless a page explicitly says otherwise, outbound store links are provided as references and are not affiliate links. Editorial rankings, source labels, and corrections are not sold to advertisers.
+              </p>
+            </article>
+
+            <article className="record-block">
+              <p className="kicker">03 // Disclaimer of Warranties</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
                 Pre-Launch Information Accuracy
               </h2>
@@ -64,7 +74,7 @@ export default function TermsPage() {
             </article>
 
             <article className="record-block">
-              <p className="kicker">03 // Intellectual Property Notice</p>
+              <p className="kicker">04 // Intellectual Property Notice</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "28px", textTransform: "uppercase", margin: "8px 0 16px" }}>
                 Third-Party Trademarks
               </h2>

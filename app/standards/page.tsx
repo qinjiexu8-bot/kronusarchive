@@ -71,7 +71,17 @@ export default function StandardsPage() {
             </article>
 
             <article className="record-block">
-              <p className="kicker">02 // Evidence Labels</p>
+              <p className="kicker">02 // Editorial Accountability</p>
+              <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", textTransform: "uppercase", margin: "8px 0 16px" }}>
+                Transparent Tools and Corrections.
+              </h2>
+              <p style={{ color: "var(--ink-muted)" }}>
+                AI-assisted tools may support research organization, comparison, drafting, and consistency checks, but every published claim remains subject to editorial review and the evidence labels above. Learn more on the <Link href="/about" style={{ color: "var(--accent-gold)" }}>About page</Link>, or report an error through <Link href="/contact" style={{ color: "var(--accent-gold)" }}>Contact &amp; Corrections</Link>.
+              </p>
+            </article>
+
+            <article className="record-block">
+              <p className="kicker">03 // Evidence Labels</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", textTransform: "uppercase", margin: "8px 0 16px" }}>
                 Confirmed, Observed, Estimated, or Tested.
               </h2>
@@ -84,7 +94,7 @@ export default function StandardsPage() {
             </article>
 
             <article className="record-block">
-              <p className="kicker">03 // Strategy Claims</p>
+              <p className="kicker">04 // Strategy Claims</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "32px", textTransform: "uppercase", margin: "8px 0 16px" }}>
                 No Fabricated Data.
               </h2>

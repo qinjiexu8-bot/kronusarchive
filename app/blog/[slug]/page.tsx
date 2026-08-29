@@ -74,7 +74,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     author: {
       "@type": "Organization",
       name: post.author,
-      url: `${site.url}/standards`,
+      url: `${site.url}/about`,
     },
     publisher: {
       "@type": "Organization",

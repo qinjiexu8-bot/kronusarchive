@@ -13,10 +13,21 @@ export const metadata: Metadata = {
   },
 };
 
+const priorityOrder = new Map([
+  ["dawn-of-war-4-release-date-editions-early-access", 0],
+  ["dawn-of-war-4-system-requirements-speculations", 1],
+  ["dawn-of-war-4-multiplayer-modes-guide", 2],
+  ["dawn-of-war-4-co-op-campaign-guide", 3],
+]);
+
 export default function BlogIndexPage() {
   const publishedPosts = blogPosts
     .filter((post) => post.indexable !== false)
-    .toSorted((a, b) => b.datePublished.localeCompare(a.datePublished));
+    .toSorted((a, b) =>
+      b.dateModified.localeCompare(a.dateModified) ||
+      (priorityOrder.get(a.slug) ?? 99) - (priorityOrder.get(b.slug) ?? 99) ||
+      b.datePublished.localeCompare(a.datePublished),
+    );
 
   return (
     <>
@@ -59,7 +70,7 @@ export default function BlogIndexPage() {
                   {post.excerpt}
                 </p>
                 <div style={{ marginTop: "auto", display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop: "20px", borderTop: "1px dashed var(--border-dim)" }}>
-                  <small style={{ color: "var(--ink-subtle)", fontSize: "12px" }}>{post.readTime} · {post.datePublished}</small>
+                  <small style={{ color: "var(--ink-subtle)", fontSize: "12px" }}>{post.readTime} · Updated {post.dateModified}</small>
                   <Link href={`/blog/${post.slug}`} className="open-record" style={{ paddingTop: 0 }}>
                     Read Briefing ↗
                   </Link>

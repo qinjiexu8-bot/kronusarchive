@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     description: site.description,
     images: ["/og.png"],
   },
-  authors: [{ name: "Kronus Archive Editorial Desk" }],
+  authors: [{ name: "Kronus Archive Editorial Desk", url: "/about" }],
   creator: "Kronus Archive Editorial Desk",
   publisher: "Kronus Archive",
 };
