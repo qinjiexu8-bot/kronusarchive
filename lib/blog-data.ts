@@ -273,7 +273,7 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Dawn of War 4 Factions & Army Comparison Guide",
     excerpt: "Compare all four confirmed Dawn of War 4 factions—Space Marines, Orks, Necrons, and Adeptus Mechanicus—and find the army that fits your RTS style.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-12",
+    dateModified: "2026-10-19",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
     readTime: "12 min read",
@@ -292,6 +292,17 @@ export const blogPosts: BlogPost[] = [
 <div class="official-notice-box"><strong>Quick answer:</strong> Space Marines are the clearest beginner choice; Orks suit aggressive expansion; Necrons reward slow territorial snowballing; and Adeptus Mechanicus offer the deepest network-based base planning. This is a playstyle recommendation, not a pre-launch tier list.</div>
 <nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#faction-matrix">comparison matrix</a> · <a href="#space-marines-choice">Space Marines</a> · <a href="#orks-choice">Orks</a> · <a href="#necrons-choice">Necrons</a> · <a href="#admech-choice">Adeptus Mechanicus</a> · <a href="#faction-verdict">recommendation</a></nav>
 <h2 id="faction-matrix">1. Four Launch Armies: Side-by-Side Comparison</h2>
+<p><strong>October 19 editorial comparison:</strong> use the decision table below to choose what to practice. These recommendations interpret the publisher's faction descriptions; they are not measured difficulty ratings or a competitive tier list.</p>
+<table class="data-table">
+<caption>Four factions: what you manage and what can go wrong</caption>
+<thead><tr><th scope="col">Faction</th><th scope="col">Main decision</th><th scope="col">Mobility and territory</th><th scope="col">Practice first</th></tr></thead>
+<tbody>
+<tr><th scope="row">Space Marines</th><td>How much to invest in each expensive squad</td><td>Orbital reserves and Thunderhawk transport help a small force respond</td><td>Retreat before losing upgraded squads; protect Power</td></tr>
+<tr><th scope="row">Orks</th><td>When to commit numbers and maintain pressure</td><td>Forward infrastructure supports aggression</td><td>Expand without leaving fragile buildings exposed</td></tr>
+<tr><th scope="row">Necrons</th><td>Where to extend the Power Matrix</td><td>Slow advance, with later translocation options</td><td>Fight within your network while watching distant objectives</td></tr>
+<tr><th scope="row">Adeptus Mechanicus</th><td>How to expand and protect the Noosphere</td><td>Connected infrastructure supports a prepared firing line</td><td>Protect relays and keep melee threats away from ranged units</td></tr>
+</tbody></table>
+<p>Source: <a href="https://www.deepsilver.com/games/dawn-of-war-iv">official faction advice</a>. For the newly detailed Marine transport mechanics, see our <a href="/blog/dawn-of-war-4-space-marines-faction-guide">updated Space Marines guide</a>. Treat these as practice priorities, not guaranteed winning strategies.</p>
 <p>
   Selecting a faction changes buildings, economy, commanders, units, and battlefield mechanics. The roster and faction identities below are developer-confirmed; difficulty and mobility labels are editorial guidance based on current official descriptions, not launch balance data.
 </p>
@@ -442,15 +453,16 @@ export const blogPosts: BlogPost[] = [
     title: "Dawn of War 4 Space Marines Guide: Units & Strategy",
     seoTitle: "Dawn of War 4 Space Marines Guide",
     shortTitle: "Space Marines Faction Guide",
-    excerpt: "Learn how Dawn of War 4 Space Marines use elite squads, orbital structures, fortifications, Reserves, reinforcement, and two playable Chapters.",
+    excerpt: "Compare four Space Marine commanders and learn how orbital reserves, Thunderhawk transport and elite squads work in Dawn of War 4.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-29",
+    dateModified: "2026-10-19",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
     readTime: "10 min read",
     keywords: ["Dawn of War 4 Space Marines guide", "Dawn of War 4 Blood Ravens", "Dawn of War 4 Space Marine units"],
-    officialStatus: "Based on official faction overview and developer AMA",
+    officialStatus: "Updated from the October Space Marines deep dive",
     sources: [
+      { label: "Faction Deep Dive — Space Marines", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/faction-deep-dive-space-marines" },
       { label: "Dawn of War IV official faction overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
       { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
       { label: "Meet the new faces from the Story Trailer", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/meet-the-new-faces-from-our-epic-story-trailer" },
@@ -473,10 +485,13 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>On-field reinforcement</strong></td><td>Preserve squads and veterancy</td><td>Continuous replacement drains resources</td></tr>
     <tr><td><strong>Orbital structures</strong></td><td>Build anywhere within vision</td><td>Longer distant deployment and visible warning</td></tr>
     <tr><td><strong>Fortifications</strong></td><td>Secure points the main army cannot hold</td><td>Static defenses cannot answer every attack</td></tr>
-    <tr><td><strong>Reserves and Thunderhawk Relay</strong></td><td>Move troops to threatened areas</td><td>Exact rules and timings remain TBA</td></tr>
+    <tr><td><strong>Reserves and Thunderhawk Relay</strong></td><td>Deploy orbital reserves or transport existing troops</td><td>Costs, cooldowns and capacity still need verification</td></tr>
   </tbody>
 </table>
 <h2 id="orbital-buildings">Orbital construction and map presence</h2>
+<h3>October update: reserves and transport explained</h3>
+<p>The <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/faction-deep-dive-space-marines">official Space Marines deep dive</a>, checked October 19, distinguishes two tools: reserves wait in orbit for Drop Pod deployment; existing units enter a Thunderhawk Relay building to be transported elsewhere. These are different ways to reinforce a position, not interchangeable names for orbital construction.</p>
+<p><strong>Planning implication:</strong> decide whether a threatened objective needs fresh reserves or troops pulled away from another front. Moving an existing force may solve one problem while exposing its previous position. This is our interpretation, not a tested build order.</p>
 <p>Space Marine structures can drop from orbit anywhere the player has vision. Distance from headquarters increases deployment time, and enemies can see where a structure will arrive. This produces a clear trade-off: orbital placement can establish a forward position, but an ambitious landing gives the opponent time and information to react.</p>
 <p>The official overview also names fortifications, Reserves, and the Thunderhawk Relay as tools for covering a wide map. Until costs and cooldowns are published, these should be treated as confirmed capabilities rather than a finished build order.</p>
 <h3>How to evaluate an orbital deployment</h3>
@@ -495,9 +510,19 @@ export const blogPosts: BlogPost[] = [
 <p>The publisher advises opponents to deny Resource Points—especially Power—stretch the elite force across several locations, and punish costly losses. Ork buildings can chip away at map control, Necrons can make territorial fights increasingly difficult, and Adeptus Mechanicus can use networked information and ranged tools. These are faction-level pressures, not guaranteed counters.</p>
 
 <h2 id="marine-chapters">Blood Ravens and Dark Angels</h2>
+<table class="data-table">
+<caption>Four commanders identified in the October faction deep dive</caption>
+<thead><tr><th scope="col">Chapter</th><th scope="col">Commander</th><th scope="col">Announced emphasis</th></tr></thead>
+<tbody>
+<tr><th scope="row">Blood Ravens</th><td>Cyrus</td><td>Ranged combat and stealth</td></tr>
+<tr><th scope="row">Blood Ravens</th><td>Jonah</td><td>Psychic abilities</td></tr>
+<tr><th scope="row">Dark Angels</th><td>Ezrael</td><td>Bike-mounted mobility</td></tr>
+<tr><th scope="row">Dark Angels</th><td>Astoran</td><td>Slower, durable Terminator armour</td></tr>
+</tbody></table>
+<p>The same announcement confirms a Painter with preset Chapters and shareable custom colour schemes for use outside the campaign. Cosmetic choice should not be confused with a separate playable faction.</p>
 <p>The Space Marines campaign includes both Blood Ravens and Dark Angels. Official story material describes Blood Ravens as flexible strategic fighters, while Dark Angels favor shock-and-awe through Deathwing and Ravenwing elite units. The <a href="/blog/space-marines-dark-angels-sub-faction-differences">Chapter comparison</a> records only confirmed differences.</p>
 <h2>What remains TBA</h2>
-<ul><li>Opening production sequence and starting resources.</li><li>Unit prices, build times, and tech tiers.</li><li>Exact Reserves and Thunderhawk Relay rules.</li><li>Complete multiplayer roster and Commander loadouts.</li><li>Map-specific fortification and orbital deployment strategy.</li></ul>
+<ul><li>Opening production sequence and starting resources.</li><li>Unit prices, build times, and tech tiers.</li><li>Reserves and Thunderhawk costs, cooldowns, and capacity.</li><li>Complete multiplayer roster and numerical Commander ability values.</li><li>Map-specific fortification and orbital deployment strategy.</li></ul>
 <div class="recommendation-box"><h3>Who should choose Space Marines?</h3><ul><li>Players who prefer fewer, stronger squads.</li><li>Players who enjoy upgrades and unit preservation.</li><li>Players comfortable defending several locations with mobility and fortifications.</li></ul></div>
 <p><strong>Pre-launch verdict:</strong> Space Marines are the clearest first faction for players learning the shared RTS systems, but their expensive squads make careless losses unusually punishing. Our beginner recommendation has medium confidence because the structure progression is officially described as straightforward; it is not a claim that Space Marines will be the strongest faction.</p>
 `,
@@ -734,17 +759,18 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-multiplayer-modes-guide",
     title: "Dawn of War 4 Multiplayer Modes Explained",
-    seoTitle: "Dawn of War 4 Multiplayer: 1v1, 2v2 & 3v3",
+    seoTitle: "Dawn of War 4 Multiplayer & Beta Modes",
     shortTitle: "Dawn of War 4 Multiplayer Modes Explained",
-    excerpt: "Dawn of War 4 supports 1v1, 2v2 and likely 3v3 battles. Compare Annihilation, Domination, Maelstrom, campaign co-op, Skirmish and Last Stand.",
+    excerpt: "Compare Dawn of War 4 player counts and modes, plus the October 21–26 closed beta: confirmed 1v1 testing, campaign co-op and team-size estimates.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-29",
+    dateModified: "2026-10-19",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
     readTime: "10 min read",
     keywords: ["Dawn of War 4 multiplayer modes", "Dawn of War 4 Last Stand mode", "Dawn of War 4 co-op campaign"],
-    officialStatus: "Developer Confirmed Game Modes",
+    officialStatus: "October beta confirmed; launch estimates labeled separately",
     sources: [
+      { label: "October closed-beta announcement", publisher: "Deep Silver", href: "https://www.deepsilver.com/au/games/dawn-of-war-iv/news/closed-beta" },
       { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
       { label: "Dawn of War IV official overview and FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
       { label: "Dawn of War IV gameplay preview", publisher: "GamesRadar+", href: "https://www.gamesradar.com/games/real-time-strategy/dawn-of-war-4-has-its-sights-set-on-gameplay-that-feels-authentic-to-the-fantasy-of-each-faction-in-warhammer-40k-and-it-already-looks-like-my-most-wanted-rts-of-2026/" },
@@ -758,6 +784,19 @@ export const blogPosts: BlogPost[] = [
 <div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV Quick Match includes Annihilation, Domination, and Maelstrom. The 70-plus-mission campaign supports solo or two-player co-op, while Skirmish and Last Stand add non-competitive options. Public previews point to 1v1, 2v2, and 3v3 battles; 4v4 is not currently confirmed.</div>
 <nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#mode-table">all modes</a> · <a href="#quick-match">Quick Match</a> · <a href="#team-sizes">player counts</a> · <a href="#coop-options">co-op choices</a> · <a href="#mode-choice">which mode to play</a></nav>
 <h2 id="mode-table">1. Overview of Game Modes & Player Capacities</h2>
+<h3>October closed beta: what is actually available?</h3>
+<p><strong>Checked October 19:</strong> the <a href="https://www.deepsilver.com/au/games/dawn-of-war-iv/news/closed-beta">official closed-beta announcement</a> schedules testing for October 21–26. AI Skirmish is available throughout, while human opponents are available during scheduled multiplayer sessions. Both are 1v1. Exact session times go to selected participants.</p>
+<table class="data-table">
+<caption>Beta access versus the wider game: player-count evidence</caption>
+<thead><tr><th scope="col">Activity</th><th scope="col">Human players</th><th scope="col">Evidence and availability</th></tr></thead>
+<tbody>
+<tr><th scope="row">Beta AI Skirmish</th><td>1 human against 1 AI</td><td>Officially announced throughout the October test</td></tr>
+<tr><th scope="row">Beta multiplayer</th><td>2 humans, opposing sides</td><td>Official 1v1 sessions; invitation schedule applies</td></tr>
+<tr><th scope="row">Campaign co-op</th><td>2 cooperating players</td><td>Announced for the game; not listed in this beta</td></tr>
+<tr><th scope="row">2v2 / 3v3</th><td>4 / 6 humans if supported</td><td>Preview-based expectations; not this beta's announced format</td></tr>
+<tr><th scope="row">Last Stand</th><td>Final capacity unconfirmed here</td><td>Three-player estimate comes from series precedent, not the beta announcement</td></tr>
+</tbody></table>
+<p>The newsletter deadline for new applicants was before October 18 and has passed. Existing applicants should check their email; applying does not guarantee selection. Discussion is permitted only under the test NDA. Recording, streaming, screenshots and sharing gameplay footage are prohibited. The announcement does not establish final launch team limits.</p>
 <p>
   <em>Warhammer 40,000: Dawn of War IV</em> includes modes for solo narrative players, cooperative commanders, and competitive multiplayer players. Campaign capacity is official. For other modes, the table combines confirmed formats with clearly labeled estimates from public previews and series precedent.
 </p>
@@ -812,11 +851,11 @@ export const blogPosts: BlogPost[] = [
 
 <h2 id="team-sizes">Does Dawn of War 4 support 1v1, 2v2, 3v3, or 4v4?</h2>
 <p>The developer AMA explicitly discusses default 1v1 matchmaking and balance across 1v1 and team games. Reputable previews describe 1v1, 2v2, and 3v3 battles. We therefore rate support through 3v3 as a <strong>medium-confidence expectation</strong>, while 4v4 remains unsupported by current evidence.</p>
-<p>This distinction is important for E-E-A-T: “team games exist” is developer-confirmed, while the complete queue-size table is not. The article gives the most likely answer without presenting preview reporting as a final platform specification.</p>
+<p>The October test confirms 1v1 availability, not a complete launch queue list. Keep the beta's limited scope separate from expectations about team games.</p>
 
 <h2>Custom match settings</h2>
 <p>KING Art Games confirms that Commander rules can be changed in custom settings: Commanders may be produced normally, enabled as starting units, or disabled. This shows that custom matches support meaningful rule variation, but the complete lobby settings—resource rates, population, victory conditions, observers, AI slots, and map filters—have not been published.</p>
-<p>Skirmish is the appropriate mode to watch for practice against AI and experimentation. The publisher says a dedicated Skirmish showcase is still planned, so capacity and customization should be updated when that presentation arrives.</p>
+<p>Skirmish provides practice against AI. The October beta explicitly offers one human against one AI; this does not establish the full game's AI slot limits or complete customization menu.</p>
 
 <h2 id="coop-options">2. Campaign Co-op: What Is Confirmed</h2>
 <p>
