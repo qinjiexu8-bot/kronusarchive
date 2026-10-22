@@ -21,11 +21,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "dawn-of-war-4-system-requirements-speculations",
     title: "Dawn of War 4 System Requirements: Estimated PC Specs",
-    seoTitle: "Dawn of War 4 System Requirements Estimate",
+    seoTitle: "Dawn of War 4 System Requirements: PC Specs Estimate",
     shortTitle: "Dawn of War 4 System Requirements",
-    excerpt: "See our estimated Dawn of War 4 PC requirements, built from Iron Harvest, Company of Heroes 3, and Tempest Rising, plus practical upgrade advice.",
+    excerpt: "Dawn of War 4 PC requirements checked October 22: what Steam confirms, estimated minimum and recommended specs, storage guidance and a PC checklist.",
     datePublished: "2026-08-01",
-    dateModified: "2026-08-29",
+    dateModified: "2026-10-22",
     author: "Kronus Archive Tech Desk",
     category: "System Specs",
     readTime: "8 min read",
@@ -42,16 +42,17 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       { question: "What are the estimated Dawn of War 4 system requirements?", answer: "Our working minimum is a Ryzen 5 1600 or Core i5-8600, GTX 1060 6GB or RX 580 8GB, 8 GB RAM, and roughly 60 GB of SSD space. For 1080p high settings, we would target a Ryzen 5 5600X or Core i5-11600K, RTX 3060 Ti or RX 6700 XT, and 16 GB RAM. These are estimates, not official requirements." },
       { question: "Are the Dawn of War 4 system requirements official?", answer: "No. Steam currently confirms only a 64-bit processor and operating system. The named hardware on this page is an editorial estimate based on comparable RTS games and may change when Deep Silver publishes final specifications." },
-      { question: "Will Dawn of War 4 require Windows 11?", answer: "Probably not. Comparable modern RTS games support 64-bit Windows 10 and Windows 11, so Windows 10 is our medium-confidence minimum estimate. Deep Silver has not yet confirmed the exact version." },
+      { question: "Will Dawn of War 4 require Windows 11?", answer: "The supported Windows versions have not been confirmed. Older comparison games list Windows 10, but that does not establish support for Dawn of War IV. Wait for the final OS requirement before changing your operating system for this game." },
+      { question: "How much storage does Dawn of War 4 need?", answer: "The official download and installed sizes are not published in the Steam requirements checked October 22. Our 60–80 GB SSD allowance is a planning estimate, not a measured file size. Allow additional headroom for updates and do not treat it as a confirmed download requirement." },
       { question: "Should I upgrade my PC before launch?", answer: "A system near the estimated recommended tier should be a sensible target for modern 1080p RTS gaming, but avoid buying a new GPU solely for Dawn of War 4 until official performance targets appear. An SSD and 16 GB RAM are lower-risk upgrades." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Best current estimate:</strong> plan around a Core i5-8600 or Ryzen 5 1600, GTX 1060 6GB or RX 580 8GB, 8 GB RAM, and about 60 GB of SSD space as a likely minimum. For a safer 1080p high-settings target, aim for a Core i5-11600K or Ryzen 5 5600X, RTX 3060 Ti or RX 6700 XT, and 16 GB RAM. <strong>Confidence: medium-low.</strong> These are editorial estimates, not requirements published by Deep Silver.</div>
+<div class="official-notice-box"><strong>Official status, checked October 22:</strong> Steam still lists a 64-bit processor and operating system, with the OS marked “Coming soon.” It does not yet give CPU, GPU, RAM or storage specifications. <strong>Our planning estimate:</strong> i5-8600 / Ryzen 5 1600, GTX 1060 6GB / RX 580 8GB and 8 GB RAM at the lower end; i5-11600K / Ryzen 5 5600X, RTX 3060 Ti / RX 6700 XT and 16 GB RAM for more headroom. Confidence is medium-low. These are not tested performance targets.</div>
 
-<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#estimated-specs">estimated specs</a> · <a href="#comparison-method">comparison games</a> · <a href="#upgrade-advice">upgrade advice</a> · <a href="#estimate-limits">uncertainty</a></nav>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#estimated-specs">estimated specs</a> · <a href="#comparison-method">comparison games</a> · <a href="#pc-checklist">check your PC</a> · <a href="#storage-size">storage</a> · <a href="#upgrade-advice">upgrade advice</a> · <a href="#estimate-limits">uncertainty</a></nav>
 
 <h2 id="estimated-specs">Estimated Dawn of War 4 PC requirements</h2>
-<p><em>Warhammer 40,000: Dawn of War IV</em> is confirmed for Windows PC through Steam. As checked on August 29, Steam still lists only a 64-bit processor and operating system; the minimum OS says “Coming soon.” Deep Silver's August delay announcement specifically mentions further polish and optimization, but it does not provide hardware specifications. The table therefore gives a practical planning range inferred from three relevant RTS references rather than leaving readers without an answer.</p>
+<p>This guide is for PC players deciding whether to wait, upgrade or investigate their existing hardware. The <a href="https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/">Steam requirements section</a> remains incomplete as of October 22. Keep the official-status column separate from our comparison-based estimates below. A closed-beta invitation or a successful run on someone else's PC is not a published minimum specification.</p>
 
 <table class="data-table">
   <thead>
@@ -66,8 +67,8 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <td><strong>Operating System</strong></td>
       <td>64-bit OS required</td>
-      <td>Windows 10 64-bit</td>
-      <td>Windows 10 or 11 64-bit</td>
+      <td>Exact Windows version unconfirmed</td>
+      <td>Check final supported OS before upgrading</td>
     </tr>
     <tr>
       <td><strong>Processor (CPU)</strong></td>
@@ -111,6 +112,7 @@ export const blogPosts: BlogPost[] = [
 <p>Our estimate begins near Tempest Rising because Dawn of War IV launches in 2026 and advertises large armies, detailed Sync Kills, base construction, four asymmetric factions, and a campaign exceeding 70 missions. We do not assume identical engines or optimization; the comparison only provides a defensible planning band.</p>
 
 <h2 id="upgrade-advice">Can your PC probably run Dawn of War 4?</h2>
+<p>These tiers are an editorial comparison, not compatibility results. Laptop GPUs with similar names can have different power limits, and CPU, GPU and memory must be considered together.</p>
 <ul>
   <li><strong>GTX 1060 / RX 580 with 8 GB RAM:</strong> likely in minimum territory. Expect compromises and wait for official targets before buying the game for this PC.</li>
   <li><strong>GTX 1660 Super / RTX 2060 with 16 GB RAM:</strong> likely playable at 1080p with adjusted settings, but large-battle performance is uncertain.</li>
@@ -119,6 +121,13 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Steam Deck:</strong> no verified compatibility or performance target has been announced.</li>
 </ul>
 <p>RTS performance can become CPU-limited when unit counts, pathfinding, AI, and simulation load increase. A newer six-core processor may matter as much as moving one GPU tier higher. An SSD and 16 GB RAM are relatively safe general upgrades; buying a high-end graphics card solely for this game is harder to justify before official testing.</p>
+
+<h2 id="pc-checklist">Check your PC before deciding on an upgrade</h2>
+<ol><li><strong>Record exact parts:</strong> note your full CPU model, GPU model, dedicated graphics memory and installed RAM. “Core i7” alone is not specific enough to compare generations.</li><li><strong>Record the machine type:</strong> distinguish a laptop GPU from a desktop card with a similar name.</li><li><strong>Choose your goal:</strong> write down resolution, graphics preferences and whether a stable lower frame rate is acceptable.</li><li><strong>Check free SSD space:</strong> leave room for your operating system and other applications as well as the game.</li><li><strong>Wait before buying parts solely for this title:</strong> compare the final official table with your notes, then look for repeatable tests at your intended settings.</li></ol>
+
+<h2 id="storage-size">Download size and installed size are not the same</h2>
+<p>The 60–80 GB range above is our disk-space allowance, not a confirmed download. Compression and patch installation can make download size, installed size and temporary free-space needs differ. Do not delete files or purchase a drive solely to meet this estimate. Recheck the store and launcher when preload details are published.</p>
+<p>For access timing, see our <a href="/blog/dawn-of-war-4-release-date-editions-early-access">release and early-unlock guide</a>. For what the current test actually offers, read the <a href="/blog/dawn-of-war-4-multiplayer-modes-guide#beta-access">closed-beta section</a>. Neither article substitutes for a hardware benchmark.</p>
 
 <h2 id="estimate-limits">What could make this estimate wrong?</h2>
 <p>The final engine, graphics presets, resolution targets, upscaling support, campaign scale, and optimization are unknown. Official “minimum” labels also vary: one publisher may target 720p/30 FPS while another expects 1080p. Our confidence is therefore <strong>medium-low</strong> for individual parts but <strong>medium</strong> for the broader conclusion that 16 GB RAM, an SSD, and an RTX 2060-to-3060-class GPU form a sensible pre-launch planning range.</p>
@@ -696,38 +705,41 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "dawn-of-war-4-last-stand-mode-guide",
-    title: "Dawn of War 4 Last Stand Mode Explained",
-    seoTitle: "Dawn of War 4 Last Stand Mode Guide",
+    title: "Dawn of War 4 Last Stand: 3-Player Co-op & Heroes",
+    seoTitle: "Dawn of War 4 Last Stand: 3 Players & 5 Heroes",
     shortTitle: "Last Stand Mode Explained",
-    excerpt: "Learn what is confirmed about Dawn of War 4's returning Last Stand mode: escalating enemy waves, co-op, progression, skills, and equipment.",
+    excerpt: "Dawn of War 4 Last Stand confirms three-player co-op, five hero choices and companion units. Compare its survival format with campaign co-op.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-12",
+    dateModified: "2026-10-22",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
     readTime: "7 min read",
     keywords: ["Dawn of War 4 Last Stand", "Dawn of War 4 Last Stand mode", "Dawn of War 4 co-op"],
-    officialStatus: "Confirmed mode; party size is an editorial estimate",
+    officialStatus: "Three-player co-op confirmed in the October overview",
     sources: [
+      { label: "October game overview: Last Stand player count", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer" },
+      { label: "October 21 overview: heroes and companion units", publisher: "PLAION", href: "https://press.plaion.com/en-EN/NEW-TRAILER-DAWN-OF-WAR-IV-DEPLOYS-MASSIVE-GAME-OVERVIEW" },
       { label: "What we're building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
       { label: "Release date, pre-order and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
       { label: "Dawn of War II: The Last Stand reference", publisher: "Dawn of War Wiki", href: "https://dawnofwar2.wiki.gg/wiki/The_Last_Stand" },
     ],
     faqs: [
       { question: "Is Last Stand returning in Dawn of War 4?", answer: "Yes. Deep Silver has officially confirmed that Last Stand returns as a horde-like mode built around increasingly deadly waves." },
-      { question: "How many players are in Dawn of War 4 Last Stand?", answer: "Three players is our best current estimate because the original Dawn of War II Last Stand used a three-hero team. Dawn of War 4 co-op is confirmed, but Deep Silver has not yet published its final Last Stand party size." },
+      { question: "How many players are in Dawn of War 4 Last Stand?", answer: "Three players. Deep Silver's October overview confirms a player can team up with two allies." },
+      { question: "How many heroes can you choose in Last Stand?", answer: "PLAION's October 21 announcement lists five hero choices and companion units. Five is the hero selection count, not the party size." },
       { question: "Does Last Stand have progression?", answer: "Yes. Players can level up characters and unlock skills and equipment. Exact progression trees, unlock rates, and launch equipment remain TBA." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Quick answer:</strong> Last Stand returns in <em>Dawn of War IV</em> as a co-op horde mode with increasingly deadly waves, character levels, skills, and equipment. <strong>Our best party-size estimate is three players</strong>, matching Dawn of War II's established three-hero format, but Deep Silver has not confirmed that number for Dawn of War IV.</div>
-<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#last-stand-basics">confirmed format</a> · <a href="#last-stand-progression">progression</a> · <a href="#last-stand-party">party size estimate</a> · <a href="#last-stand-prep">how to prepare</a></nav>
-<p>This guide is for co-op players deciding what to expect before launch. Confirmed facts come from Deep Silver; the party-size estimate is based on the directly related Dawn of War II mode and is labeled separately.</p>
+<div class="official-notice-box"><strong>Quick answer:</strong> Last Stand is a <strong>three-player co-op survival mode</strong>. Its escalating waves, character progression, skills and equipment distinguish it from the story campaign.</div>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#last-stand-basics">confirmed format</a> · <a href="#last-stand-progression">progression</a> · <a href="#last-stand-party">player count</a> · <a href="#last-stand-prep">how to prepare</a></nav>
+<p><strong>October 22 correction:</strong> our previous trio estimate is now confirmed by the <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer">official overview</a>. This guide helps groups choose a mode; it does not present untested hero builds.</p>
 <h2 id="last-stand-basics">What is Last Stand?</h2>
 <p>Last Stand is a survival-focused alternative to the game's army-scale campaign and competitive multiplayer. The official description centers on enduring waves that become progressively more dangerous. Rather than inventing a fixed wave count or boss schedule before release, this guide tracks the structure that Deep Silver and KING Art Games have actually announced.</p>
 <table class="data-table">
   <thead><tr><th>Feature</th><th>Official status</th><th>What remains TBA</th></tr></thead>
   <tbody>
     <tr><td><strong>Escalating waves</strong></td><td>Confirmed</td><td>Total waves, enemy tables, and boss timing</td></tr>
-    <tr><td><strong>Co-op support</strong></td><td>Confirmed</td><td>Three players estimated; final party size unconfirmed</td></tr>
+    <tr><td><strong>Co-op support</strong></td><td>Three players confirmed</td><td>Solo/duo fill options and matchmaking rules</td></tr>
     <tr><td><strong>Character levels</strong></td><td>Confirmed</td><td>Level cap and experience requirements</td></tr>
     <tr><td><strong>Skills and equipment</strong></td><td>Confirmed</td><td>Complete unlock lists, statistics, and builds</td></tr>
     <tr><td><strong>Post-launch scenarios</strong></td><td>Confirmed on the Year One roadmap</td><td>Scenario dates and objectives</td></tr>
@@ -735,14 +747,14 @@ export const blogPosts: BlogPost[] = [
 </table>
 <h2 id="last-stand-progression">Progression between runs</h2>
 <p>Official material says players level up characters and unlock skills and equipment. That creates a persistent progression layer, but the publisher has not yet shown enough data for a trustworthy leveling route or equipment tier list. Claims about optimal loadouts should wait until the launch build can be tested repeatedly.</p>
-<h2 id="last-stand-party">Our best player-count estimate</h2>
-<p>Dawn of War II's Last Stand was built for three players, each controlling one hero against escalating waves. Because Dawn of War IV explicitly revives that named mode and again emphasizes characters, skills, and equipment, a three-player team is the strongest working assumption. We rate this estimate <strong>medium confidence</strong>: the historical format is directly relevant, but KING Art Games could expand or redesign the lobby.</p>
-<p>Players planning a group should provisionally expect a trio, while avoiding purchases or schedules that depend on the number until Deep Silver confirms it. A two-player fallback or larger custom lobby remains possible.</p>
+<h2 id="last-stand-party">How many players and heroes are there?</h2>
+<p>Plan for a trio. The <a href="https://press.plaion.com/en-EN/NEW-TRAILER-DAWN-OF-WAR-IV-DEPLOYS-MASSIVE-GAME-OVERVIEW">October 21 publisher announcement</a> separately identifies five selectable heroes and a Strikeforce of companion units. Do not confuse hero options with human player slots.</p>
+<p>If your regular group has two people, the <a href="/blog/dawn-of-war-4-co-op-campaign-guide">campaign co-op guide</a> is the better starting point. For Last Stand, check matchmaking and fill rules before assuming that a missing third player will be replaced automatically. We have not verified those lobby details.</p>
 <h2>How Dawn of War IV may differ from the original mode</h2>
-<p>The Dawn of War II version used three heroes against 20 escalating waves. That history supports the estimated trio, but it does not establish a 20-wave limit for the sequel. Dawn of War IV can change arenas, objectives, enemy composition, revive rules, progression, or team size while retaining the Last Stand name.</p>
+<p>The Dawn of War II version used three heroes against 20 escalating waves. That history does not establish a 20-wave limit for the sequel. Dawn of War IV can change arenas, objectives, enemy composition, revive rules and progression while retaining the Last Stand name.</p>
 <p>Deep Silver's Year One roadmap promises additional Commander scenarios, abilities, loadouts, and playstyles. This indicates that the mode is intended as an evolving character-based activity rather than a one-off side mission. It does not prove that every campaign Commander will be playable in Last Stand.</p>
 <h2 id="last-stand-prep">How players can prepare without invented builds</h2>
-<ol><li><strong>Plan for complementary roles:</strong> a likely three-player team benefits from damage, control, and survival rather than three identical loadouts.</li><li><strong>Expect progression to matter:</strong> skills and equipment are confirmed, so early runs may focus on learning and unlocking options.</li><li><strong>Separate wave clearing from boss damage:</strong> escalating modes usually punish a team that can solve only one target type; this is planning guidance, not a confirmed enemy table.</li><li><strong>Track official Commander reveals:</strong> role descriptions will be more useful than unsupported tier lists.</li><li><strong>Rebuild advice after launch:</strong> every recommended loadout needs a game version, difficulty, and repeatable test.</li></ol>
+<ol><li><strong>Discuss complementary roles:</strong> compare damage, control and survival tools when actual loadouts become available, rather than assuming three identical choices are best.</li><li><strong>Expect progression to matter:</strong> skills and equipment are confirmed, so early runs may focus on learning and unlocking options.</li><li><strong>Separate wave clearing from boss damage:</strong> escalating modes usually punish a team that can solve only one target type; this is planning guidance, not a confirmed enemy table.</li><li><strong>Track official Commander reveals:</strong> role descriptions will be more useful than unsupported tier lists.</li><li><strong>Rebuild advice after launch:</strong> every recommended loadout needs a game version, difficulty, and repeatable test.</li></ol>
 <h2>How Last Stand fits the wider game</h2>
 <p>The mode complements the story campaign, <a href="/blog/dawn-of-war-4-crusade-mode-guide">Crusade</a>, Skirmish, and competitive formats covered in our <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">modes guide</a>. Players who prefer small-team survival and character progression may find Last Stand more approachable than managing a full base and army.</p>
 <h2>Year One support</h2>
@@ -753,23 +765,27 @@ export const blogPosts: BlogPost[] = [
   <h3>Who should watch Last Stand?</h3>
   <ul><li>Players who want co-op rather than competitive matches.</li><li>Players interested in character progression and equipment unlocks.</li><li>Returning Dawn of War II players curious about the revived mode.</li></ul>
 </div>
-<p><strong>Pre-launch verdict:</strong> expect a progression-driven co-op survival mode, probably for three players, with expanding post-launch Commander support. The format and progression are confirmed; the trio is a medium-confidence estimate; exact waves and builds remain genuinely unknown.</p>
+<p><strong>Pre-launch verdict:</strong> choose Last Stand for small-group survival and character progression. Use the confirmed format to plan your group, but wait for documented loadouts and repeatable testing before choosing a supposedly optimal build.</p>
 `,
   },
   {
     slug: "dawn-of-war-4-multiplayer-modes-guide",
     title: "Dawn of War 4 Multiplayer Modes Explained",
-    seoTitle: "Dawn of War 4 Multiplayer & Beta Modes",
+    seoTitle: "Dawn of War 4 Multiplayer: Modes & Player Counts",
     shortTitle: "Dawn of War 4 Multiplayer Modes Explained",
-    excerpt: "Compare Dawn of War 4 player counts and modes, plus the October 21–26 closed beta: confirmed 1v1 testing, campaign co-op and team-size estimates.",
+    excerpt: "Compare Dawn of War 4 multiplayer, campaign co-op and Last Stand player counts. See confirmed 2v2, Skirmish AI limits and the October beta's scope.",
     datePublished: "2026-08-01",
-    dateModified: "2026-10-19",
+    dateModified: "2026-10-22",
     author: "Kronus Archive Tactical Desk",
     category: "Campaign & Co-op",
     readTime: "10 min read",
     keywords: ["Dawn of War 4 multiplayer modes", "Dawn of War 4 Last Stand mode", "Dawn of War 4 co-op campaign"],
-    officialStatus: "October beta confirmed; launch estimates labeled separately",
+    officialStatus: "October overview and official 2v2 reports checked",
     sources: [
+      { label: "Official game overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer" },
+      { label: "October 21 overview: Skirmish capacity", publisher: "PLAION", href: "https://press.plaion.com/en-EN/NEW-TRAILER-DAWN-OF-WAR-IV-DEPLOYS-MASSIVE-GAME-OVERVIEW" },
+      { label: "Battlefield Report: 2v2 Team Domination", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-battlefield-report-2v2-team-domination" },
+      { label: "Battlefield Report: 2v2 Team Skirmish Maelstrom PvE", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-battlefield-report-2v2-team-skirmish-maelstrom-pve" },
       { label: "October closed-beta announcement", publisher: "Deep Silver", href: "https://www.deepsilver.com/au/games/dawn-of-war-iv/news/closed-beta" },
       { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
       { label: "Dawn of War IV official overview and FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
@@ -778,14 +794,15 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       { question: "What multiplayer modes are confirmed for Dawn of War 4?", answer: "Quick Match supports Annihilation, Domination, and Maelstrom. The official site also confirms competitive multiplayer, Skirmish, Last Stand, and campaign co-op." },
       { question: "Does Dawn of War 4 have co-op?", answer: "Yes. The 70-plus-mission campaign supports solo or two-player co-op, and official material says several other modes support cooperative play." },
-      { question: "Does Dawn of War 4 have 4v4 multiplayer?", answer: "Probably not at launch. Public previews consistently describe 1v1, 2v2, and 3v3 battles, making 3v3 the strongest current ceiling estimate. A 4v4 mode has not been confirmed." },
+      { question: "Does Dawn of War 4 have 4v4 multiplayer?", answer: "4v4 has not been confirmed in the sources checked here. Official reports establish 2v2, while 3v3 remains a preview-based expectation. Neither the 1v1 beta nor the Skirmish AI limit defines the complete launch PvP queue list." },
+      { question: "Is Dawn of War 4 multiplayer only 1v1?", answer: "No. The October closed beta is limited to 1v1, but Deep Silver has separately published a 2v2 Team Domination report. Beta access and the wider game have different scopes." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV Quick Match includes Annihilation, Domination, and Maelstrom. The 70-plus-mission campaign supports solo or two-player co-op, while Skirmish and Last Stand add non-competitive options. Public previews point to 1v1, 2v2, and 3v3 battles; 4v4 is not currently confirmed.</div>
+<div class="official-notice-box"><strong>Quick answer:</strong> campaign co-op supports two players; Last Stand supports three. Official reports demonstrate 2v2, while 3v3 remains preview-based and 4v4 unconfirmed. Quick Match includes Annihilation, Domination and Maelstrom. The October beta's 1v1 restriction is not a limit on the wider game.</div>
 <nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#mode-table">all modes</a> · <a href="#quick-match">Quick Match</a> · <a href="#team-sizes">player counts</a> · <a href="#coop-options">co-op choices</a> · <a href="#mode-choice">which mode to play</a></nav>
 <h2 id="mode-table">1. Overview of Game Modes & Player Capacities</h2>
-<h3>October closed beta: what is actually available?</h3>
-<p><strong>Checked October 19:</strong> the <a href="https://www.deepsilver.com/au/games/dawn-of-war-iv/news/closed-beta">official closed-beta announcement</a> schedules testing for October 21–26. AI Skirmish is available throughout, while human opponents are available during scheduled multiplayer sessions. Both are 1v1. Exact session times go to selected participants.</p>
+<h3 id="beta-access">October closed beta: what is actually available?</h3>
+<p><strong>Checked October 22:</strong> the <a href="https://www.deepsilver.com/au/games/dawn-of-war-iv/news/closed-beta">official closed-beta announcement</a> schedules testing for October 21–26. AI Skirmish is available throughout, while human opponents are available during scheduled multiplayer sessions. Both are 1v1. Exact session times go to selected participants.</p>
 <table class="data-table">
 <caption>Beta access versus the wider game: player-count evidence</caption>
 <thead><tr><th scope="col">Activity</th><th scope="col">Human players</th><th scope="col">Evidence and availability</th></tr></thead>
@@ -793,12 +810,13 @@ export const blogPosts: BlogPost[] = [
 <tr><th scope="row">Beta AI Skirmish</th><td>1 human against 1 AI</td><td>Officially announced throughout the October test</td></tr>
 <tr><th scope="row">Beta multiplayer</th><td>2 humans, opposing sides</td><td>Official 1v1 sessions; invitation schedule applies</td></tr>
 <tr><th scope="row">Campaign co-op</th><td>2 cooperating players</td><td>Announced for the game; not listed in this beta</td></tr>
-<tr><th scope="row">2v2 / 3v3</th><td>4 / 6 humans if supported</td><td>Preview-based expectations; not this beta's announced format</td></tr>
-<tr><th scope="row">Last Stand</th><td>Final capacity unconfirmed here</td><td>Three-player estimate comes from series precedent, not the beta announcement</td></tr>
+<tr><th scope="row">2v2 PvP</th><td>4 humans</td><td>Official Team Domination report; not this beta's format</td></tr>
+<tr><th scope="row">3v3 PvP</th><td>6 humans if supported</td><td>Preview-based expectation; final queues still need confirmation</td></tr>
+<tr><th scope="row">Last Stand</th><td>3 cooperating players</td><td>Official overview; not listed in this beta</td></tr>
 </tbody></table>
 <p>The newsletter deadline for new applicants was before October 18 and has passed. Existing applicants should check their email; applying does not guarantee selection. Discussion is permitted only under the test NDA. Recording, streaming, screenshots and sharing gameplay footage are prohibited. The announcement does not establish final launch team limits.</p>
 <p>
-  <em>Warhammer 40,000: Dawn of War IV</em> includes modes for solo narrative players, cooperative commanders, and competitive multiplayer players. Campaign capacity is official. For other modes, the table combines confirmed formats with clearly labeled estimates from public previews and series precedent.
+  Use the table below to compare objectives. A format shown in a publisher demonstration is stronger evidence than a preview estimate, but it still does not tell us every launch matchmaking option.
 </p>
 
 <table class="data-table">
@@ -819,27 +837,27 @@ export const blogPosts: BlogPost[] = [
     </tr>
     <tr>
       <td><strong>Annihilation Mode</strong></td>
-      <td>Likely 1v1, 2v2, and 3v3; 3v3 estimated ceiling</td>
+      <td>1v1 established; complete team queue list pending</td>
       <td>Destroy all enemy headquarters &amp; production bases</td>
       <td>Hardcore RTS purists</td>
     </tr>
     <tr>
       <td><strong>Domination Mode</strong></td>
-      <td>Likely 1v1, 2v2, and 3v3; 3v3 estimated ceiling</td>
+      <td>2v2 demonstrated in the official report</td>
       <td>Capture &amp; hold Strategic Victory Points for score</td>
       <td>Objective-focused multiplayer players</td>
     </tr>
-    <tr><td><strong>Maelstrom</strong></td><td>Likely 1v1, 2v2, and 3v3; 3v3 estimated ceiling</td><td>Secure dynamically appearing objectives for Victory Points</td><td>Players who prefer shifting objectives</td></tr>
-    <tr><td><strong>Last Stand</strong></td><td>Co-op confirmed; 3-player party estimated</td><td>Survive escalating waves and progress characters</td><td>Co-op and hero-mode fans</td></tr>
+    <tr><td><strong>Maelstrom</strong></td><td>2v2 PvE demonstrated; complete PvP queue list pending</td><td>Secure dynamically appearing objectives for Victory Points</td><td>Players who prefer shifting objectives</td></tr>
+    <tr><td><strong>Last Stand</strong></td><td>3-player co-op confirmed</td><td>Survive escalating waves and progress characters</td><td>Co-op and hero-mode fans</td></tr>
     <tr>
       <td><strong>Skirmish Mode</strong></td>
-      <td>Likely supports the same maps up to 3v3; unconfirmed</td>
-      <td>Offline/custom rules not yet fully detailed</td>
+      <td>Up to 5 AI opponents announced</td>
+      <td>Customizable battles against AI</td>
       <td>Practice and custom-match players</td>
     </tr>
   </tbody>
 </table>
-<p><strong>Confidence note:</strong> 1v1, 2v2, and 3v3 are repeatedly reported from game previews, while 4v4 has not appeared in the publisher's current mode table. We therefore treat 3v3 as the likely launch ceiling rather than leaving the question unanswered. Last Stand's three-player estimate comes from the original mode's established format.</p>
+<p><strong>October update:</strong> the <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer">official overview</a> confirms Last Stand's trio and advertises 30 multiplayer maps. Map count does not establish which maps or queues support each team size.</p>
 
 <h2 id="quick-match">How the three Quick Match win conditions differ</h2>
 <h3>Annihilation</h3>
@@ -850,18 +868,18 @@ export const blogPosts: BlogPost[] = [
 <p>Maelstrom also uses Victory Points, but objectives appear dynamically around the map. The shifting target rewards mobility, scouting, and the ability to abandon one area for another. Read the dedicated <a href="/blog/dawn-of-war-4-maelstrom-mode-guide">Maelstrom guide</a> for the confirmed win condition and remaining unknowns.</p>
 
 <h2 id="team-sizes">Does Dawn of War 4 support 1v1, 2v2, 3v3, or 4v4?</h2>
-<p>The developer AMA explicitly discusses default 1v1 matchmaking and balance across 1v1 and team games. Reputable previews describe 1v1, 2v2, and 3v3 battles. We therefore rate support through 3v3 as a <strong>medium-confidence expectation</strong>, while 4v4 remains unsupported by current evidence.</p>
+<p>The <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-battlefield-report-2v2-team-domination">official Team Domination report</a> establishes 2v2 with four human participants. Separately, the <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-battlefield-report-2v2-team-skirmish-maelstrom-pve">Maelstrom PvE report</a> describes two developers teaming up against AI. Reputable previews support a medium-confidence expectation of 3v3, but we have not verified a complete official PvP lobby table. Do not assume 4v4 support.</p>
 <p>The October test confirms 1v1 availability, not a complete launch queue list. Keep the beta's limited scope separate from expectations about team games.</p>
 
 <h2>Custom match settings</h2>
-<p>KING Art Games confirms that Commander rules can be changed in custom settings: Commanders may be produced normally, enabled as starting units, or disabled. This shows that custom matches support meaningful rule variation, but the complete lobby settings—resource rates, population, victory conditions, observers, AI slots, and map filters—have not been published.</p>
-<p>Skirmish provides practice against AI. The October beta explicitly offers one human against one AI; this does not establish the full game's AI slot limits or complete customization menu.</p>
+<p>KING Art Games confirms that Commander rules can be changed in custom settings: Commanders may be produced normally, enabled as starting units, or disabled. The full per-setting limits still need verification.</p>
+<p><strong>Beyond the beta:</strong> <a href="https://press.plaion.com/en-EN/NEW-TRAILER-DAWN-OF-WAR-IV-DEPLOYS-MASSIVE-GAME-OVERVIEW">PLAION's October 21 announcement</a> specifies four Skirmish game types and up to five AI opponents. This does not establish six-human PvP support or guarantee that every human/AI team combination is legal.</p>
 
 <h2 id="coop-options">2. Campaign Co-op: What Is Confirmed</h2>
 <p>
   The 70-plus-mission campaign can be played solo or with one friend. The publisher has not confirmed that partners can freely mix factions inside a campaign, nor has it documented shared Commander cooldowns, so those details remain open until a co-op showcase or launch documentation appears. Our dedicated <a href="/blog/dawn-of-war-4-co-op-campaign-guide">Dawn of War 4 co-op campaign guide</a> separates those confirmed facts from the most reasonable launch expectations.
 </p>
-<p>Last Stand provides a second co-op path focused on characters, increasingly deadly waves, skills, and equipment rather than full base management. Three players is our current medium-confidence estimate based on Dawn of War II's established format. See the <a href="/blog/dawn-of-war-4-last-stand-mode-guide">Last Stand guide</a> for the evidence and uncertainty.</p>
+<p>For character-based survival instead of story missions, see the <a href="/blog/dawn-of-war-4-last-stand-mode-guide">Last Stand guide</a>, including its confirmed party size and remaining lobby questions.</p>
 
 <h2 id="mode-choice">Which Dawn of War 4 mode should you play?</h2>
 <table class="data-table"><thead><tr><th>If you want…</th><th>Start with</th><th>Why</th></tr></thead><tbody><tr><td>A long story with a friend</td><td>Campaign co-op</td><td>70+ missions; two-player support confirmed</td></tr><tr><td>Classic base destruction</td><td>Annihilation</td><td>Default Quick Match condition</td></tr><tr><td>Predictable scoring locations</td><td>Domination</td><td>Control more Strategic Positions</td></tr><tr><td>Changing map objectives</td><td>Maelstrom</td><td>Dynamic objectives award Victory Points</td></tr><tr><td>AI practice and custom rules</td><td>Skirmish</td><td>Non-ranked environment; full settings pending</td></tr><tr><td>Character progression with teammates</td><td>Last Stand</td><td>Co-op waves, skills, and equipment</td></tr></tbody></table>
@@ -875,13 +893,14 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Dawn of War 4 Co-op Campaign Guide",
     excerpt: "Dawn of War 4 has a two-player online co-op campaign with 70+ missions. See what is confirmed, how shared play may work, and what remains unknown.",
     datePublished: "2026-08-13",
-    dateModified: "2026-08-29",
+    dateModified: "2026-10-22",
     author: "Kronus Archive Campaign Desk",
     category: "Campaign & Co-op",
     readTime: "9 min read",
     keywords: ["Dawn of War 4 co-op campaign", "Dawn of War 4 co-op", "Dawn of War 4 campaign multiplayer"],
     officialStatus: "Campaign co-op confirmed; detailed rules pending",
     sources: [
+      { label: "October overview: Last Stand player count", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer" },
       { label: "Dawn of War IV official overview and FAQ", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv" },
       { label: "What we're building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
       { label: "How the four campaigns form one story", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/crafting-an-epic-dawn-of-war-iv-story-fit-for-the-warhammer-40-000-universe" },
@@ -943,7 +962,7 @@ export const blogPosts: BlogPost[] = [
 <p>Campaign is not the only cooperative option. Deep Silver says the other announced modes support co-op as well, giving pairs and groups alternatives when they do not want to advance the story.</p>
 <ul>
   <li><strong>Skirmish:</strong> configurable battles with choices such as map, factions, and difficulty. It should be the clearest place to practise with a friend against AI.</li>
-  <li><strong>Last Stand:</strong> a returning survival mode built around increasingly dangerous waves, character levels, skills, and equipment. Co-op is confirmed, while the final party size remains unannounced.</li>
+  <li><strong>Last Stand:</strong> three-player survival, confirmed in the <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer">October overview</a>. Its party size differs from the campaign.</li>
   <li><strong>Team multiplayer:</strong> 2v2 and 3v3 let friends join the same side against human opponents. This is cooperative teamwork, but it is PvP rather than campaign or Skirmish co-op.</li>
 </ul>
 <p>Compare all competitive objectives and capacities in the <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a>. Players who prefer hero progression over full army control can use the <a href="/blog/dawn-of-war-4-last-stand-mode-guide">Last Stand guide</a>.</p>
@@ -1124,15 +1143,18 @@ export const blogPosts: BlogPost[] = [
     title: "Dawn of War 4 Year One Roadmap: Free & Paid DLC",
     seoTitle: "Dawn of War 4 Year One DLC Roadmap",
     shortTitle: "Year One DLC Roadmap",
-    excerpt: "See the revised Dawn of War 4 Year One roadmap after the December delay, including free Crusade mode, maps, mission editor, scenarios and premium DLC.",
+    excerpt: "Compare Dawn of War 4's base game, free Year One updates and paid story expansions. Check Crusade timing, Commander Edition access and what remains undated.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-29",
+    dateModified: "2026-10-22",
     author: "Kronus Archive Commercial Desk",
     category: "Pre-order & Editions",
     readTime: "6 min read",
     keywords: ["Dawn of War 4 DLC roadmap", "Dawn of War 4 Year One expansion", "Dawn of War 4 Crusade mode"],
     officialStatus: "Year One plan confirmed by publisher",
     sources: [
+      { label: "Year 1 Expansion content and release status", publisher: "Steam", href: "https://store.steampowered.com/app/4759250/Warhammer_40000_Dawn_of_War_IV_Year_1_Expansion/" },
+      { label: "October game overview: post-launch plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer" },
+      { label: "Original Crusade systems reveal", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/crusade-mode-returns-in-warhammer-40-000-dawn-of-iv" },
       { label: "Release date update and revised roadmap", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/release-date-update" },
       { label: "Original editions and DLC plan", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
       { label: "Dawn of War IV Steam listing", publisher: "Steam", href: "https://store.steampowered.com/app/2272360/Warhammer_40000_Dawn_of_War_IV/" },
@@ -1144,6 +1166,18 @@ export const blogPosts: BlogPost[] = [
     ],
     contentHtml: `
 <div class="official-notice-box"><strong>Updated roadmap:</strong> Dawn of War IV's move to December 3 also shifted its post-launch calendar. Free modes, maps, editing tools and scenarios plus two premium story releases remain planned, with the rollout now moving through 2027. Exact dates remain unannounced.</div>
+
+<h2>What the October update means for your purchase</h2>
+<p><strong>Checked October 22:</strong> the <a href="https://store.steampowered.com/app/4759250/Warhammer_40000_Dawn_of_War_IV_Year_1_Expansion/">Year 1 Expansion Steam listing</a> still gives its release as “Coming soon.” It separates free modes, maps, Commanders and the Mission Editor from the two story expansions. Inclusion in a bundle is not proof that its content is ready to play.</p>
+<table class="data-table">
+<caption>What to check before choosing an edition</caption>
+<thead><tr><th scope="col">Your priority</th><th scope="col">What to compare</th><th scope="col">Do not assume</th></tr></thead>
+<tbody>
+<tr><th scope="row">Playing the base game</th><td>Standard versus Commander inclusions</td><td>That free future updates require the premium edition</td></tr>
+<tr><th scope="row">Playing earlier</th><td>The base game's early-unlock terms</td><td>That an early-unlock badge dates every DLC</td></tr>
+<tr><th scope="row">More story content</th><td>Bundle premium versus future separate prices</td><td>That buying now guarantees immediate expansion access</td></tr>
+<tr><th scope="row">Crusade or editing tools</th><td>Feature-specific release announcements</td><td>That a systems preview is a delivery date</td></tr>
+</tbody></table>
 
 <h2>Confirmed Dawn of War 4 DLC roadmap</h2>
 <p>Deep Silver describes the post-launch plan as the Year One Expansion. After delaying the base game from September 17 to December 3, the publisher also issued a revised roadmap. It separates free updates available to game owners from two premium story packages included with the Commander Edition or sold separately. This page records announced content without inventing exact dates from the roadmap artwork.</p>
@@ -1161,7 +1195,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>What is free for all game owners?</h2>
 <p>The publisher groups Crusade, maps, the mission editor, and Commander scenarios under free DLC. “Free” does not mean every feature arrives on launch day: following the base-game delay, the revised schedule places this work in the 2027 post-launch period. The order and individual dates are not yet public.</p>
-<p>Crusade is separate from the launch campaign and from the three Quick Match win conditions described in our <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a>. Until a dedicated feature reveal appears, rules such as progression, map structure, and co-op capacity remain TBA.</p>
+<p>Crusade is separate from the story campaign and Quick Match. Its <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/crusade-mode-returns-in-warhammer-40-000-dawn-of-iv">earlier feature reveal</a> already described a turn-based map and persistent Strike Forces. However, that older article still references the superseded September launch. The <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer">October overview</a> places Crusade in post-launch Year One updates. See our <a href="/blog/dawn-of-war-4-crusade-mode-guide">Crusade guide</a> for the announced systems, not a promise of day-one access.</p>
 
 <h2>What are the two premium expansions?</h2>
 <h3>Blood Ravens Story Prologue</h3>
@@ -1191,7 +1225,7 @@ export const blogPosts: BlogPost[] = [
 <table class="data-table">
   <thead><tr><th>Update to watch</th><th>What Kronus Archive will verify</th></tr></thead>
   <tbody>
-    <tr><td>Crusade reveal</td><td>Rules, progression, player capacity, and launch date</td></tr>
+    <tr><td>Crusade release announcement</td><td>Delivery date, final rules and co-op capacity against the earlier systems preview</td></tr>
     <tr><td>Mission editor showcase</td><td>Sharing, scripting, map support, and platform requirements</td></tr>
     <tr><td>Premium DLC store pages</td><td>Standalone prices, dates, and exact inclusions</td></tr>
     <tr><td>Aftermath faction reveal</td><td>Name, mechanics, commanders, units, and campaign scope</td></tr>
@@ -1396,25 +1430,29 @@ export const blogPosts: BlogPost[] = [
     shortTitle: "Crusade Mode Guide",
     excerpt: "Learn how Dawn of War 4 Crusade mode works: the turn-based Kronus map, Action Points, Requisition, Strike Forces, Commander campaigns, and co-op before launch.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-02",
+    dateModified: "2026-10-22",
     author: "Kronus Archive Campaign Desk",
     category: "Campaign & Co-op",
     readTime: "10 min read",
     keywords: ["Dawn of War 4 Crusade mode", "Dawn of War IV Crusade guide", "Dawn of War 4 turn-based map"],
-    officialStatus: "Crusade systems confirmed by publisher",
+    officialStatus: "Systems preview available; now in the post-launch plan",
     sources: [
+      { label: "October overview: revised Crusade availability", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer" },
       { label: "Crusade mode returns in Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/au/games/dawn-of-war-iv/news/crusade-mode-returns-in-warhammer-40-000-dawn-of-iv" },
       { label: "Release date, editions and DLC plans", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/warhammer-40-000-dawn-of-war-iv-s-release-date-pre-order-dlc-plans-confirmed" },
       { label: "What we’re building with Dawn of War IV", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/what-we-re-building-with-warhammer-40-000-dawn-of-war-iv" },
     ],
     faqs: [
       { question: "What is Crusade mode in Dawn of War 4?", answer: "Crusade is a replayable extended campaign built around a turn-based world map of Kronus. Players spend limited Action Points, move a Strike Force between territories, fight RTS battles, and pursue Commander-specific objectives." },
+      { question: "Is Crusade included at launch?", answer: "Do not plan on day-one access. The October overview places Crusade in free post-launch Year One updates, superseding the older reveal's launch wording. Its exact release date remains unannounced." },
       { question: "How long is a Dawn of War 4 Crusade?", answer: "Deep Silver says a typical Crusade takes approximately eight to ten hours. Because the mode is designed to play differently across runs, actual completion time may vary." },
       { question: "How many Crusades are available?", answer: "Five Commanders are confirmed to receive dedicated Crusades. The publisher also plans additional Commander scenarios for Crusade and Last Stand as free post-launch content." },
       { question: "Does Crusade mode support co-op?", answer: "Deep Silver has stated that Crusade supports cooperative play. Final lobby rules, player responsibilities, saving behavior, and campaign ownership details still need clarification." },
     ],
     contentHtml: `
 <div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War IV Crusade mode is a replayable extended campaign that combines a turn-based map of Kronus with real-time strategy battles. You spend limited Action Points, move and improve a Strike Force, capture territories, manage Requisition, and pursue objectives shaped by the selected Commander.</div>
+
+<p><strong>Availability correction, October 22:</strong> the <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/official-game-overview-trailer">latest overview</a> places Crusade after launch. The earlier systems reveal still contains the old September date. Read the mechanics below as announced design, and use the <a href="/blog/dawn-of-war-4-year-one-roadmap-dlc">roadmap tracker</a> for timing.</p>
 
 <p>This guide explains what Deep Silver has confirmed, how the strategic layer connects to RTS missions, and which details remain unknown. It does not invent territory bonuses, Action Point costs, AI rules, or “best routes” before the final mode can be tested.</p>
 
@@ -1427,7 +1465,7 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>Action Points</strong></td><td>Limit what can be done during each turn</td><td>Move, fight, or invest within a finite turn budget?</td><td>Starting total and action costs</td></tr>
     <tr><td><strong>Strike Force</strong></td><td>Carries combat units through the extended campaign</td><td>How should damage, upgrades, and unit composition be managed?</td><td>Roster limits and replacement rules</td></tr>
     <tr><td><strong>Requisition</strong></td><td>Improves territories and heals or develops Strike Forces</td><td>Spend on map control or army recovery?</td><td>Income values and upgrade prices</td></tr>
-    <tr><td><strong>Commander scenario</strong></td><td>Defines goals, starting conditions, advantages, and disadvantages</td><td>Which campaign style fits the player?</td><td>All five launch Commander identities and exact modifiers</td></tr>
+    <tr><td><strong>Commander scenario</strong></td><td>Defines goals, starting conditions, advantages, and disadvantages</td><td>Which campaign style fits the player?</td><td>All five planned Commander identities and exact modifiers</td></tr>
   </tbody>
 </table>
 
@@ -1486,7 +1524,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>The complete map, territory count, and how layouts vary between runs.</li>
   <li>The number of Action Points per turn and the cost of every action.</li>
-  <li>All five launch Commander Crusades and their modifiers.</li>
+  <li>All five planned Commander Crusades and their modifiers.</li>
   <li>Requisition income, prices, territory upgrades, and healing rules.</li>
   <li>Strike Force roster limits, losses, replacement, and veterancy persistence.</li>
   <li>Enemy strategic AI, counterattacks, diplomacy, and difficulty behavior.</li>

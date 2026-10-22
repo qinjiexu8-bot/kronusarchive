@@ -1195,6 +1195,10 @@ button:focus-visible {
 /* ==========================================================================
    BLOG ARTICLE ENHANCEMENTS (TABLES, NOTICES, RECOMMENDATIONS & ANCHORS)
    ========================================================================== */
+.blog-post-content [id] {
+  scroll-margin-top: 120px;
+}
+
 .blog-post-content h2 {
   font-family: var(--font-display), sans-serif;
   font-size: 32px;
