@@ -1240,25 +1240,34 @@ export const blogPosts: BlogPost[] = [
     title: "Dawn of War 4 Orks Guide: Waaagh!, Units & Commanders",
     seoTitle: "Dawn of War 4 Orks Faction Guide",
     shortTitle: "Orks Faction Guide",
-    excerpt: "Learn how the Dawn of War 4 Orks faction works: Waaagh! momentum, low-cost expansion, early upgrades, Gorgutz, Guzcutta, and confirmed battlefield roles.",
+    excerpt: "Choose your Ork playstyle with confirmed Waaagh! mechanics, October campaign previews, unit roles, and practical advice for your first Dawn of War 4 army.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-02",
+    dateModified: "2026-10-25",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
     readTime: "7 min read",
     keywords: ["Dawn of War 4 Orks guide", "Dawn of War 4 Waaagh mechanic", "Dawn of War 4 Gorgutz"],
-    officialStatus: "Based on official Orks faction deep dive",
+    officialStatus: "Official mechanics + October preview analysis",
     sources: [
       { label: "Faction Deep Dive — Orks", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/faction-deep-dive-orks" },
       { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
+      { label: "October 23 preview scope and closed-beta restrictions", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/game-overview-trailer-previews-closed-beta" },
     ],
     faqs: [
-      { question: "How does the Ork Waaagh! work in Dawn of War 4?", answer: "The Waaagh! meter grows with the number of Orks fielded and enemies killed. Activating it makes fighting units more aggressive and stronger for a timed battlefield advantage." },
+      { question: "How does the Ork Waaagh! work in Dawn of War 4?", answer: "Deep Silver describes a meter fueled by fielded Orks and enemy kills, with an activated combat boost. October previews report additional interactions, including banners and unlocks. Treat those preview details separately from verified launch rules; we have not tested final thresholds or multiplayer behavior." },
       { question: "Who are the Ork commanders in Dawn of War 4?", answer: "The official faction preview names returning Warboss Gorgutz and the new Beast Snagga Boss Guzcutta. Guzcutta later unlocks a Squigosaur mount during the campaign." },
       { question: "Can Orks build cover?", answer: "Yes. Developers confirm that Orks can construct their own cover, supporting their ability to expand and bring infrastructure closer to the front." },
+      { question: "Are Orks a good first faction in Dawn of War 4?", answer: "For a first campaign, Orks are our provisional recommendation over Adeptus Mechanicus if you prefer expansion and direct combat to managing a connected base. This is a playstyle recommendation informed by public previews, not a multiplayer tier ranking or a claim that careless attacks are safe." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Faction summary:</strong> Dawn of War IV Orks are built around numbers, fast expansion, inexpensive structures, early upgrades, and a Waaagh! meter charged by fielded Orks and defeated enemies. Exact costs, bonuses, and build timings remain unannounced.</div>
+<div class="official-notice-box"><strong>Quick answer:</strong> Dawn of War 4 Orks suit players who want affordable armies, forward expansion, and fights that build toward a Waaagh! payoff. For a first campaign, they are our provisional pick over Adeptus Mechanicus if connected-base management sounds less appealing than taking the initiative. That is a playstyle recommendation, not a competitive strength ranking.</div>
+<p><strong>Updated October 25, 2026:</strong> This guide combines official faction rules with explicitly attributed October hands-on previews. Kronus Archive has not played the preview or closed beta. We have added campaign advice and new preview findings, not measured build orders or final balance values.</p>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#orks-preview">October previews</a> · <a href="#orks-waaagh">Waaagh!</a> · <a href="#orks-units">units</a> · <a href="#orks-commanders">Commanders</a> · <a href="#orks-decisions">beginner decisions</a></nav>
+
+<h2 id="orks-preview">What the October Orks previews add</h2>
+<p><strong>Confirmed preview scope:</strong> Deep Silver's <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/game-overview-trailer-previews-closed-beta">October 23 roundup</a> says press access included the full Ork and Adeptus Mechanicus campaigns, with over 30 missions across branching storylines. That is not 30 missions per faction, and the press build is distinct from the NDA-restricted closed beta.</p>
+<p><strong>Reported hands-on:</strong> <a href="https://www.pcgamer.com/games/rts/ive-played-2-of-dawn-of-war-4s-campaigns-and-theyre-everything-i-hoped-theyd-be/">Fraser Brown's October 21 PC Gamer preview</a> finds Orks straightforward to start with, but warns that blind attacks can lose an army quickly. It also describes a campaign split between rival Ork leaders, with both shared and distinct missions. <a href="https://www.polygon.com/dawn-of-war-4-preview/">Polygon's preview</a> independently reports that the developers recommend the Ork campaign first.</p>
+<p><strong>Our recommendation:</strong> Start with the prologue, then choose Orks to learn expansion, scouting, and squad preservation before adding AdMech's network dependencies. Confidence is moderate: the recommendation concerns campaign learning, not ranked difficulty. Do not buy or choose this faction on an assumed win-rate advantage.</p>
 
 <h2>How the Orks play in Dawn of War 4</h2>
 <p>Orks are one of four confirmed <a href="/blog/dawn-of-war-4-factions-compared">launch factions</a>. Deep Silver’s faction preview positions them as an aggressive army that expands through fighting and looting. Their roster can add models and unlock weapons or upgrades early, while many units and structures sit among the game’s cheaper options.</p>
@@ -1272,26 +1281,29 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>How the Waaagh! meter works</h2>
-<p>The official preview compares Waaagh! to an energy bar. It fills through two confirmed inputs: putting more Orks on the battlefield and killing enemies. Activating it makes units already engaged in combat act like berserkers and become substantially stronger.</p>
+<h2 id="orks-waaagh">How the Waaagh! meter works</h2>
+<p>The <a href="https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/faction-deep-dive-orks">official faction deep dive</a> describes a meter fed by army presence and kills, with an activated boost to fighting units. This is the developer's high-level explanation, not a complete specification of every Waaagh! interaction.</p>
+<p><strong>October preview detail:</strong> <a href="https://press-start.com.au/previews/2026/10/21/warhammer-40k-dawn-of-war-iv-hands-on-preview-what-waaaghs-good-for/">Press Start's hands-on report</a> describes banners and Commander abilities contributing to Waaagh!, unlocks linked to its level, and basic Boyz becoming free at maximum charge. These are reported preview-build behaviors, not independently tested launch guarantees. The report does not establish a permanent, unlimited free-unit economy or identical rules in every mode.</p>
 <p>The strategic lesson is timing. Triggering Waaagh! without enough units in contact may waste part of its value; waiting too long risks losing the squads that charged it. Exact activation rules require launch testing, so this is a decision framework rather than a finished build order.</p>
 
-<h2>Confirmed Ork units and roles</h2>
+<h2 id="orks-units">Confirmed Ork units and roles</h2>
 <ul>
   <li><strong>Flash Gitz:</strong> powerful ranged infantry using Snazzguns to pressure defensive lines.</li>
   <li><strong>Squighog Boyz:</strong> relatively fast mounted fighters designed to strike and create gaps in a frontline.</li>
-  <li><strong>Lootas and Looted Wagons:</strong> examples named by developers when discussing ranged threats and anti-mass tools.</li>
+  <li><strong>Meganobz:</strong> the official deep dive names a choice between Kombi-Rokkits for longer-range fire and Kombi-Skorchas for short-range area damage. Choose for the threat you can identify, rather than assuming one upgrade is always best.</li>
   <li><strong>Slugga Boyz:</strong> can use a Burna that is particularly effective against clustered units.</li>
 </ul>
 <p>This list is not presented as the complete launch roster. Unit costs, production tiers, upgrades, and counters can change during final balancing.</p>
 
-<h2>Gorgutz and Guzcutta</h2>
+<h2 id="orks-commanders">Gorgutz and Guzcutta</h2>
 <p>Warboss Gorgutz returns from earlier Dawn of War games and appears at the start of Dawn of War IV. The campaign also introduces Guzcutta, a Beast Snagga Boss designed as an emerging rival. Guzcutta begins on foot and later unlocks a Squigosaur he can ride, effectively changing how the commander enters battle.</p>
+<p>The official deep dive describes Gorgutz as a slower Mega Armour fighter with melee and ranged options, while Guzcutta gains mobility with his mount. For a spoiler-light choice, favor Gorgutz if the heavy Warboss identity appeals to you, or Guzcutta for Beast Snagga flavor and mounted aggression. Neither description establishes the stronger campaign branch.</p>
 <p>Outside campaigns, the developer says multiplayer commanders are generic faction units selected before a match and normally produced from headquarters after unlocks. Named campaign characters should therefore not automatically be treated as standard multiplayer commander options.</p>
 
 <h2>Buildings, forward pressure, and economy</h2>
 <p>The multiplayer developers say almost any Ork infantry can build structures. Those buildings are relatively cheap and always armed, making “base crawling” a natural part of the faction: production can move closer to the fighting while new structures also threaten nearby enemies. Forward production shortens reinforcement travel, but it also places economic assets where opponents can attack them.</p>
-<p>Orks can additionally build their own cover. Combined with armed structures, that suggests a faction identity based on turning newly captured territory into a fighting position. The word “suggests” matters here; exact construction radius, weapon damage, cover durability, and refund rules have not been published.</p>
+<p><strong>Construction clarification:</strong> The <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer">developer AMA</a> describes infantry initiating construction; Press Start describes Gretchin working while an Ork is nearby and staffing completed weapons. These accounts may describe different parts of the same process. Check builder proximity in the available build before assuming an unattended forward structure will finish.</p>
+<p>Orks can additionally build their own cover. Combined with armed structures, that suggests a faction identity based on turning newly captured territory into a fighting position. We have not verified final construction ranges, damage, durability, or refund rules, so this is positioning advice rather than a numerical model.</p>
 
 <h2>How Orks interact with core multiplayer systems</h2>
 <ul>
@@ -1299,22 +1311,26 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Retreat:</strong> like other cover-using factions, Ork squads can preserve experience by disengaging toward production.</li>
   <li><strong>On-field reinforcement:</strong> adding models supports the faction’s numbers, but continuous replacement can pressure the economy.</li>
   <li><strong>Anti-mass tools:</strong> the developer names the Slugga Boyz’ Burna as a weapon suited to clustered enemies.</li>
-  <li><strong>Faction Stratagem:</strong> every faction has a powerful Stratagem independent of its selected Commander; the Ork-specific details remain TBA.</li>
+  <li><strong>Faction Stratagem:</strong> the AMA confirms a faction-level ability independent of Commander selection. Preview reports now describe Ork ability interactions, but do not establish a complete final multiplayer loadout.</li>
 </ul>
 
-<h2>Beginner questions to ask during a match</h2>
-<ol>
-  <li>Is the Waaagh! meter growing because the army is expanding, because enemies are dying, or both?</li>
-  <li>Will another inexpensive unit create useful pressure, or delay a needed technology unlock?</li>
-  <li>Can an infantry builder safely establish armed production closer to the objective?</li>
-  <li>Is Waaagh! being activated with enough units already fighting to justify the timing?</li>
-  <li>Should a damaged squad reinforce in the field, retreat, or hold behind constructed cover?</li>
-</ol>
-<p>These questions describe the faction’s confirmed systems without pretending that a universal five-minute sequence exists. Maps, opponents, balance patches, and selected Commanders will all affect the correct answer.</p>
+<h2 id="orks-decisions">Beginner decisions: pressure without wasting your army</h2>
+<p>The following is our decision framework based on the systems above, not a tested opening. It gives you a next action without inventing costs, timings, or damage breakpoints.</p>
+<table class="data-table">
+  <caption>Ork decision checklist — editorial advice, not a build order</caption>
+  <thead><tr><th scope="col">Situation</th><th scope="col">First decision</th><th scope="col">Mistake to avoid</th></tr></thead>
+  <tbody>
+    <tr><td>You have numbers but cannot see the defense</td><td>Scout the approach before committing; identify what your weapons need to answer</td><td>Confusing cheap replacements with a cost-free attack</td></tr>
+    <tr><td>A forward objective is contested</td><td>Secure the approach before investing in nearby production</td><td>Adding another asset the same enemy force can destroy</td></tr>
+    <tr><td>Waaagh! is available</td><td>Check whether the army can actually engage and follow through</td><td>Activating while most squads are still traveling</td></tr>
+    <tr><td>Replacements consume your resources</td><td>Compare holding this fight with retreating and preserving an upgrade budget</td><td>Keeping every squad on automatic reinforcement regardless of the objective</td></tr>
+  </tbody>
+</table>
+<p>Cheap units give you more opportunities to recover, not permission to ignore terrain or counters. If you enjoy this cycle of scouting, expanding, and choosing when to commit, Orks are a sensible first campaign choice. If you prefer protecting connections and setting up ranged engagements, compare the <a href="/blog/dawn-of-war-4-adeptus-mechanicus-faction-guide">Adeptus Mechanicus guide</a>.</p>
 
 <h2>Ork strengths, risks, and launch questions</h2>
 <div class="recommendation-box"><h3>What to watch</h3><ul><li><strong>Strength:</strong> pressure from numerous affordable units and armed forward structures.</li><li><strong>Strength:</strong> Waaagh! converts existing momentum into a timed combat advantage.</li><li><strong>Risk:</strong> an economy spread across forward structures may be exposed to focused attacks.</li><li><strong>Verify at launch:</strong> Waaagh! thresholds, expansion timings, unit caps, reinforcement costs, and anti-vehicle options.</li></ul></div>
-<p>Players comparing this aggressive style with defensive scaling should review the <a href="/factions/necrons">Necrons dossier</a> and <a href="/factions/adeptus-mechanicus">Adeptus Mechanicus dossier</a>. For positioning fundamentals, see the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a>.</p>
+<p>For positioning fundamentals, see the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a>. Use the <a href="/blog/dawn-of-war-4-multiplayer-modes-guide">multiplayer modes guide</a> to separate campaign lessons from the rules of the mode you intend to play.</p>
 `,
   },
   {
@@ -1322,29 +1338,37 @@ export const blogPosts: BlogPost[] = [
     title: "Dawn of War 4 Adeptus Mechanicus Guide: Noosphere & Units",
     seoTitle: "Dawn of War 4 Adeptus Mechanicus Guide",
     shortTitle: "Adeptus Mechanicus Faction Guide",
-    excerpt: "Learn how the Dawn of War 4 Adeptus Mechanicus use the Noosphere, Void Shield, Auger Vision, ranged units, Knights, and two distinct Commanders before launch.",
+    excerpt: "Understand Dawn of War 4 Adeptus Mechanicus: Noosphere expansion, Void Shield vs cover, October previews, and practical faction-choice advice before launch.",
     datePublished: "2026-08-02",
-    dateModified: "2026-08-02",
+    dateModified: "2026-10-25",
     author: "Kronus Archive Tactical Desk",
     category: "Faction Mechanics",
     readTime: "10 min read",
     keywords: ["Dawn of War 4 Adeptus Mechanicus guide", "Dawn of War 4 Noosphere", "Dawn of War 4 AdMech units"],
-    officialStatus: "Based on official faction preview and developer AMA",
+    officialStatus: "Official mechanics + October preview analysis",
     sources: [
       { label: "Introducing Dawn of War IV’s Adeptus Mechanicus", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/introducing-warhammer-40-000-dawn-of-war-iv-s-adeptus-mechanicus" },
       { label: "Multiplayer developer AMA", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer" },
       { label: "Dawn of War IV official overview", publisher: "Deep Silver", href: "https://www.deepsilver.com/gb/games/dawn-of-war-iv" },
+      { label: "October 23 preview scope and closed-beta restrictions", publisher: "Deep Silver", href: "https://www.deepsilver.com/games/dawn-of-war-iv/news/game-overview-trailer-previews-closed-beta" },
     ],
     faqs: [
       { question: "How does the Adeptus Mechanicus Noosphere work in Dawn of War 4?", answer: "Adeptus Mechanicus structures link back to headquarters to form a Noosphere Network. Adding connected structures raises its level, unlocks stronger technology, and benefits units and production inside its sphere of influence." },
       { question: "What does the Void Shield do?", answer: "The Void Shield protects a large area containing buildings and units. Enemies can move through it, but enemy ranged fire cannot pass through the barrier, making its placement important around chokepoints." },
       { question: "Who are the Adeptus Mechanicus Commanders?", answer: "The two named campaign Commanders are Technoarcheologist Potentia Delta-9 and Skitarii Marshal Sek-Ix-23. Potentia offers scouting and flexible upgrades; Sek-Ix-23 buffs nearby units and is protected by multiple bodyguard models." },
-      { question: "Is this an Adeptus Mechanicus build order?", answer: "No. Final costs, build times, upgrade requirements, and balance values are not public. This guide explains confirmed systems and provides a launch-day testing framework rather than inventing an opening sequence." },
+      { question: "Is this an Adeptus Mechanicus build order?", answer: "No. We have not tested a final-release opening. This guide combines official mechanics, attributed October preview observations, and an editorial decision framework; preview values alone cannot establish an optimal multiplayer build order." },
+      { question: "Should beginners choose Adeptus Mechanicus or Orks?", answer: "Choose Adeptus Mechanicus if connected-base planning and ranged combined arms appeal to you. Our provisional recommendation is Orks for players who want a more direct first campaign. This compares learning preferences, not faction win rates; mobile AdMech units do not mean the base develops as quickly as an Ork base." },
     ],
     contentHtml: `
-<div class="official-notice-box"><strong>Quick answer:</strong> The Dawn of War IV Adeptus Mechanicus are a fast, ranged-focused faction built around a connected Noosphere Network. Their strength grows as linked structures unlock technology and improve forces inside the network, while Auger Vision, the Void Shield, specialized units, and two contrasting Commanders reward planning and combined arms.</div>
+<div class="official-notice-box"><strong>Quick answer:</strong> The Dawn of War 4 Adeptus Mechanicus suit players who enjoy connected bases, information tools, and ranged combined arms. Their Noosphere rewards protected expansion rather than simply building anywhere. Several units are mobile, but that does not make their base development as immediate as the Orks' expansion-focused approach.</div>
 
-<p>This guide is for players who want to understand the faction before choosing an army. It separates developer-confirmed mechanics from editorial interpretation. Exact costs, percentages, build times, network radii, and competitive build orders remain unannounced and will be added only after official documentation or repeatable launch testing.</p>
+<p><strong>Updated October 25, 2026:</strong> This guide is for players choosing an army before launch. It distinguishes official mechanics, attributed October preview observations, and our own planning advice. Kronus Archive has not played the preview or closed beta; no recommendation below is a tested build order.</p>
+<nav aria-label="Article contents"><strong>In this guide:</strong> <a href="#admech-preview">October previews</a> · <a href="#admech-noosphere">Noosphere</a> · <a href="#admech-planning">expansion decisions</a> · <a href="#admech-shield">shield vs cover</a> · <a href="#admech-commanders">Commanders</a> · <a href="#admech-choice">who should choose them?</a></nav>
+
+<h2 id="admech-preview">What the October Adeptus Mechanicus previews add</h2>
+<p><strong>Confirmed scope:</strong> The <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/game-overview-trailer-previews-closed-beta">October 23 official roundup</a> identifies the full Ork and AdMech campaigns as part of press access. These campaign observations should not be treated as proof of ranked balance or of every multiplayer unlock.</p>
+<p><strong>Reported hands-on:</strong> <a href="https://www.pcgamer.com/games/rts/ive-played-2-of-dawn-of-war-4s-campaigns-and-theyre-everything-i-hoped-theyd-be/">Fraser Brown's October 21 PC Gamer preview</a> describes a more deliberate buildup than Orks, vulnerable relays, and melee specialists supporting ranged forces. It also identifies Emanatus Field Generators as garrisonable protection, distinct from the Void Shield. These are preview observations, not our measurements of the final release.</p>
+<p><strong>Our interpretation:</strong> Do not read “defensive” as “stay at headquarters.” Connected expansion still requires choosing which territory you can protect. Confidence is moderate in this learning recommendation: start with a manageable branch and learn its failure points before extending toward several objectives. Exact network thresholds could change the best opening.</p>
 
 <h2>Adeptus Mechanicus playstyle at a glance</h2>
 <p>The Adeptus Mechanicus make their first full appearance as a playable Dawn of War faction. KING Art Games describes them as relatively quick, strong at ranged combat, and equipped with technological tools that reveal information and amplify connected forces. They do field melee specialists, including Ruststalkers, but their close-combat units are designed to work with ranged synergies rather than turn the faction into an Ork-style brawler.</p>
@@ -1358,13 +1382,13 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>How the Noosphere Network works</h2>
-<p>The Noosphere is the defining Adeptus Mechanicus mechanic. Buildings connect to headquarters, and the linked chain creates a sphere of influence that can include structures, static weapons, and units. As more structures join the network, its level increases and opens access to stronger units, upgrades, and research. The official faction preview also says units within the network can become stronger and cheaper to produce.</p>
+<h2 id="admech-noosphere">How the Noosphere Network works</h2>
+<p>The Noosphere is the defining Adeptus Mechanicus mechanic. Buildings connect to headquarters, and the linked chain creates a sphere of influence that can include structures, static weapons, and units. As more structures join the network, its level increases and opens access to stronger units, upgrades, and research. The <a href="https://www.deepsilver.com/gb/games/dawn-of-war-iv/news/introducing-warhammer-40-000-dawn-of-war-iv-s-adeptus-mechanicus">official faction preview</a> also says units within the network can become stronger and cheaper to produce.</p>
 <p>This creates a base-building problem with two competing goals. A compact network should be easier to defend, but it may surrender map reach and resources. A wide network can support forward units and production, but losing one critical connection may isolate part of the system. The developer explicitly frames disconnecting the Noosphere as an enemy objective, so network topology matters alongside army combat.</p>
 <p>It is important not to convert that description into fictional percentage bonuses. An earlier version of this site presented unsupported cost and turret values; those figures have been removed. Until the final game exposes its rules, the correct preparation is learning how to evaluate connectivity, redundancy, and the value of territory.</p>
 
-<h2>Building a resilient network without a fake build order</h2>
-<p>A pre-release build order would require exact costs, build times, starting resources, map distances, and unlock requirements. Those inputs are not public. Players can still use a source-led planning framework when the game becomes available:</p>
+<h2 id="admech-planning">Building a resilient network without a fake build order</h2>
+<p>A reliable opening needs a specified build, map, starting conditions, and repeatable tests. We have not verified that dataset. The useful preparation is a planning framework, rather than assigning seconds to an untested structure sequence:</p>
 <ol>
   <li><strong>Identify the network root:</strong> confirm which headquarters connection keeps each branch active.</li>
   <li><strong>Map critical links:</strong> note whether destroying one structure disconnects several valuable buildings.</li>
@@ -1373,12 +1397,22 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Protect the payoff:</strong> place defenses where they guard production, research, and the structures that maintain network level.</li>
 </ol>
 <p>This sequence is a launch-day testing method, not a claim about the optimal opening. Maps and balance patches may change the correct structure order, while different multiplayer objectives can make a forward branch more or less valuable.</p>
+<table class="data-table">
+  <caption>Noosphere decision checklist — editorial analysis of the confirmed network system</caption>
+  <thead><tr><th scope="col">Situation</th><th scope="col">Decision to make</th><th scope="col">What to verify in your build</th></tr></thead>
+  <tbody>
+    <tr><td>A resource point lies beyond your defended area</td><td>Weigh the income against the cost of protecting the route</td><td>Connection range and whether the proposed branch actually remains linked</td></tr>
+    <tr><td>A relay supports several forward assets</td><td>Protect the shared dependency before adding more exposed assets</td><td>Which benefits disappear if that relay is lost</td></tr>
+    <tr><td>The objective moves away from your network</td><td>Decide whether to extend support or commit a limited force outside it</td><td>The mode's scoring rules and the benefits units lose outside coverage</td></tr>
+  </tbody>
+</table>
 
 <h2>Auger Vision and battlefield information</h2>
 <p>Auger Vision is a strategic ability that provides awareness beneath the fog of war. The developer compares it to a heatmap: it hints at enemy activity in an area without providing perfect information. That distinction matters. A hint can reveal that something is developing, but players must still scout or infer whether the threat is infantry, armor, a base expansion, or a diversion.</p>
 <p>Used defensively, Auger Vision can warn of pressure against a vulnerable network link. Used offensively, it may identify lightly protected space for ranged units to exploit. Used around a changing objective, it can help decide whether to commit the main formation or preserve it for another location. These use cases are reasonable interpretations of the confirmed information tool; cooldown and coverage will determine how often they are practical.</p>
 
-<h2>Void Shield rules and chokepoint use</h2>
+<h2 id="admech-shield">Void Shield vs garrisonable cover</h2>
+<p>Do not merge these tools into one mechanic. The <a href="https://www.deepsilver.com/games/dawn-of-war-iv/news/ama-developer-blog-multiplayer">multiplayer AMA</a> confirms an AdMech-built garrisonable structure; the faction deep dive separately describes the large Void Shield. Use the former as a squad-protection concept and the latter as a way to manage incoming fire over an area. Neither description establishes invulnerable units.</p>
 <p>The Void Shield is an enormous defensive structure that can cover many buildings and units. Friendly and enemy units can move through the shield, and friendly forces can move out. Hostile ranged attacks cannot travel through it. The barrier therefore changes firing lines without creating a sealed wall.</p>
 <p>That rule produces several immediate tactical consequences. A ranged opponent may need to enter the protected area, attack the shield or its support network, or reposition toward another angle. Melee attackers are not automatically stopped at the boundary, so a shielded formation still needs units capable of controlling enemies that cross it. The Void Shield is best understood as a tool that changes engagement geometry, not an invulnerability button.</p>
 <ul>
@@ -1402,12 +1436,12 @@ export const blogPosts: BlogPost[] = [
 </table>
 <p>Exact weapons, counters, upgrades, and tech tiers should be verified after launch. For example, knowing that a unit is long-ranged does not reveal its accuracy, minimum range, armor interaction, or resource efficiency. Those are the details that eventually turn a faction overview into a tested strategy guide.</p>
 
-<h2>Potentia Delta-9 vs Sek-Ix-23</h2>
+<h2 id="admech-commanders">Potentia Delta-9 vs Sek-Ix-23</h2>
 <p>The Adeptus Mechanicus campaign offers two named leaders with different purposes. Technoarcheologist Potentia Delta-9 can deploy a servo-skull to scout remote areas. Her upgrade paths are described as highly flexible, allowing development toward melee or ranged combat while retaining technological tricks. She fits players who value information and adapting a Commander to the match.</p>
 <p>Skitarii Marshal Sek-Ix-23 focuses on improving units attached to him and other forces within range. The official preview encourages placing him close to the center of battle so more units receive his support. Bodyguards make him the only Commander described as a multi-model unit, and the publisher specifically imagines him leading a 20-strong Skitarii formation.</p>
 <p>Those campaign identities should not be assumed to map directly onto every multiplayer rule. The multiplayer AMA says generic faction Commanders are selected before a match and normally produced from headquarters after unlocks. Named campaign characters and multiplayer Commander options may therefore differ.</p>
 
-<h2>Who should choose Adeptus Mechanicus?</h2>
+<h2 id="admech-choice">Who should choose Adeptus Mechanicus?</h2>
 <div class="recommendation-box"><h3>Best fit player profile</h3><ul><li>Choose them if you enjoy spatial base planning and connected infrastructure.</li><li>Choose them if you prefer ranged combined arms over constant melee pressure.</li><li>Choose them if information tools and adaptable technology appeal to you.</li><li>Expect a learning curve: network placement creates more dependencies than the straightforward Space Marine structure system.</li></ul></div>
 <p>Players who prefer relentless numbers may be happier with the <a href="/blog/dawn-of-war-4-orks-faction-guide">Orks faction guide</a>. Those comparing all four armies should use the <a href="/blog/dawn-of-war-4-factions-compared">faction comparison</a>. For the shared preservation systems surrounding cover and reinforcement, read the <a href="/blog/dawn-of-war-4-cover-retreat-reinforcement-guide">cover, retreat, and reinforcement guide</a>.</p>
 
